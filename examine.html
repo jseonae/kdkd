@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="k0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키득키득</title>
+
+    <link rel="stylesheet" href="/kideukkideuk/css/common.css">
+    <link rel="stylesheet" href="/kideukkideuk/css/reset.css">
+    <link rel="stylesheet" href="/kideukkideuk/css/font.css">
+    <link rel="stylesheet" href="/kideukkideuk/css/contents.css">    
+
+    <!-- <link rel="stylesheet" href="/kideukkideuk/css/modal.css">   -->
+
+    <script type="text/javascript" src="/kideukkideuk/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/kideukkideuk/js/main.js"></script>
+    <script type="text/javascript" src="/kideukkideuk/js/jquery-latest.min.js"></script>
+
+</head>
+
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $('.select.type1, .select.type2').on('click', function (event) {
+        $(this).toggleClass('on');
+        });
+        $('body').on('click', function (e) {
+        if (!$('.select.type1, .select.type2').is(e.target) 
+            && $('.select.type1, .select.type2').has(e.target).length === 0 
+            && $('.on').has(e.target).length === 0
+        ) {
+            $('.select.type1, .select.type2').removeClass('on');
+        }
+        }); // select
+
+        $('.std_list table td button').click(function() {
+            var modal_id = $(this).attr('id');
+            $('.modal' + '#' + modal_id).css({
+                display: 'flex', 
+            });
+        })
+        $('.btn_close').click(function() {
+            $('.modal').css({
+                display: 'none',
+            });
+        }) // modal
+    });
+</script>
+
+<script>
+    
+</script>
+
+<body>
+
+<!--HEADER :: Start -->
+<header>
+    <div class="header main">
+        <h1 class="logo_w"><img src="/kideukkideuk/images/common/logo_w.png" alt="온채움 한글해득 지원 시스템 키득키득"></a></h1>
+        <ul class="member">
+            <li class="name"><span>대한초등학교 홍길동</span>님,&nbsp;안녕하세요!<i></i></li>
+            <li class="level">
+                <div>
+                    <div class="select type1">
+                        <div class="lay category">
+                            <input type="hidden" name="catem" value="0">
+                            <strong><a href="#">1학년 1반(2023)</a></strong>
+                        </div>
+                        <div class="lists">
+                            <ul>
+                                <li><a href="#" rel="">1학년 1반(2018)</a></li>
+                                <li><a href="#" rel="">1학년 1반(2019)</a></li>
+                                <li><a href="#" rel="">1학년 1반(2020)</a></li>
+                                <li><a href="#" rel="">1학년 1반(2021)</a></li>
+                                <li><a href="#" rel="">1학년 1반(2022)</a></li>
+                                <li><a href="#" rel="">1학년 1반(2023)</a></li>
+                            </ul>
+                        </div>					
+                    </div>                    
+                </div>
+            </li>
+            <li>
+                <button class="btn white md">학급추가<i></i></button>
+            </li>
+        </ul>
+    </div>
+
+    <nav class="gnb">
+        <ul>
+            <li class="gnb_on"><a href="#"><i class="menu_ico num1"></i>진단하기</a></li>
+            <li><a href="#"><i class="menu_ico num2"></i>진단결과</a></li>
+            <li><a href="#"><i class="menu_ico num3"></i>나의학급</a></li>
+            <li><a href="#"><i class="menu_ico num4"></i>우리 학급 현황</a></li>
+        </ul>
+    </nav>
+</header><!--HEADER :: End -->
+
+<!--MAIN CONTENTS :: Start -->
+<div id="examine" class="container">
+
+    <section class="con_wrap lct_box">
+        <h2 class="title"><i class="tit_ico num1"></i>진단하기</h2>
+        <ul class="location txt_gray_7 tw_700">
+            <li><i class="ico_home"></i><p class="ir">home</p></l></li>
+            <li>진단하기</li>
+            <li>1. 읽기와 유창성</li>
+        </ul>
+    </section>
+
+    <section class="bg_white plus_box">
+        <div class="inner">
+            <div class="item std">
+                <i class="ico_32 student"></i>
+                <p>학생 추가</p>
+                <div class="btn_group">
+                    <button type="button" class="circle"><i class="ico_36 minus"></i><p class="ir">빼기</p></button>
+                    <input type="text" class="count tw_700 font-nsN ts_14" value="20명">
+                    <button type="button" class="circle"><i class="ico_36 plus"></i><p class="ir">더하기</p></button>
+                    <button type="button" class="btn bg_blue" name="btn_add">추가하기</button>
+                </div>
+            </div>
+            <div class="item file">
+                <i class="ico_32 excel"></i>
+                <p>학생목록 엑셀 일괄추가</p>
+                <button type="button" class="btn white line" name="download">엑셀양식 다운로드</button>
+                <button type="button" class="btn bg_blue" name="upload">엑셀파일 업로드</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="std_list">
+        <h2>학생 목록</h2>
+        <div class="table_wrap">
+            <table class="tbl_basic center table-hover">
+                <caption>
+                    <strong>학생 목록</strong>
+                    <details>
+                        <p>학생 목록을 안내하는 표입니다. 이름, 학년, 반, 번호, 다문화, 1차진단(읽기, 유창성, 쓰기), 2차진단(읽기, 유창성, 쓰기), 3차진단(읽기, 유창성, 쓰기), 삭제로 나뉘어 자료를 제공하고 있습니다.</p>
+                    </details>
+                </caption>
+                <colgroup>
+                    <col style="width: 3%">
+                    <col style="width: 2%">
+                    <col style="width: 2%">
+                    <col style="width: 2%">
+                    <col style="width: 2%">
+                    <col style="width: 5%">
+                    <col style="width: 5%">
+                    <col style="width: 5%">
+                    <col style="width: 5%">
+                    <col style="width: 5%">
+                    <col style="width: 5%">
+                    <col style="width: 5%">
+                    <col style="width: 5%">
+                    <col style="width: 5%">  
+                    <col style="width: 3%">                                     
+                </colgroup>
+                <thead>
+                    <tr align="center" role="row">
+                        <th rowspan="2">이름</th>
+                        <th rowspan="2">학년</th>
+                        <th rowspan="2">반</th>
+                        <th rowspan="2">번호</th>
+                        <th rowspan="2">다문화</th>
+                        <th colspan="3" class="th_yellow_1"><span class="step_tit"><i class="step num1"></i>1차 진단</span></th>
+                        <th colspan="3" class="th_pink_1"><span class="step_tit"><i class="step num2"></i>2차 진단</span></th>
+                        <th colspan="3" class="th_mint_1"><span class="step_tit"><i class="step num3"></i>3차 진단</span></th>
+                        <th rowspan="2">삭제</th>
+                    </tr>
+                    <tr align="center" role="row">
+                        <th class="th_yellow_2">읽기</th>
+                        <th class="th_yellow_2">유창성</th>
+                        <th class="th_yellow_2">쓰기</th>
+                        <th class="th_pink_2">읽기</th>
+                        <th class="th_pink_2">유창성</th>
+                        <th class="th_pink_2">쓰기</th>
+                        <th class="th_mint_2">읽기</th>
+                        <th class="th_mint_2">유창성</th>
+                        <th class="th_mint_2">쓰기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center" role="row">
+                        <td><input type="text" name="std_name" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
+                        <td><input type="text" name="std_year" value="1"><div id="std_year" class="input_txt">1</div></td>
+                        <td><input type="text" name="std_class" value="1"><div id="std_class" class="input_txt">1</div></td>
+                        <td><input type="text" name="std_number" value="1"><div id="std_number" class="input_txt">1</div></td>
+                        <td>
+                            <div class="select type2">
+                                <div class="lay category">
+                                    <input type="hidden" name="catem" value="0">
+                                    <strong><a href="#"><i class="ico_x"></i><p class="ir">해당없음</p></a></strong>
+                                </div>
+                                <div class="lists">
+                                    <ul>
+                                        <li><a href="#" rel=""><i class="ico_x"></i><p class="ir">해당없음</p></a></li>
+                                        <li><a href="#" rel=""><i class="ico_o"></i><p class="ir">해당</p></a></li>
+                                    </ul>
+                                </div>					
+                            </div>
+                        </td><!--다문화-->
+                        <td><button type="button" name="st1_r" id="test01"><i class="test"><p class="ir">읽기 검사시작</p></i></button></td>
+                        <td><button type="button" name="st1_f" id="test02"><i class="test"><p class="ir">유창성 검사시작</p></i></button></td>
+                        <td><button type="button" name="st1_w" id="test03"><i class="test"><p class="ir">쓰기 검사시작</p></i></button></td><!--1차진단 쓰기-->
+                        <td><button type="button" name="st2_r"><i class="test"><p class="ir">읽기 검사시작</p></i></button></td>
+                        <td><button type="button" name="st2_f"><i class="test"><p class="ir">유창성 검사시작</p></i></button></td>
+                        <td><button type="button" name="st2_w"><i class="test"><p class="ir">쓰기 검사시작</p></i></button></td><!--2차진단 쓰기-->
+                        <td><button type="button" name="st3_r"><i class="test"><p class="ir">읽기 검사시작</p></i></button></td>
+                        <td><button type="button" name="st3_f"><i class="test"><p class="ir">유창성 검사시작</p></i></button></td>
+                        <td><button type="button" name="st3_w"><i class="test"><p class="ir">쓰기 검사시작</p></i></button></td><!--3차진단 쓰기-->    
+                        <td><button type="button" name="basket"><i class="basket"><p class="ir">삭제</p></i></button></td><!--삭제-->         
+                    </tr>
+                    <tr align="center" role="row">
+                        <td><input type="text" name="std_name" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
+                        <td><input type="text" name="std_year" value="1"><div id="std_year" class="input_txt">1</div></td>
+                        <td><input type="text" name="std_class" value="1"><div id="std_class" class="input_txt">1</div></td>
+                        <td><input type="text" name="std_number" value="1"><div id="std_number" class="input_txt">1</div></td>
+                        <td>
+                            <div class="select type2">
+                                <div class="lay category">
+                                    <input type="hidden" name="catem" value="0">
+                                    <strong><a href="#"><i class="ico_o"></i><p class="ir">해당</p></a></strong>
+                                </div>
+                                <div class="lists">
+                                    <ul>
+                                        <li><a href="#" rel=""><i class="ico_x"></i><p class="ir">해당없음</p></a></li>
+                                        <li><a href="#" rel=""><i class="ico_o"></i><p class="ir">해당</p></a></li>
+                                    </ul>
+                                </div>					
+                            </div>
+                        </td><!--다문화-->
+                        <td><button type="button" name="st1_r"><i class="learn"></i><p class="ir">읽기 검사시작</p></button></td>
+                        <td><button type="button" name="st1_f"><i class="learn"></i><p class="ir">유창성 검사시작</p></button></td>
+                        <td><button type="button" name="st1_w"><i class="more"></i><p class="ir">쓰기 검사시작</p></button></td><!--1차진단 쓰기-->
+                        <td><button type="button" name="st2_r"><i class="test"></i><p class="ir">읽기 검사시작</p></button></td>
+                        <td><button type="button" name="st2_f"><i class="test"></i><p class="ir">유창성 검사시작</p></button></td>
+                        <td><button type="button" name="st2_w"><i class="test"></i><p class="ir">쓰기 검사시작</p></button></td><!--2차진단 쓰기-->
+                        <td><button type="button" name="st3_r"><i class="test"></i><p class="ir">읽기 검사시작</p></button></td>
+                        <td><button type="button" name="st3_f"><i class="test"></i><p class="ir">유창성 검사시작</p></button></td>
+                        <td><button type="button" name="st3_w"><i class="test"></i><p class="ir">쓰기 검사시작</p></button></td><!--3차진단 쓰기-->    
+                        <td><button type="button" name="basket"><i class="basket"></i><p class="ir">삭제</p></button></td><!--삭제-->         
+                    </tr>   
+                    <tr align="center" role="row">
+                        <td><input type="text" name="std_name" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
+                        <td><input type="text" name="std_year" value="1"><div id="std_year" class="input_txt">1</div></td>
+                        <td><input type="text" name="std_class" value="1"><div id="std_class" class="input_txt">1</div></td>
+                        <td><input type="text" name="std_number" value="1"><div id="std_number" class="input_txt">1</div></td>
+                        <td>
+                            <div class="select type2">
+                                <div class="lay category">
+                                    <input type="hidden" name="catem" value="0">
+                                    <strong><a href="#"><i class="ico_x"></i><p class="ir">해당없음</p></a></strong>
+                                </div>
+                                <div class="lists">
+                                    <ul>
+                                        <li><a href="#" rel=""><i class="ico_x"></i><p class="ir">해당없음</p></a></li>
+                                        <li><a href="#" rel=""><i class="ico_o"></i><p class="ir">해당</p></a></li>
+                                    </ul>
+                                </div>					
+                            </div>
+                        </td><!--다문화-->
+                        <td><button type="button" name="st1_r"><i class="miss"></i><p class="ir">읽기 검사시작</p></button></td>
+                        <td><button type="button" name="st1_f"><i class="miss"></i><p class="ir">유창성 검사시작</p></button></td>
+                        <td><button type="button" name="st1_w"><i class="miss"></i><p class="ir">쓰기 검사시작</p></button></td><!--1차진단 쓰기-->
+                        <td><button type="button" name="st2_r"><i class="test"></i><p class="ir">읽기 검사시작</p></button></td>
+                        <td><button type="button" name="st2_f"><i class="test"></i><p class="ir">유창성 검사시작</p></button></td>
+                        <td><button type="button" name="st2_w"><i class="test"></i><p class="ir">쓰기 검사시작</p></button></td><!--2차진단 쓰기-->
+                        <td><button type="button" name="st3_r"><i class="test"></i><p class="ir">읽기 검사시작</p></button></td>
+                        <td><button type="button" name="st3_f"><i class="test"></i><p class="ir">유창성 검사시작</p></button></td>
+                        <td><button type="button" name="st3_w"><i class="test"></i><p class="ir">쓰기 검사시작</p></button></td><!--3차진단 쓰기-->    
+                        <td><button type="button" name="basket"><i class="basket"></i><p class="ir">삭제</p></button></td><!--삭제-->         
+                    </tr>                                     
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div><!--MAIN CONTENTS :: End -->
+
+<!--FOOTER :: Start -->
+<footer>
+    <div class="main_ft bg_gray">
+        <p>COPYRIGHT&copy; 2023 충청남도교육청. ALL RIGHTS RESERVED.</p>
+    </div>
+</footer><!--FOOTER :: End -->
+
+
+<!--1차 진단하기 modal :: Start -->
+<div id="test01" class="modal">
+    <div class="modal__wrap type01">
+        
+        <!--진단하기 인트로 :: Start-->
+        <div id="testIntro" class="window">
+            <div class="test__intro">
+                <div class="intro__wrap">
+                    <button type="button" class="btn_close"><i></i><p class="ir">닫기</p></button>
+                    <section class="con_wrap test_intro_hd">
+                        <div class="title_box">
+                            <h3 class="txt_gray_5">한글키득키득</h3>
+                            <span class="title_cover"><h2 class="txt_blue2 font-nsR">진단하기</h2><p class="round_box bg_blue2 font-nsR">읽기</p></span>
+                            <p class="sub_txt">제시되는 단어 또는 문장을 바르게 읽어봅시다.</p>
+                            <ul class="btn_wrap">
+                                <li><a href="#" class="btn prep">연습하기</a></li>
+                                <li><a href="#" class="btn start" id="reading">검사시작</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="test_check">
+                            <div>
+                                <i class="test_check num1"></i>
+                                <span>예상시간 <strong>2분</strong></span>
+                            </div>
+                            <div>
+                                <i class="test_check num2"></i>
+                                <span>문항 <strong>14개</strong></span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="con_wrap bg_indigo test_exp">
+                        <div class="inner checklist">
+                            <div class="box_item num1">
+                                <p class="font-nsR">시작 전,<br><span class="txt_green">알아둘 것!</span></p>
+                            </div>
+
+                            <div class="box_item num2">
+                                <span class="badge">방향키</span>
+                                <ul>
+                                    <li><span class="txt_green">키보드 방향키로<br>채점 및 진행</span></li>
+                                    <li><img src="/kideukkideuk/images/common/img_key.png" alt="방향키 조작에 대한 설명 이미지입니다 왼쪽은 이전문항 오른쪽은 다음문항 위쪽은 정답 아래쪽은 오답"></li>
+                                    <li>
+                                        <ul class="row_item num1">
+                                            <li class="txt_green">진행</li>
+                                            <li><i class="prev"><p class="ir">왼쪽 방향키</p></i><span>이전문항</span></li>
+                                            <li><i class="next"><p class="ir">오른쪽 방향키</p></i><span>다음문항</span></li>  
+                                        </ul>
+                                        <ul class="row_item num2">
+                                            <li class="txt_green">채점</li>
+                                            <li><i class="top"><p class="ir">위쪽 방향키</p></i><span>정답</span><i class="sun"><p class="ir">해</p></i></li>
+                                            <li><i class="foot"><p class="ir">아래쪽 방향키</p></i><span>오답</span><i class="moon"><p class="ir">달</p></i></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box_item num3">
+                                <span class="badge">진행률</span>
+                                <ul class="col_item">
+                                    <li class="sub_title"><i></i><span>진행단계</span></li>
+                                    <li>
+                                        <div class="chart_wrap">
+                                            <div class="chart_bar">
+                                                <span class="percent"></span>
+                                            </div>
+                                            <div class="count">
+                                                <span>14</span>
+                                                <span>/</span>
+                                                <span class="circle">5</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box_item num4">
+                                <span class="badge">네비게이션 활성화</span>
+                                <div><img src="/kideukkideuk/images/common/test_intro_img01.png"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div><!--진단하기 인트로 :: End-->
+
+        <!--읽기 검사 :: Start-->
+        <div id="reading" class="window">
+            <div class="test__start">
+                <div class="test__wrap">
+                    <div class="start__hd">
+                        <div class="start__title">
+                        <h2>진단하기</h2>
+                        <p class="round_box badge">읽기</p>
+                        <p class="sub_txt">제시되는 단어 또는 문장을 바르게 읽어봅시다.</p>
+                        </div>
+                        <button type="button" class="btn_close"><i></i><p class="ir">닫기</p></button>
+                    </div>
+
+                    <div class="start__con">
+                        <section class="con_wrap btn_group">
+                            <ul class="btn__list">
+                                <li class="btn__item num1"><input type="radio" name="" checked><label>모음</label></li>
+                                <li class="btn__item num2"><input type="radio"><label>자음</label></li>
+                                <li class="btn__item num3"><input type="radio"><label>받침없는 글자</label></li>
+                                <li class="btn__item num4"><input type="radio"><label>받침없는 낱말</label></li>
+                                <li class="btn__item num5"><input type="radio"><label>복잡한 모음</label></li>
+                                <li class="btn__item num6"><input type="radio"><label>받침있는 글자</label></li> 
+                                <li class="btn__item num7"><input type="radio"><label>복잡한 받침 낱말</label></li> 
+                            </ul>
+                        </section>
+
+                        <section class="con_wrap question_box">
+                            <div class="slide_container">
+                                <div class="number_wrap">
+                                    <div class="number num1">문항 - 1</div>
+                                    <div class="number num2" style="display: none;">문항 - 2</div>
+                                </div>
+                                <div class="slide_wrap">
+                                    <div class="slide_item num1">가지</div>
+                                    <div class="slide_item num2" style="display: none;">지구</div>
+                                </div>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><i><p class="ir"></p>해 모양</i></li>
+                                    <li><i><p class="ir"></p>달 모양</i></li>
+                                </ul>
+                            </div>
+                            <div class="btn_group">
+                                <div class="slide_btn_prev"><p class="ir">왼쪽 화살표</p></div>
+                                <div class="slide_btn_next"><p class="ir">오른쪽 화살표</p></div>
+                            </div>
+                        </section>
+
+                        <section class="con_wrap">
+                            <div class="fram__box num1">
+                                <div class="grap__wrap">
+                                    <div class="sub_title"><i></i><span>진행단계</span></div>
+                                    <div class="chart_wrap">
+                                        <div class="chart_bar">
+                                            <span class="percent"></span>
+                                        </div>
+                                        <div class="count">
+                                            <span>14</span>
+                                            <span>/</span>
+                                            <span class="circle">5</span>
+                                        </div>
+                                    </div>
+                                <div>
+
+                                <div id="stage_box" style="display: none;"><!--진행단계보기 클릭하면 그래프 위에 나타나게 하기-->
+                                    <table class="stage__table">
+                                        <caption>
+                                            <strong>진행단계</strong>
+                                            <details>
+                                                <p>진단 진행단계를 확인하기 위한 네비게이션으로 문항별로 정답과 오답을 표기하여 진행 상태를 확인할 수 있습니다</p>
+                                            </details>
+                                        </caption>
+                                        <colgroup>
+                                            <col >                                     
+                                        </colgroup>
+                                        <thead>
+                                            <tr align="center" role="row">
+                                                <th>1</th>
+                                                <th>2</th>
+                                                <th>3</th>
+                                                <th>4</th>
+                                                <th>5</th>
+                                                <th>6</th>
+                                                <th>7</th>
+                                                <th>8</th>
+                                                <th>9</th>
+                                                <th>10</th>
+                                                <th>11</th>
+                                                <th>12</th>
+                                                <th>13</th>
+                                                <th>14</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr align="center" role="row">
+                                                <td><i><p class="ir">정답</p></i></td>
+                                                <td><i><p class="ir">오답</p></i></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="frame__box num2">
+                                <button type="button" class="btn stage" name="stage_box"><i></i><p class="ir">진행단계 보기</p></button>
+                                <button type="button" class="btn bg_blue2" name="btn_save">저장하기</button>
+                            </div>                        
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div><!--읽기 검사 :: Endt-->
+
+    </div>
+</div><!--진단하기 modal :: End -->
+
+
+
+</body>
+</html>

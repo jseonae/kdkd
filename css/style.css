@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* stylegiude.html css*/
+.styleGuide {display: flex; padding:50px 15%;}
+.styleGuide .section {width:100%; }
+.styleGuide .style__box {border:1px solid #dedede; border-radius:20px; padding:50px; margin-bottom:30px;}
+/* stylegiude.html css :: End*/
+
+
+/* font-family*/
+.font-nsN {font-family: 'NanumSquareNeo';}
+.font-nsR {font-family: 'NanumSquareRound';}
+
+/* Heading*/
+h2 {font-weight: 800; font-size: 40px; line-height: 45px; letter-spacing: -0.01em; font-family: 'NanumSquareRound'; color: #4D8DE7; margin-bottom:20px}
+h3 {font-weight: 800; font-size: 24px; line-height: 27px; letter-spacing: -0.005em; font-family: 'NanumSquareNeo'; color: #757575; margin-bottom:10px}
+h4 {font-weight: 900; font-size: 20px; line-height: 22px; letter-spacing: -0.005em; font-family: 'NanumSquareNeo'; color: #757575; margin-bottom:10px}
+h5 {}
+h6 {}
+
+/* Text*/
+
+
+/* Button*/
+.btn {display: inline-block;position: relative;border: 0; outline: 0;background: 0;color: inherit;text-transform: uppercase;cursor: pointer;transition: all .3s; -webkit-transition: all .3s;-moz-transition: all .3s; text-align: center;}
+
+.btn-rect {border-radius:4px;}
+.btn-round {border-radius: 84px;}
+
+.btn.small {padding: 12px 16px; font-family: 'NanumSquareNeo'; font-size: 14px;letter-spacing: -0.01em; font-weight: 400;}
+.btn.nomall {padding: 18px 16px; font-family: 'NanumSquareNeo'; font-size: 14px;letter-spacing: -0.01em; font-weight: 800;}
+.btn.large {padding: 20px 25px; font-family: 'NanumSquareNeo'; font-size: 20px;letter-spacing: -0.01em; font-weight: 800;}
+.btn.long {padding: 20px 40px; font-family: 'NanumSquareNeo'; font-size: 20px;letter-spacing: -0.01em; font-weight: 800;}
+
+.btn-blue {background: #4D8DE7; color:#fff;}
+.btn-blue:hover {background: #206CD8;}
+.btn-gray {background: #EDEDED; color:#757575;}
+.btn-gray:hover {background: #e1e1e1;}
+.btn-black {background: #333; color:#fff;}
+.btn-black:hover {background: #111;}
+
+.btn-line-b {background: #fff; color:#4D8DE7; border:1px solid #4D8DE7;}
+.btn-line-b:hover {background: rgba(109, 169, 224, 0.1);}
+.btn-line-g {background: #F6F6F6; color:#757575; border:1px solid #CACACA;}
+.btn-line-g:hover {background: #eee;}
+.btn-line-k {background: #fff; color:#333; border:1px solid #333;}
+.btn-line-k:hover {background: rgba(238, 238, 238, 0.5);}
