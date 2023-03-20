@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>키득키득</title>
 
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/font.css">
-    <link rel="stylesheet" href="/css/contents.css">    
-    <!-- <link rel="stylesheet" href="/kideukkideuk/css/modal.css">   -->
-    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
-    <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/contents.css">    
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-latest.min.js"></script>
 
 </head>
 
@@ -54,7 +54,7 @@
 <!--HEADER :: Start -->
 <header>
     <div class="header main">
-        <h1 class="logo_w"><img src="/images/common/logo_w.png" alt="온채움 한글해득 지원 시스템 키득키득"></a></h1>
+        <h1 class="logo_w"><img src="images/common/logo_w.png" alt="온채움 한글해득 지원 시스템 키득키득"></a></h1>
         <ul class="member">
             <li class="name"><span>대한초등학교 홍길동</span>님,&nbsp;안녕하세요!<i></i></li>
             <li class="level">
@@ -96,24 +96,24 @@
 <!--MAIN CONTENTS :: Start -->
 <div id="examine" class="container">
 
-    <section class="con_wrap lct_box">
+    <div class="con_wrap lct_box">
         <h2 class="title"><i class="tit_ico num1"></i>진단하기</h2>
         <ul class="location txt_gray_7 tw_700">
             <li><i class="ico_home"></i><p class="ir">home</p></l></li>
             <li>진단하기</li>
             <li>1. 읽기와 유창성</li>
         </ul>
-    </section>
+    </div>
 
-    <section class="bg_white plus_box">
+    <div class="bg_white plus_box">
         <div class="inner">
             <div class="item std">
                 <i class="ico_32 student"></i>
                 <p>학생 추가</p>
                 <div class="btn_group">
-                    <button type="button" class="circle"><i class="ico_36 minus"></i><p class="ir">빼기</p></button>
-                    <input type="text" class="count tw_700 font-nsN ts_14" value="20명">
-                    <button type="button" class="circle"><i class="ico_36 plus"></i><p class="ir">더하기</p></button>
+                    <button type="button" class="circle_btn"><i class="ico_36 minus"></i><p class="ir">빼기</p></button>
+                    <input type="text" class="count_txt_input tw_700 font-nsN ts_14" value="20명">
+                    <button type="button" class="circle_btn"><i class="ico_36 plus"></i><p class="ir">더하기</p></button>
                     <button type="button" class="btn bg_blue" name="btn_add">추가하기</button>
                 </div>
             </div>
@@ -124,9 +124,9 @@
                 <button type="button" class="btn bg_blue" name="upload">엑셀파일 업로드</button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="std_list">
+    <div class="std_list">
         <h2>학생 목록</h2>
         <div class="table_wrap">
             <table class="tbl_basic center table-hover">
@@ -154,7 +154,7 @@
                     <col style="width: 3%">                                     
                 </colgroup>
                 <thead>
-                    <tr align="center" role="row">
+                    <tr>
                         <th rowspan="2">이름</th>
                         <th rowspan="2">학년</th>
                         <th rowspan="2">반</th>
@@ -165,7 +165,7 @@
                         <th colspan="3" class="th_mint_1"><span class="step_tit"><i class="step num3"></i>3차 진단</span></th>
                         <th rowspan="2">삭제</th>
                     </tr>
-                    <tr align="center" role="row">
+                    <tr>
                         <th class="th_yellow_2">읽기</th>
                         <th class="th_yellow_2">유창성</th>
                         <th class="th_yellow_2">쓰기</th>
@@ -178,7 +178,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr align="center" role="row">
+                    <tr>
                         <td><input type="text" name="std_name" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
                         <td><input type="text" name="std_year" value="1"><div id="std_year" class="input_txt">1</div></td>
                         <td><input type="text" name="std_class" value="1"><div id="std_class" class="input_txt">1</div></td>
@@ -208,7 +208,7 @@
                         <td><button type="button" name="st3_w"><i class="test"><p class="ir">쓰기 검사시작</p></i></button></td><!--3차진단 쓰기-->    
                         <td><button type="button" name="basket"><i class="basket"><p class="ir">삭제</p></i></button></td><!--삭제-->         
                     </tr>
-                    <tr align="center" role="row">
+                    <tr>
                         <td><input type="text" name="std_name" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
                         <td><input type="text" name="std_year" value="1"><div id="std_year" class="input_txt">1</div></td>
                         <td><input type="text" name="std_class" value="1"><div id="std_class" class="input_txt">1</div></td>
@@ -238,7 +238,7 @@
                         <td><button type="button" name="st3_w"><i class="test"></i><p class="ir">쓰기 검사시작</p></button></td><!--3차진단 쓰기-->    
                         <td><button type="button" name="basket"><i class="basket"></i><p class="ir">삭제</p></button></td><!--삭제-->         
                     </tr>   
-                    <tr align="center" role="row">
+                    <tr>
                         <td><input type="text" name="std_name" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
                         <td><input type="text" name="std_year" value="1"><div id="std_year" class="input_txt">1</div></td>
                         <td><input type="text" name="std_class" value="1"><div id="std_class" class="input_txt">1</div></td>
@@ -271,7 +271,7 @@
                 </tbody>
             </table>
         </div>
-    </section>
+    </div>
 </div><!--MAIN CONTENTS :: End -->
 
 <!--FOOTER :: Start -->
@@ -291,40 +291,43 @@
             <div class="test__intro">
                 <div class="intro__wrap">
                     <button type="button" class="btn_close"><i></i><p class="ir">닫기</p></button>
-                    <section class="con_wrap test_intro_hd">
+                    <div class="con_wrap test_intro_hd">
+                      
                         <div class="title_box">
                             <h3 class="txt_gray_5">한글키득키득</h3>
                             <span class="title_cover"><h2 class="txt_blue2 font-nsR">진단하기</h2><p class="round_box bg_blue2 font-nsR">읽기</p></span>
                             <p class="sub_txt">제시되는 단어 또는 문장을 바르게 읽어봅시다.</p>
-                            <ul class="btn_wrap">
-                                <li><a href="#" class="btn prep">연습하기</a></li>
-                                <li><a href="#" class="btn start" id="reading">검사시작</a></li>
-                            </ul>
+                            <div class="btn_wrap">
+                                <div><a href="#" class="btn prep">연습하기</a></div>
+                                <div><a href="#" class="btn start" id="reading">검사시작</a></div>
+                            </div>
                         </div>
 
                         <div class="test_check">
-                            <div>
-                                <i class="test_check num1"></i>
-                                <span>예상시간 <strong>2분</strong></span>
-                            </div>
-                            <div>
-                                <i class="test_check num2"></i>
-                                <span>문항 <strong>14개</strong></span>
-                            </div>
+                            <ul>
+                                <li>
+                                    <i class="test_check num1"></i>
+                                    <span>예상시간 <strong>2분</strong></span>
+                                </li>
+                                <li>
+                                    <i class="test_check num2"></i>
+                                    <span>문항 <strong>14개</strong></span>
+                                </li>
+                            </ul>
                         </div>
-                    </section>
+                    </div>
 
-                    <section class="con_wrap bg_indigo test_exp">
+                    <div class="con_wrap bg_indigo test_exp">
                         <div class="inner checklist">
                             <div class="box_item num1">
-                                <p class="font-nsR">시작 전,<br><span class="txt_green">알아둘 것!</span></p>
+                                <h2 class="font-nsR">시작 전,<br><span class="txt_green">알아둘 것!</span></h2>
                             </div>
 
                             <div class="box_item num2">
                                 <span class="badge">방향키</span>
                                 <ul>
                                     <li><span class="txt_green">키보드 방향키로<br>채점 및 진행</span></li>
-                                    <li><img src="/images/common/img_key.png" alt="방향키 조작에 대한 설명 이미지입니다 왼쪽은 이전문항 오른쪽은 다음문항 위쪽은 정답 아래쪽은 오답"></li>
+                                    <li><img src="images/common/img_key.png" alt="방향키 조작에 대한 설명 이미지입니다 왼쪽은 이전문항 오른쪽은 다음문항 위쪽은 정답 아래쪽은 오답"></li>
                                     <li>
                                         <ul class="row_item num1">
                                             <li class="txt_green">진행</li>
@@ -333,8 +336,8 @@
                                         </ul>
                                         <ul class="row_item num2">
                                             <li class="txt_green">채점</li>
-                                            <li><i class="top"><p class="ir">위쪽 방향키</p></i><span>정답</span><i class="sun"><p class="ir">해</p></i></li>
-                                            <li><i class="foot"><p class="ir">아래쪽 방향키</p></i><span>오답</span><i class="moon"><p class="ir">달</p></i></li>
+                                            <li><i class="top"><p class="ir">위쪽 방향키</p></i><span>정답</span><i class="sun samll"><p class="ir">해</p></i></li>
+                                            <li><i class="foot"><p class="ir">아래쪽 방향키</p></i><span>오답</span><i class="moon samll"><p class="ir">달</p></i></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -348,10 +351,10 @@
                                             <div class="chart_bar">
                                                 <span class="percent"></span>
                                             </div>
-                                            <div class="count">
+                                            <div class="count_wrap">
                                                 <span>14</span>
                                                 <span>/</span>
-                                                <span class="circle">5</span>
+                                                <span class="circle type01">5</span>
                                             </div>
                                         </div>
                                     </li>
@@ -359,10 +362,10 @@
                             </div>
                             <div class="box_item num4">
                                 <span class="badge">네비게이션 활성화</span>
-                                <div><img src="/images/common/test_intro_img01.png"></div>
+                                <div><img src="images/common/test_intro_img01.png"></div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div><!--진단하기 인트로 :: End-->
@@ -381,57 +384,75 @@
                     </div>
 
                     <div class="start__con">
-                        <section class="con_wrap btn_group">
+                        <div class="con_wrap btn_group">
                             <ul class="btn__list">
-                                <li class="btn__item num1"><input type="radio" name="" checked><label>모음</label></li>
-                                <li class="btn__item num2"><input type="radio"><label>자음</label></li>
-                                <li class="btn__item num3"><input type="radio"><label>받침없는 글자</label></li>
-                                <li class="btn__item num4"><input type="radio"><label>받침없는 낱말</label></li>
-                                <li class="btn__item num5"><input type="radio"><label>복잡한 모음</label></li>
-                                <li class="btn__item num6"><input type="radio"><label>받침있는 글자</label></li> 
-                                <li class="btn__item num7"><input type="radio"><label>복잡한 받침 낱말</label></li> 
+                                <li class="btn__item num1">
+                                    <input type="radio" value="01" id="typeBnt01" name="category">
+                                    <div class="type__btn"><label for="typeBnt01">모음</label><i></i></div>
+                                </li>
+                                <li class="btn__item num2">
+                                    <input type="radio" value="02" id="typeBnt02" name="category">
+                                    <div class="type__btn"><label for="typeBnt02">자음</label><i></i></div>
+                                </li>                               
+                                <li class="btn__item num3">
+                                    <input type="radio" value="03" id="typeBnt03" name="category">
+                                    <div class="type__btn"><label for="typeBnt03">받침없는 글자</label><i></i></div>
+                                </li> 
+                                <li class="btn__item num4">                         
+                                    <input type="radio" value="04" id="typeBnt04" name="category">
+                                    <div class="type__btn"><label for="typeBnt04">받침없는 낱말</label><i></i></div>
+                                </li>
+                                <li class="btn__item num5">
+                                    <input type="radio" value="05" id="typeBnt05" name="category">
+                                    <div class="type__btn"><label for="typeBnt05">복잡한 모음</label><i></i></div>
+                                </li>
+                                <li class="btn__item num6">
+                                    <input type="radio" value="06" id="typeBnt06" name="category">
+                                    <div class="type__btn"><label for="typeBnt06">받침있는 글자</label><i></i></div>
+                                </li> 
+                                <li class="btn__item num7">
+                                    <input type="radio" value="07" id="typeBnt07" name="category">
+                                    <div class="type__btn"><label for="typeBnt07">복잡한 받침 낱말</label><i></i></div>
+                                </li> 
                             </ul>
-                        </section>
+                        </div>
 
-                        <section class="con_wrap question_box">
-                            <div class="slide_container">
-                                <div class="number_wrap">
-                                    <div class="number num1">문항 - 1</div>
-                                    <div class="number num2" style="display: none;">문항 - 2</div>
+                        <div class="con_wrap quest_box">
+                            <div class="slide_box">
+                                <div class="quest_num_box">
+                                    <div class="quest_num"><p>문항 &ndash; </p><span class="circle type02">1</span></div>
                                 </div>
-                                <div class="slide_wrap">
-                                    <div class="slide_item num1">가지</div>
-                                    <div class="slide_item num2" style="display: none;">지구</div>
+                                <div class="quest_item_wrap">
+                                    <div class="quest_item">가지</div>
                                 </div>
                             </div>
-                            <div>
+                            <div class="answer_box">
                                 <ul>
-                                    <li><i><p class="ir"></p>해 모양</i></li>
-                                    <li><i><p class="ir"></p>달 모양</i></li>
+                                    <li><a href="#"><i class="sun big"></i><p class="ir">정답 체크 버튼</p></a></li>
+                                    <li><a href="#"><i class="moon big"></i><p class="ir">오답 체크 버튼</p></a></li>
                                 </ul>
                             </div>
-                            <div class="btn_group">
-                                <div class="slide_btn_prev"><p class="ir">왼쪽 화살표</p></div>
-                                <div class="slide_btn_next"><p class="ir">오른쪽 화살표</p></div>
+                            <div class="slide_btn_box">
+                                <div class="btn_prev"><a href="#"><p class="ir">왼쪽 화살표</p></a></div>
+                                <div class="btn_next"><a href="#"><p class="ir">오른쪽 화살표</p></a></div>
                             </div>
-                        </section>
+                        </div>
 
-                        <section class="con_wrap">
-                            <div class="fram__box num1">
+                        <div class="con_wrap stage_nav">
+                            <div class="frame num1">
                                 <div class="grap__wrap">
                                     <div class="sub_title"><i></i><span>진행단계</span></div>
                                     <div class="chart_wrap">
                                         <div class="chart_bar">
                                             <span class="percent"></span>
                                         </div>
-                                        <div class="count">
+                                        <div class="count_wrap">
                                             <span>14</span>
                                             <span>/</span>
-                                            <span class="circle">5</span>
+                                            <span class="circle type01">5</span>
                                         </div>
                                     </div>
-                                <div>
-
+                                </div>
                                 <div id="stage_box" style="display: none;"><!--진행단계보기 클릭하면 그래프 위에 나타나게 하기-->
                                     <table class="stage__table">
                                         <caption>
@@ -444,7 +465,7 @@
                                             <col >                                     
                                         </colgroup>
                                         <thead>
-                                            <tr align="center" role="row">
+                                            <tr>
                                                 <th>1</th>
                                                 <th>2</th>
                                                 <th>3</th>
@@ -462,7 +483,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr align="center" role="row">
+                                            <tr>
                                                 <td><i><p class="ir">정답</p></i></td>
                                                 <td><i><p class="ir">오답</p></i></td>
                                                 <td></td>
@@ -482,11 +503,11 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="frame__box num2">
+                            <div class="frame num2">
                                 <button type="button" class="btn stage" name="stage_box"><i></i><p class="ir">진행단계 보기</p></button>
-                                <button type="button" class="btn bg_blue2" name="btn_save">저장하기</button>
+                                <button type="button" class="btn save" name="btn_save">저장하기</button>
                             </div>                        
-                        </section>
+                        </div>
                     </div>
                 </div>
             </div>
