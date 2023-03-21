@@ -86,7 +86,7 @@
 
     <nav class="gnb">
         <ul>
-            <li><a href="exam.html"><i class="menu_ico num1"></i>진단하기</a></li>
+
             <li class="gnb_on"><a href="#"><i class="menu_ico num2"></i>진단결과</a></li>
             <li><a href="#"><i class="menu_ico num3"></i>나의학급</a></li>
             <li><a href="#"><i class="menu_ico num4"></i>우리 학급 현황</a></li>
@@ -111,7 +111,6 @@
             <ul class="flex_row">
                 <li class="level">
                     <div>
-                        <div class="select type01">
                             <div class="lay category">
                                 <input type="hidden" name="catem" value="0">
                                 <strong><a href="#">1학년 1반(2023)</a></strong>
@@ -130,28 +129,39 @@
                     </div>
                 </li>
                 <li class="flex_col">
-                    <i><p class="ir">진단인원 아이콘 이미지</p></i>
                     <ul>
                         <li class="ts_18">진단 등록인원</li>
                         <li class="ts_28">20명</li>
                     </ul>
                 </li>
             </ul>
-            <ul class="flex_col">
+            <ul class="flex_row">
                 <li>
-                    <div>1차진단</div>
+                    <ul>
+                        <li>1차 진단</li>
+                        <li><i></i>0%</li>
+                        <li>(0명)</li>
+                    </ul>
                 </li>
                 <li>
-                    <div>2차진단</div>
+                    <ul>
+                        <li>2차 진단</li>
+                        <li><i></i>0%</li>
+                        <li>(0명)</li>
+                    </ul>
                 </li>
                 <li>
-                    <div>3차진단</div>
+                    <ul>
+                        <li>3차 진단</li>
+                        <li><i></i>0%</li>
+                        <li>(0명)</li>
+                    </ul>
+
                 </li> 
             </ul>
         </div>
 
         <div class="inner type03">
-            <div>2</div>
         </div>        
     </div>
 
@@ -166,9 +176,6 @@
         <div class="table_wrap">
             <table class="tbl_basic center table-hover">
                 <caption>
-                    <strong>학생 목록</strong>
-                    <details>
-                        <p>학생 목록을 안내하는 표입니다. 이름, 학년, 반, 번호, 다문화, 1차진단(읽기, 유창성, 쓰기), 2차진단(읽기, 유창성, 쓰기), 3차진단(읽기, 유창성, 쓰기), 삭제로 나뉘어 자료를 제공하고 있습니다.</p>
                     </details>
                 </caption>
                 <colgroup>
@@ -176,22 +183,21 @@
                 </colgroup>
                 <thead>
                     <tr>
-                        <th scope="col">이름</th>
                         <th scope="col">학년</th>
                         <th scope="col">반</th>
                         <th scope="col">번호</th>
                         <th scope="col">다문화</th>
                         <th scope="col" class="th_yellow_1">
-                            <input type="checkbox" id="1step" name="1step_all">
-                            <label for="1step"><span class="step_tit"><i class="step num1"></i>1차 진단</span></label>
+                            <input type="checkbox" id="step1" name="step_all_1">
+                            <label for="step1"><span class="step_tit"><i class="step num1"></i>1차 진단</span></label>
                         </th>
                         <th scope="col" class="th_pink_1">
-                            <input type="checkbox" id="2step" name="2step_all">
-                            <label for="2step"><span class="step_tit"><i class="step num2"></i>2차 진단</span></label>
+                            <input type="checkbox" id="step2" name="step_all_2">
+                            <label for="step2"><span class="step_tit"><i class="step num2"></i>2차 진단</span></label>
                         </th>
                         <th scope="col" class="th_mint_1">
-                            <input type="checkbox" id="3step" name="3step_all">
-                            <label for="3step"><span class="step_tit"><i class="step num3"></i>3차 진단</span></label>
+                            <input type="checkbox" id="step3" name="step_all_3">
+                            <label for="step3"><span class="step_tit"><i class="step num3"></i>3차 진단</span></label>
                         </th>
                         <th scope="col">수준</th>
                     </tr>
@@ -217,15 +223,16 @@
                             </div>
                         </td><!--다문화-->
                         <td>
-                            <input type="checkbox" id="row_1_1" name="1step_all">
+                            <input type="checkbox" id="row_1_1" name="step_all_1">
                             <label for="row_1_1"><i class="learn"><p class="ir">해득</p></i></label> 
                         </td>
                         <td>
-                            <input type="checkbox" id="row_1_2" name="2step_all">
+                            <input type="checkbox" id="row_1_2" name="step_all_2">
                             <label for="row_1_2"><i class="miss"><p class="ir">미해득</p></i></label> 
                         </td>
                         <td>
-                            <input type="checkbox" id="row_1_3" name="3step_all">
+                            <input type="checkbox" id="row_1_3" name="step_all_3">
+
                             <label for="row_1_3"><i class="test"><p class="ir">검사시작</p></i></label> 
                         </td>
                         <td><p class="test_learn">해득</p></td>   
@@ -242,243 +249,6 @@
         <p>COPYRIGHT&copy; 2023 충청남도교육청. ALL RIGHTS RESERVED.</p>
     </div>
 </footer><!--FOOTER :: End -->
-
-
-<!--1차 진단하기 modal :: Start -->
-<div id="test01" class="modal">
-    <div class="modal__wrap type01">
-        
-        <!--진단하기 인트로 :: Start-->
-        <div id="testIntro" class="window">
-            <div class="test__intro">
-                <div class="intro__wrap">
-                    <button type="button" class="btn_close"><i></i><p class="ir">닫기</p></button>
-                    <div class="con_wrap test_intro_hd">
-                      
-                        <div class="title_box">
-                            <h3 class="txt_gray_5">한글키득키득</h3>
-                            <span class="title_cover"><h2 class="txt_blue2 font-nsR">진단하기</h2><p class="round_box bg_blue2 font-nsR">읽기</p></span>
-                            <p class="sub_txt">제시되는 단어 또는 문장을 바르게 읽어봅시다.</p>
-                            <div class="btn_wrap">
-                                <div><a href="#" class="btn prep">연습하기</a></div>
-                                <div><a href="#" class="btn start" id="reading">검사시작</a></div>
-                            </div>
-                        </div>
-
-                        <div class="test_check">
-                            <ul>
-                                <li>
-                                    <i class="test_check num1"></i>
-                                    <span>예상시간 <strong>2분</strong></span>
-                                </li>
-                                <li>
-                                    <i class="test_check num2"></i>
-                                    <span>문항 <strong>14개</strong></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="con_wrap bg_indigo test_exp">
-                        <div class="inner checklist">
-                            <div class="box_item num1">
-                                <h2 class="font-nsR">시작 전,<br><span class="txt_green">알아둘 것!</span></h2>
-                            </div>
-
-                            <div class="box_item num2">
-                                <span class="badge">방향키</span>
-                                <ul>
-                                    <li><span class="txt_green">키보드 방향키로<br>채점 및 진행</span></li>
-                                    <li><img src="images/common/img_key.png" alt="방향키 조작에 대한 설명 이미지입니다 왼쪽은 이전문항 오른쪽은 다음문항 위쪽은 정답 아래쪽은 오답"></li>
-                                    <li>
-                                        <ul class="row_item num1">
-                                            <li class="txt_green">진행</li>
-                                            <li><i class="prev"><p class="ir">왼쪽 방향키</p></i><span>이전문항</span></li>
-                                            <li><i class="next"><p class="ir">오른쪽 방향키</p></i><span>다음문항</span></li>  
-                                        </ul>
-                                        <ul class="row_item num2">
-                                            <li class="txt_green">채점</li>
-                                            <li><i class="top"><p class="ir">위쪽 방향키</p></i><span>정답</span><i class="sun small"><p class="ir">해</p></i></li>
-                                            <li><i class="foot"><p class="ir">아래쪽 방향키</p></i><span>오답</span><i class="moon small"><p class="ir">달</p></i></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="box_item num3">
-                                <span class="badge">진행률</span>
-                                <ul class="col_item">
-                                    <li class="sub_title"><i></i><span>진행단계</span></li>
-                                    <li>
-                                        <div class="chart_wrap">
-                                            <div class="chart_bar">
-                                                <span class="percent"></span>
-                                            </div>
-                                            <div class="count_wrap">
-                                                <span>14</span>
-                                                <span>/</span>
-                                                <span class="circle type01">5</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="box_item num4">
-                                <span class="badge">네비게이션 활성화</span>
-                                <div><img src="images/common/test_intro_img01.png"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!--진단하기 인트로 :: End-->
-
-        <!--읽기 검사 :: Start-->
-        <div id="reading" class="window">
-            <div class="test__start">
-                <div class="test__wrap">
-                    <div class="start__hd">
-                        <div class="start__title">
-                        <h2>진단하기</h2>
-                        <p class="round_box badge">읽기</p>
-                        <p class="sub_txt">제시되는 단어 또는 문장을 바르게 읽어봅시다.</p>
-                        </div>
-                        <button type="button" class="btn_close"><i></i><p class="ir">닫기</p></button>
-                    </div>
-
-                    <div class="start__con">
-                        <div class="con_wrap btn_group">
-                            <ul class="btn__list">
-                                <li class="btn__item num1">
-                                    <input type="radio" value="01" id="typeBnt01" name="category">
-                                    <div class="type__btn"><label for="typeBnt01">모음</label><i></i></div>
-                                </li>
-                                <li class="btn__item num2">
-                                    <input type="radio" value="02" id="typeBnt02" name="category">
-                                    <div class="type__btn"><label for="typeBnt02">자음</label><i></i></div>
-                                </li>                               
-                                <li class="btn__item num3">
-                                    <input type="radio" value="03" id="typeBnt03" name="category">
-                                    <div class="type__btn"><label for="typeBnt03">받침없는 글자</label><i></i></div>
-                                </li> 
-                                <li class="btn__item num4">                         
-                                    <input type="radio" value="04" id="typeBnt04" name="category">
-                                    <div class="type__btn"><label for="typeBnt04">받침없는 낱말</label><i></i></div>
-                                </li>
-                                <li class="btn__item num5">
-                                    <input type="radio" value="05" id="typeBnt05" name="category">
-                                    <div class="type__btn"><label for="typeBnt05">복잡한 모음</label><i></i></div>
-                                </li>
-                                <li class="btn__item num6">
-                                    <input type="radio" value="06" id="typeBnt06" name="category">
-                                    <div class="type__btn"><label for="typeBnt06">받침있는 글자</label><i></i></div>
-                                </li> 
-                                <li class="btn__item num7">
-                                    <input type="radio" value="07" id="typeBnt07" name="category">
-                                    <div class="type__btn"><label for="typeBnt07">복잡한 받침 낱말</label><i></i></div>
-                                </li> 
-                            </ul>
-                        </div>
-
-                        <div class="con_wrap quest_box">
-                            <div class="slide_box">
-                                <div class="quest_num_box">
-                                    <div class="quest_num"><p>문항 &ndash; </p><span class="circle type02">1</span></div>
-                                </div>
-                                <div class="quest_item_wrap">
-                                    <div class="quest_item">가지</div>
-                                </div>
-                            </div>
-                            <div class="answer_box">
-                                <ul>
-                                    <li><a href="#"><i class="sun big"></i><p class="ir">정답 체크 버튼</p></a></li>
-                                    <li><a href="#"><i class="moon big"></i><p class="ir">오답 체크 버튼</p></a></li>
-                                </ul>
-                            </div>
-                            <div class="slide_btn_box">
-                                <div class="btn_prev"><a href="#"><p class="ir">왼쪽 화살표</p></a></div>
-                                <div class="btn_next"><a href="#"><p class="ir">오른쪽 화살표</p></a></div>
-                            </div>
-                        </div>
-
-                        <div class="con_wrap stage_nav">
-                            <div class="frame num1">
-                                <div class="grap__wrap">
-                                    <div class="sub_title"><i></i><span>진행단계</span></div>
-                                    <div class="chart_wrap">
-                                        <div class="chart_bar">
-                                            <span class="percent"></span>
-                                        </div>
-                                        <div class="count_wrap">
-                                            <span>14</span>
-                                            <span>/</span>
-                                            <span class="circle type01">5</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="stage_box" class="stage__wrap"><!--btn stage 클릭하면 grap__wrap 위에 나타나게 하기-->
-                                    <table class="stage__table">
-                                        <caption>
-                                            <strong>진행단계</strong>
-                                            <details>
-                                                <p>진단 진행단계를 확인하기 위한 네비게이션으로 문항별로 정답과 오답을 표기하여 진행 상태를 확인할 수 있습니다</p>
-                                            </details>
-                                        </caption>
-                                        <colgroup>
-                                            <col >                                     
-                                        </colgroup>
-                                        <thead class="thead type02">
-                                            <tr>
-                                                <th>1</th>
-                                                <th>2</th>
-                                                <th>3</th>
-                                                <th>4</th>
-                                                <th>5</th>
-                                                <th>6</th>
-                                                <th>7</th>
-                                                <th>8</th>
-                                                <th>9</th>
-                                                <th>10</th>
-                                                <th>11</th>
-                                                <th>12</th>
-                                                <th>13</th>
-                                                <th>14</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="tbody type02">
-                                            <tr>
-                                                <td><i class="sun small"></i><p class="ir">정답</p></td>
-                                                <td><i class="moon small"></i><p class="ir">오답</p></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="frame num2">
-                                <button type="button" class="btn stage" name="btn_stage" id="stageBtn"><i></i><p class="ir">진행단계 보기</p></button>
-                                <button type="button" class="btn save" name="btn_save">저장하기</button>
-                            </div>                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!--읽기 검사 :: Endt-->
-
-    </div>
-</div><!--진단하기 modal :: End -->
-
-
 
 </body>
 </html>
