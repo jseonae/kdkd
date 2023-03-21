@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* 전체 공통으로 정리할 css*/
 
+i.small {display: block; background:url(../images/common/icon_group.png) no-repeat; width: 24px; height: 24px; margin: auto;}
+i.sun.small {background-position:0 -906px; }
+i.moon.small {background-position:-50px -906px; }
+
 /* layout*/
 footer {width: 100%; text-align: center; font-size: 15px;}
 .con_wrap {width: 100%;}
@@ -83,10 +87,10 @@ footer .intro_ft p {color:#fff;}
 	50% {transform: translateY(-15px);}
 }
 
-/* ---------------------intro css 끝 */
-/* main css 시작--------------------- */
+/* ---------------------intro 끝 */
+/* exam 시작--------------------- */
 
-/* main - header */
+/* exam - header */
 .header.main {display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 20px 40px;gap: 50px;isolation: isolate;
     background: url(../images/common/header_bg.jpg) no-repeat 50%;}
 .header.main h1 {width: 149px;height: 40px;}
@@ -99,7 +103,7 @@ footer .intro_ft p {color:#fff;}
 .member button.btn {font-family: 'NanumSquareRound'; font-weight: 900; display: flex;flex-direction: row; align-items: center;}
 .member button.btn i {width: 24px;height: 24px; background: url(../images/common/plus.png) no-repeat; margin-left: 4px;}
 
-/* main - nav*/
+/* exam - nav*/
 .gnb {background: #fff; border-bottom: 1px solid #6DA9E0; font-family: 'NanumSquareRound'; font-weight: 900;}
 .gnb ul {display:flex; flex-direction: row;justify-content: center;align-items: center;padding: 24px 110px;gap: 50px;}
 .gnb ul li a {display: flex;flex-direction: row; align-items: center; padding: 0px; gap: 4px; color:#CACACA;}
@@ -117,28 +121,28 @@ footer .intro_ft p {color:#fff;}
 .gnb ul li.gnb_on .menu_ico.num3 {background-position: 0 -37px;}
 .gnb ul li.gnb_on .menu_ico.num4 {background-position: 0 -37px;}
 
-/* 컨텐츠 시작*/
+/* exam 컨텐츠 시작*/
 .container {font-family: 'NanumSquareRound'; display: flex; flex-direction: column; align-items: center; padding: 40px 60px; gap: 30px; background: #F5F7FB; }
 
-/* main - location*/
+/* exam - location*/
 .lct_box {font-family: 'NanumSquareRound'; width:100%; height: 68px; display: flex; flex-direction: row; align-items: center; gap: 12px;}
-.lct_box .title {font-style: normal; font-weight: 800; font-size: 40px; line-height: 45px; letter-spacing: -0.01em; display: flex;flex-direction: row; align-items: center;}
+.lct_box .title {font-style: normal; font-weight: 800; font-size: 40px; line-height: 45px; letter-spacing: -0.01em; display: flex;flex-direction: row; align-items: center; color: #4D8DE7;}
 .lct_box .location {width: 275px; height: 46px;display: flex; flex-direction: row; align-items: center; padding: 15px 4px 6px; gap: 35px;}
 .lct_box .location li {position:relative; line-height: 25px;}
 .lct_box .location li i {display: block; width: 25px; height: 25px; background: url(../images/common/home.png) no-repeat;}
 .lct_box .location li:not(:last-child)::before {right: -20px; top: 5px; width: 14px;height: 14px;content: ''; position: absolute;border-color: #777;
     border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid; transform: rotate(315deg);}
 
-/* main - title icon*/
+/* exam - title icon*/
 .lct_box .title .tit_ico {display: block; width: 68px;height: 68px; background: url(../images/common/icon_group.png) no-repeat;}
 .lct_box .title .tit_ico.num1 {background-position: 0 -75px;}
-.lct_box .title .tit_ico.num2 {background-position: 0 -75px;}
-.lct_box .title .tit_ico.num3 {background-position: 0 -75px;}
-.lct_box .title .tit_ico.num4 {background-position: 0 -75px;}
+.lct_box .title .tit_ico.num2 {background-position: -68px -75px;}
+.lct_box .title .tit_ico.num3 {background-position: -139px -75px;}
+.lct_box .title .tit_ico.num4 {background-position: -204px -75px;}
 
-/* main - plus_box*/
-.plus_box {width: 100%; border-radius: 8px; border: 1px solid #EDEDED; overflow:hidden;}
-.plus_box .inner {display: flex;justify-content: center; padding: 30px 0px; gap: 80px;}
+/* exam - plus_box*/
+.plus_box {width: 100%; overflow:hidden; display: flex; gap: 20px;}
+.plus_box .inner {display: flex; justify-content: center; padding: 30px 0px; gap: 80px; border-radius: 8px; border: 1px solid #EDEDED; background: #ffffff;width: 100%;}
 .plus_box .std {display: inline-flex; align-items: center;padding: 0px; gap: 10px;}
 .plus_box .std .btn_group {display: flex; align-items: center; gap: 10px;}
 .plus_box .std .btn_group .count_txt_input {width: 53px; height: 36px; border: 2px solid #E2E2E2; border-radius: 4px; text-align: center;}
@@ -147,7 +151,7 @@ footer .intro_ft p {color:#fff;}
 .plus_box .file {display: inline-flex;align-items: center; padding: 0px; gap: 10px;}
 .plus_box .inner .item p {line-height: 32px;font-weight: 800; font-size: 18px; color: #4D8DE7;transform: skew(-0.001deg);}
 
-/* main - plus_box icon*/
+/* exam - plus_box icon*/
 .ico_32 {display: block; width: 32px; height: 32px; background: url(../images/common/icon_group.png) no-repeat;}
 .ico_32.student {background-position: 0 -154px;}
 .ico_32.excel {background-position: -31px -154px;}
@@ -156,9 +160,9 @@ footer .intro_ft p {color:#fff;}
 .ico_36.minus {background-position:-64px -154px;}
 .ico_36.plus {background-position:-100px -154px;}
 
-/* main - 학생목록*/
+/* exam - 학생목록*/
 .std_list {width:100%;}
-.std_list h2 {font-size: 22px; line-height: 27px; color: #555; letter-spacing: -0.005em; font-weight: 800; font-family: 'NanumSquareNeo'; margin-bottom: 20px;}
+.std_list h3 {font-size: 22px; line-height: 27px; color: #555; letter-spacing: -0.005em; font-weight: 800; font-family: 'NanumSquareNeo'; margin-bottom: 20px;}
 .std_list .table_wrap {display: flex; flex-direction: column; align-items: flex-start;}
 .std_list thead tr th {font-weight: 700;font-size: 18px;}
 .std_list tbody tr td {text-align: center;}
@@ -169,15 +173,17 @@ footer .intro_ft p {color:#fff;}
     font-family: 'NanumSquareRound'; color: #555;border-radius: 8px; border: 1px solid #E3EEF3;}
 .std_list tbody tr .input_name {width:140px;}
 
-/* main - 학생목록 button icon*/
-.std_list tbody button i {margin:auto; height: 36px; display: block; background: url(../images/common/icon_group.png) no-repeat;}
+/* exam - 학생목록 button icon*/
+.std_list tbody i {margin:auto; height: 36px; display: block; background: url(../images/common/icon_group.png) no-repeat;}
 .std_list .test {width:32px; background-position:0 -225px;}
 .std_list .learn {width:32px; background-position:-33px -225px;}
 .std_list .miss {width:32px; background-position:-65px -225px;}
 .std_list .more {width:60px; background-position:-101px -225px;}
 .std_list .basket {width:32px; background-position:-173px -225px;}
+.std_list .test_learn {color:#4D8DE7; font-size:18px; font-weight: 700; font-family: 'NanumSquareRound';}
+.std_list .test_miss {color: #AFAFAF; font-size:18px; font-weight: 700; font-family: 'NanumSquareRound';}
 
-/* main - 학생목록 테이블 헤더*/
+/* exam - 학생목록 테이블 헤더*/
 .std_list table thead .th_yellow_1 {background: #FFF9C6; color: #E7A702; border: none; border-right: 1px solid #FFDC81;}
 .std_list table thead .th_pink_1 {background: #FFDDEC; color: #FF1286; border: none; border-right: 1px solid #FFCFE5;}
 .std_list table thead .th_mint_1 {background: #D5EEE0; color: #00B799; border: none; border-right: 1px solid #BFE6D0;}
@@ -193,15 +199,14 @@ footer .intro_ft p {color:#fff;}
 .std_list table thead th i.step.num2 {background-position: -56px -272px;}
 .std_list table thead th i.step.num3 {background-position: -112px -272px;}
 
-/* main - 학생목록 테이블 바디*/
+/* exam - 학생목록 테이블 바디*/
 .std_list tbody tr:nth-child(odd) {background: #fff;}
 .std_list tbody tr:nth-child(even) {background: #fbfdff;}
 
-/* main - footer*/
+/* exam - footer*/
 footer .main_ft {padding: 3vh 0;}
 
-
-/* main - select 박스 css 정리*/
+/* exam - select 박스 css 정리*/
 /* 공통*/
 .select {position: relative; margin: auto;}
 .select .lay {width: 100%;}
@@ -213,33 +218,32 @@ footer .main_ft {padding: 3vh 0;}
 .select .lists ul li a {display: block;}
 
 /* 헤더영역 select*/
-.level .select.type1 {width: 240px; height: 48px;  background: #206CD8; border: none; border-radius: 4px; font-family: 'NanumSquareRound';}
-.level .select.type1 .lay {height: 48px; border: none; background: transparent; border-radius:0;}
-.level .select.type1 .lay a {height: 48px; line-height: 48px; padding: 0 20px; color: #fff; font-size: 16px;}
-.level .select.type1 .lay a::after {content: ""; display: block; position: absolute; right: 15px; top: 10px; width: 24px; height: 24px; 
+.level .select.type01 {width: 240px; height: 48px;  background: #206CD8; border: none; border-radius: 4px; font-family: 'NanumSquareRound';}
+.level .select.type01 .lay {height: 48px; border: none; background: transparent; border-radius:0;}
+.level .select.type01 .lay a {height: 48px; line-height: 48px; padding: 0 20px; color: #fff; font-size: 16px;}
+.level .select.type01 .lay a::after {content: ""; display: block; position: absolute; right: 15px; top: 10px; width: 24px; height: 24px; 
     background: url(../images/common/arrow_under_white.png) no-repeat; transform: rotate(0deg); -webkit-transform: rotate(0deg); transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;}
-.level .select.type1.on .lay a::after {transform: rotate(180deg);-webkit-transform: rotate(180deg);}
+.level .select.type01.on .lay a::after {transform: rotate(180deg);-webkit-transform: rotate(180deg);}
 
-.level .select.type1.on .lists {max-height: 200px; border-radius: 3px;}
-.level .select.type1 .lists ul li a {height: 48px; line-height: 48px; text-align: left; margin-left: 20px;}
+.level .select.type01.on .lists {max-height: 200px; border-radius: 3px;}
+.level .select.type01 .lists ul li a {height: 48px; line-height: 48px; text-align: left; margin-left: 20px;}
 
 /* 학생목록 영역 select*/
-table .select.type2 {width: 70px; height: 40px;}
-table .select.type2 .lay {height: 40px; border: 0;background-color: #fff; border-radius: 8px; border: 1px solid #E3EEF3;}
-table .select.type2 .lay a {height: 40px; line-height: 40px; padding: 9px 0 0;}
-table .select.type2 .lay a::after {content: ""; display: block; position: absolute; right: 4px; top: 8px; width: 20px; height: 20px; 
+table .select.type02 {width: 70px; height: 40px;}
+table .select.type02 .lay {height: 40px; border: 0;background-color: #fff; border-radius: 8px; border: 1px solid #E3EEF3;}
+table .select.type02 .lay a {height: 40px; line-height: 40px; padding: 9px 0 0;}
+table .select.type02 .lay a::after {content: ""; display: block; position: absolute; right: 4px; top: 8px; width: 20px; height: 20px; 
     background: url(../images/common/arrow_down.png) no-repeat center center; transform: rotate(0deg); -webkit-transform: rotate(0deg); transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;}
-table .select.type2.on .lay a::after {transform: rotate(180deg);-webkit-transform: rotate(180deg);}
+table .select.type02.on .lay a::after {transform: rotate(180deg);-webkit-transform: rotate(180deg);}
 
-table .select.type2.on .lists {border-radius: 8px; height: 82px; overflow: hidden;}
-table .select.type2 .lists ul li a {height: 40px; border-top: 1px dotted #E3EEF3; padding: 9px 0 0 0;}
-table .select.type2 .lists ul li:first-child a {border-top:none;}
-table .select.type2 i {display: block;width:20px; height: 20px; margin: 0 20px; background: url(../images/common/icon_group.png) no-repeat;}
-table .select.type2 i.ico_x {background-position:0 -196px;}
-table .select.type2 i.ico_o {background-position:-24px -196px;}
-
+table .select.type02.on .lists {border-radius: 8px; height: 82px; overflow: hidden;}
+table .select.type02 .lists ul li a {height: 40px; border-top: 1px dotted #E3EEF3; padding: 9px 0 0 0;}
+table .select.type02 .lists ul li:first-child a {border-top:none;}
+table .select.type02 i {display: block;width:20px; height: 20px; margin: 0 20px; background: url(../images/common/icon_group.png) no-repeat;}
+table .select.type02 i.ico_x {background-position:0 -196px;}
+table .select.type02 i.ico_o {background-position:-24px -196px;}
 
 
 /* modal css*/
@@ -253,20 +257,16 @@ table .select.type2 i.ico_o {background-position:-24px -196px;}
     100% {-webkit-transform: scale(1); transform: scale(1)}
 }
 
-
 /* 진단하기__modal 시작*/
-
 .modal__wrap.type01 {width: 86%; height: 90%;}
 .modal__wrap .window {display: flex; width: 100%; height: 100%; }
 
-/* 닫기버튼 공통*/
+/* close 버튼 공통*/
 .modal__wrap.type01 .btn_close {position: absolute; width: 72px; height: 72px;}
 .modal__wrap.type01 .btn_close i {display: block; width: 72px; height: 72px; background: url(../images/common/icon_group.png) no-repeat; background-position: -193px -318px;}
 
 /* 인트로__modal*/
 .modal__wrap .test__intro {width: 100%; background-color:#fff;}
-
-/* 닫기버튼 위치 */
 .test__intro .intro__wrap .btn_close {right:30px; top: 30px;}
 
 /* 컨텐츠 시작*/
@@ -340,7 +340,6 @@ table .select.type2 i.ico_o {background-position:-24px -196px;}
 
 /* 읽기 진단*/
 .test__start {width: 100%; background:url(../images/common/sub_bg02.jpg) no-repeat; padding: 35px 45px;}
-.test__start .test__wrap {}
 
 .test__start .start__hd {position: relative; width: 100%; display: flex; justify-content: space-between; margin-bottom:20px;}
 .test__start .start__hd .start__title {display: flex;align-items: center; gap: 10px;}
@@ -381,6 +380,9 @@ table .select.type2 i.ico_o {background-position:-24px -196px;}
 .test__start .start__con .answer_box i.sun.big {background-position:0 -700px;}
 .test__start .start__con .answer_box i.moon.big {background-position:-220px -700px;}
 
+.test__start .start__con .answer_box i.sun.big:hover {background-position:-112px -700px;}
+.test__start .start__con .answer_box i.moon.big:hover {background-position:-321px -700px;}
+
 /* 슬라이더 버튼*/
 .test__start .start__con .slide_btn_box {width: 100%; position: absolute;display: inline-flex; justify-content: space-between; height: 102px;}
 .test__start .start__con .slide_btn_box div {position: absolute; width: 102px; height: 102px; background:url(../images/common/icon_group.png) no-repeat;
@@ -389,24 +391,42 @@ table .select.type2 i.ico_o {background-position:-24px -196px;}
 .test__start .start__con .slide_btn_box div.btn_prev {background-position:0 -450px; left: 0;}
 .test__start .start__con .slide_btn_box div.btn_next {background-position:-102px -450px; right: 0;}
 
+.test__start .start__con .slide_btn_box div.btn_prev:hover {background-position:-204px -450px;}
+.test__start .start__con .slide_btn_box div.btn_next:hover {background-position:-306px -450px;}
 
 .test__start .start__con .stage_nav {display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .test__start .start__con .stage_nav .frame {display: flex;}
 .test__start .start__con .stage_nav .frame.num1 {width:80%;}
 .test__start .start__con .stage_nav .frame.num2 {width: auto; position: relative; display: flex; align-items: center; gap: 20px;}
+
 .test__start .start__con .grap__wrap {width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px;}
-
-.test__start .start__con .btn.stage {width: 118px;height: 118px;display:block;border-radius: 118px;overflow: hidden;padding: 0;background: initial;float: left;}
-.test__start .start__con .btn.stage i {width: 118px;height: 118px; display:block; background: url(../images/common/stage_btn_img.png);}
-
-.test__start .start__con .btn.save {background: #4D8DE7; color:#fff; height: 50px;}
-
-.test__start .start__con .sub_title {display: inline-flex;}
-.test__start .start__con .sub_title i {width: 40px;height: 40px;display: block;background: url(../images/common/icon_group.png) no-repeat;background-position: -31px -401px;}
-.test__start .start__con .sub_title span {line-height: 40px;}
-
+.test__start .start__con .grap__wrap .sub_title {display: inline-flex;}
+.test__start .start__con .grap__wrap .sub_title i {width: 40px;height: 40px;display: block;background: url(../images/common/icon_group.png) no-repeat;background-position: -31px -401px;}
+.test__start .start__con .grap__wrap .sub_title span {line-height: 40px;}
 .test__start .start__con .grap__wrap .chart_wrap {width: 90%; display: flex; flex-direction: row; gap: 20px; align-items: center;}
 .test__start .start__con .grap__wrap .chart_wrap .chart_bar {width: 100%; background: #ddd; border-radius: 15px; overflow:hidden;}
 .test__start .start__con .grap__wrap .chart_wrap .chart_bar .percent {display: block; width:40%; height: 15px; border-radius: 15px; background: #4D8DE7;}
 .test__start .start__con .grap__wrap .chart_wrap .count_wrap {display: flex; align-items: center; gap: 10px; color:#000;}
 .test__start .start__con .grap__wrap .chart_wrap .count_wrap .circle.type01 {width: 24px; height: 24px;background: #4D8DE7;border-radius: 100px;color: #FFFFFF;text-align: center;line-height: 24px;}
+.test__start .start__con .grap__wrap.off {display: none;}
+
+.test__start .start__con .btn.stage {width: 118px;height: 118px;display:block;border-radius: 118px;overflow: hidden;padding: 0;background: initial;float: left;}
+.test__start .start__con .btn.stage i {width: 118px;height: 118px; display:block; background: url(../images/common/stage_btn_img.png);}
+.test__start .start__con .btn.stage.on > i {background: url(../images/common/stage_btn_img_on.png.png);}
+.test__start .start__con .btn.save {background: #4D8DE7; color:#fff; height: 50px;}
+
+/* 진행단계 네비게이션 활성화 박스*/
+.test__start .start__con .stage__wrap {display: none;}
+.test__start .start__con .stage__wrap.on {display: flex; width:100%;}
+.test__start .start__con .stage__wrap.on th, .test__start .start__con .frame .stage__wrap td {width:5%;}
+.test__start .start__con .stage__wrap.on .thead.type02 th {background: #F7FAFD; border-width: 1px 1px 1px 0px; border-style: solid; border-color: rgba(77, 141, 231, 0.5); color: #4D8DE7;}
+.test__start .start__con .stage__wrap.on .tbody.type02 td {background: #FFFFFF; border-width: 0px 1px 1px 0px; border-style: solid; border-color: #E3EEF3;}
+.test__start .start__con .stage__wrap.on .thead.type02 th:last-child {border-right:none;}
+.test__start .start__con .stage__wrap.on .tbody.type02 td:last-child {border-right:none;}
+
+/* ---------------------exam 끝 */
+/* result 시작--------------------- */
+
+/* result 컨텐츠 시작*/
+.plus_box .inner.type02 {width:70%;}
+.plus_box .inner.type03 {width:30%;}
