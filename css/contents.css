@@ -204,7 +204,8 @@ footer .intro_ft p {color:#fff;}
 .std_list tbody tr:nth-child(even) {background: #fbfdff;}
 
 /* exam - footer*/
-footer .main_ft {padding: 3vh 0;font-size:1.5rem}
+footer .main_ft {padding: 3vh 0;}
+footer p{font-size:1.5rem}
 
 
 /* modal css*/
