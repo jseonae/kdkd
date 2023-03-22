@@ -1,0 +1,49 @@
+@charset "UTF-8";
+:root {
+	/* Primary - color */
+	--c_blue : #4D8DE7;
+	--c_yellow : #FEC637;
+	--c_pink : #FF82BB;
+	--c_mint : #57BBAD;
+
+	/* Primary - color - more */
+	--c_blue_m : #206CD8;
+	--c_yellow_m : #E7A702;
+	--c_pink_m : #FF1286;
+	--c_mint_m : #00B799;
+
+	/* Primary - color - 30 */
+	--c_blue_3 : #250088;
+	--c_yellow_3 : #FFDC81;
+	--c_pink_3 : #FFCFE5;
+	--c_mint_3 : #BFE5D0;
+
+	/* Primary - color - 20 */
+	--c_blue_2 : #250088;
+	--c_yellow_2 : #FFF9C6;
+	--c_pink_2 : #FFDDEC;
+	--c_mint_2 : #D5EEE0;
+
+	/* Primary - color - 10 */
+	--c_blue_1 : #F0F6FC;
+	--c_yellow_1 : #FFFCE2;
+	--c_pink_1 : #FFEFF6;
+	--c_mint_1 : #EFFDF4;
+
+	/* point - color */
+	--c_orange : #FF7754;
+	--c_skyblue : #1AD5D1;
+	--c_deepblue : #000E3E;
+	
+	/* bg / line - color */
+	--bg_body : #F5F7FB;
+
+	--f_nsN:'NanumSquareNeo';
+	--f_nsR:'NanumSquareRound';
+	--ani_time:.3s;
+	--load_time:3s;
+	
+}
+
+.c_blue {color:var(--c_blue);} /* 적용예시 */
+
