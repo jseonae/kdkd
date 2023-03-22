@@ -106,7 +106,7 @@ footer .intro_ft p {color:#fff;}
 /* exam - nav*/
 .gnb {background: #fff; border-bottom: 1px solid #6DA9E0; font-family: 'NanumSquareRound'; font-weight: 900;}
 .gnb ul {display:flex; flex-direction: row;justify-content: center;align-items: center;padding: 24px 110px;gap: 50px;}
-.gnb ul li a {display: flex;flex-direction: row; align-items: center; padding: 0px; gap: 4px; color:#CACACA;}
+.gnb ul li a {display: flex;flex-direction: row; align-items: center; padding: 0px; gap: 4px; color:#CACACA;font-size:2rem;font-weight:800}
 .gnb ul li .menu_ico {width:28px; height:28px; background: url(../images/common/icon_group.png) no-repeat;}
 
 .gnb ul li .menu_ico.num1 {background-position: 0 0;}
