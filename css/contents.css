@@ -142,7 +142,7 @@ footer .intro_ft p {color:#fff;}
 
 /* exam - plus_box*/
 .plus_box {width: 100%; display: flex; gap: 20px;}
-.plus_box .inner {display: flex; justify-content: center; padding: 30px 0px; gap: 80px; border-radius: 8px; border: 1px solid #EDEDED; background: #ffffff;width: 100%;}
+.plus_box .inner {display: flex; justify-content: center; padding: 3rem 0; gap: 80rem; border-radius: 8px; border: 1px solid #EDEDED; background: #ffffff;width: 100%;}
 .plus_box .std {display: inline-flex; align-items: center;padding: 0px; gap: 10px;}
 .plus_box .std .btn_group {display: flex; align-items: center; gap: 10px;}
 .plus_box .std .btn_group .count_txt_input {width: 53px; height: 36px; border: 2px solid #E2E2E2; border-radius: 4px; text-align: center;}
