@@ -47,3 +47,13 @@
 
 .c_blue {color:var(--c_blue);} /* 적용예시 */
 
+.f36 {font-size:36px; line-height: 1;font-weight:800} /* h2 */
+.f24 {font-size: 24px; line-height: 1;font-weight:800} /* h3 */
+.f20 {font-size: 20px; line-height: 1;font-weight:800}
+.f16 {font-size: 16px; line-height: 1;font-weight:800}
+.f15 {font-size: 15px; line-height: 1;font-weight:800}
+
+.f16_r {font-size: 16px; line-height: 1;font-weight:400}
+.f15_r {font-size: 15px; line-height: 1;font-weight:400}
+
+.f15_p {font-size: 15px; line-height:150%;font-weight:400}
