@@ -126,7 +126,7 @@ footer .intro_ft p {color:#fff;}
 
 /* exam - location*/
 .lct_box {font-family: 'NanumSquareRound'; width:100%; height: 68px; display: flex; flex-direction: row; align-items: center; gap: 12px;}
-.lct_box .title {font-style: normal; font-weight: 800; font-size: 40px; line-height: 45px; letter-spacing: -0.01em; display: flex;flex-direction: row; align-items: center; color: #4D8DE7;}
+.lct_box .title {font-style: normal; font-weight: 800; font-size: 4rem; line-height: 4.5rem; letter-spacing: -0.01em; display: flex;flex-direction: row; align-items: center; color: #4D8DE7;}
 .lct_box .location {width: 275px; height: 46px;display: flex; flex-direction: row; align-items: center; padding: 15px 4px 6px; gap: 35px;}
 .lct_box .location li {position:relative; line-height: 25px;}
 .lct_box .location li i {display: block; width: 25px; height: 25px; background: url(../images/common/home.png) no-repeat;}
