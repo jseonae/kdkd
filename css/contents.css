@@ -100,7 +100,7 @@ footer .intro_ft p {color:#fff;}
 .member .name span {font-weight: 900;}
 .member .name i {width: 24px;height: 24px; background: url(../images/common/arrow_circle_white.svg) no-repeat;}
 
-.member button.btn {font-family: 'NanumSquareRound'; font-weight: 900; display: flex;flex-direction: row; align-items: center;}
+.member button.btn {font-family: 'NanumSquareRound'; font-weight: 800; display: flex;flex-direction: row; align-items: center;}
 .member button.btn i {width: 24px;height: 24px; background: url(../images/common/plus.png) no-repeat; margin-left: 4px;}
 
 /* exam - nav*/
