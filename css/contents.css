@@ -95,7 +95,7 @@ footer .intro_ft p {color:#fff;}
     background: url(../images/common/header_bg.jpg) no-repeat 50%;}
 .header.main h1 {width: 149px;height: 40px;}
 
-.member {display: flex;flex-direction: row;align-items: center;padding: 0px;gap: 20px;font-size:1.8rem}
+.member {display: flex;flex-direction: row;align-items: center;padding: 0px;gap: 20px;font-size:1.6rem}
 .member .name {color:#fff;display: flex;flex-direction: row;align-items: center;padding: 0px;gap: 8px;}
 .member .name span {font-weight: 900;}
 .member .name i {width: 24px;height: 24px; background: url(../images/common/arrow_circle_white.svg) no-repeat;}
