@@ -242,7 +242,7 @@ footer p{font-size:1.5rem}
 .test__intro .test_intro_hd .title_box {display: flex; flex-direction: column; gap: 10px;}
 .test__intro .test_intro_hd .title_box .sub_txt {margin: 10px 0 30px; font-size: 2.4rem; font-family: 'NanumSquareRound'; font-weight: 700; letter-spacing: -0.01em;}
 .test__intro .test_intro_hd .title_cover {display: flex; align-items: center; gap: 15px;}
-.test__intro .test_intro_hd .title_cover .round_box {border-radius: 8px; padding: 1rem; color:#fff; font-size: 58rem; line-height: 1; font-weight: 700;}
+.test__intro .test_intro_hd .title_cover .round_box {border-radius: 8px; padding: 1rem; color:#fff; font-size: 5.8rem; line-height: 1; font-weight: 700;}
 
 .test__intro .test_intro_hd .title_box .btn_wrap {display:flex; gap: 10px;}  
 .test__intro .test_intro_hd .title_box .btn_wrap .btn {text-align: center; padding: 0; width: 290px; height: 68px; border-radius: 4px; font-weight: 800; font-size: 20px; line-height: 66px; border: 1px solid var(--c_blue);}
