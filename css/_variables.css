@@ -52,6 +52,13 @@
 .f20 {font-size: 20px; line-height: 1;font-weight:800}
 .f16 {font-size: 16px; line-height: 1;font-weight:800}
 .f15 {font-size: 15px; line-height: 1;font-weight:800}
+<<<<<<< Updated upstream
 .f16_r {font-size: 16px; line-height: 1;font-weight:400}
 .f15_r {font-size: 15px; line-height: 1;font-weight:400}
+=======
+
+.f16_r {font-size: 16px; line-height: 1;font-weight:400}
+.f15_r {font-size: 15px; line-height: 1;font-weight:400}
+
+>>>>>>> Stashed changes
 .f15_p {font-size: 15px; line-height:150%;font-weight:400}
