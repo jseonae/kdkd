@@ -235,14 +235,14 @@ footer p{font-size:1.5rem}
 .test__intro .intro__wrap {width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; background: url(../images/common/test_intro_bg01.png) no-repeat; background-size: 90%; background-position: 151px -48px;}
 .test__intro .intro__wrap .con_wrap {display:flex; align-items: flex-end;}
 
-.test__intro .intro__wrap .con_wrap h3 {font-weight: 900; font-size: 33px; line-height: 36px; letter-spacing: -0.01em;}
-.test__intro .intro__wrap .con_wrap h2 {font-weight: 800; font-size: 86px; line-height: 98px; letter-spacing: -0.01em;}
+.test__intro .intro__wrap .con_wrap h3 {font-weight: 800; font-size: 3rem; line-height: 1; letter-spacing: -0.01em;}
+.test__intro .intro__wrap .con_wrap h2 {font-weight: 800; font-size: 8.6rem; line-height: 1; letter-spacing: -0.01em;}
 
 .test__intro .test_intro_hd {width: 85%; justify-content: space-between; margin: auto; }
 .test__intro .test_intro_hd .title_box {display: flex; flex-direction: column; gap: 10px;}
-.test__intro .test_intro_hd .title_box .sub_txt {margin: 10px 0 30px; font-size: 24px; font-family: 'NanumSquareRound'; font-weight: 700; letter-spacing: -0.01em;}
+.test__intro .test_intro_hd .title_box .sub_txt {margin: 10px 0 30px; font-size: 2.4rem; font-family: 'NanumSquareRound'; font-weight: 700; letter-spacing: -0.01em;}
 .test__intro .test_intro_hd .title_cover {display: flex; align-items: center; gap: 15px;}
-.test__intro .test_intro_hd .title_cover .round_box {border-radius: 8px; padding: 10px; color:#fff; font-size: 58px; line-height: 66px; height: 82px; font-weight: 700;}
+.test__intro .test_intro_hd .title_cover .round_box {border-radius: 8px; padding: 1rem; color:#fff; font-size: 58rem; line-height: 1; font-weight: 700;}
 
 .test__intro .test_intro_hd .title_box .btn_wrap {display:flex; gap: 10px;}  
 .test__intro .test_intro_hd .title_box .btn_wrap .btn {text-align: center; padding: 0; width: 290px; height: 68px; border-radius: 4px; font-weight: 800; font-size: 20px; line-height: 66px; border: 1px solid var(--c_blue);}
@@ -250,7 +250,7 @@ footer p{font-size:1.5rem}
 .test__intro .test_intro_hd .title_box .btn_wrap .btn.start {background: var(--c_blue); color: #FFF;}
 
 .test__intro .test_intro_hd .test_check ul {display:flex; gap: 20px;}
-.test__intro .test_intro_hd .test_check li {display: flex; flex-direction: column; justify-content: flex-end; align-items: center;width: 130px; height: 125px; gap: 20px;}
+.test__intro .test_intro_hd .test_check li {display: flex; flex-direction: column; justify-content: flex-end; align-items: center;width: 130px; height: 125px; gap: 20px;font-size:2.4rem}
 .test__intro .test_intro_hd .test_check ul li i {display:block; width: 90px; height: 90px; background: url(../images/common/icon_group.png) no-repeat;}
 .test__intro .test_intro_hd .test_check ul li i.num1 {background-position: 0 -306px;}
 .test__intro .test_intro_hd .test_check ul li i.num2 {background-position: -90px -306px;}
