@@ -141,7 +141,7 @@ footer .intro_ft p {color:#fff;}
 .lct_box .title .tit_ico.num4 {background-position: -204px -75px;}
 
 /* exam - plus_box*/
-.plus_box {width: 100%; overflow:hidden; display: flex; gap: 20px;}
+.plus_box {width: 100%; display: flex; gap: 20px;}
 .plus_box .inner {display: flex; justify-content: center; padding: 30px 0px; gap: 80px; border-radius: 8px; border: 1px solid #EDEDED; background: #ffffff;width: 100%;}
 .plus_box .std {display: inline-flex; align-items: center;padding: 0px; gap: 10px;}
 .plus_box .std .btn_group {display: flex; align-items: center; gap: 10px;}
@@ -205,45 +205,6 @@ footer .intro_ft p {color:#fff;}
 
 /* exam - footer*/
 footer .main_ft {padding: 3vh 0;}
-
-/* exam - select 박스 css 정리*/
-/* 공통*/
-.select {position: relative; margin: auto;}
-.select .lay {width: 100%;}
-.select .lay>strong {display: block; width: 100%; height: 100%;}
-.select .lay a {display: block; position: relative; width: 100%;}
-.select.on .lists {display: block; position: absolute; width: 100%; z-index: 10; border: 1px solid #E3EEF3; overflow-y: scroll;}
-.select .lists {display: none; background: #fff;}
-.select .lists ul li {text-align: center;}
-.select .lists ul li a {display: block;}
-
-/* 헤더영역 select*/
-.level .select.type01 {width: 240px; height: 48px;  background: #206CD8; border: none; border-radius: 4px; font-family: 'NanumSquareRound';}
-.level .select.type01 .lay {height: 48px; border: none; background: transparent; border-radius:0;}
-.level .select.type01 .lay a {height: 48px; line-height: 48px; padding: 0 20px; color: #fff; font-size: 16px;}
-.level .select.type01 .lay a::after {content: ""; display: block; position: absolute; right: 15px; top: 10px; width: 24px; height: 24px; 
-    background: url(../images/common/arrow_under_white.png) no-repeat; transform: rotate(0deg); -webkit-transform: rotate(0deg); transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;}
-.level .select.type01.on .lay a::after {transform: rotate(180deg);-webkit-transform: rotate(180deg);}
-
-.level .select.type01.on .lists {max-height: 200px; border-radius: 3px;}
-.level .select.type01 .lists ul li a {height: 48px; line-height: 48px; text-align: left; margin-left: 20px;}
-
-/* 학생목록 영역 select*/
-table .select.type02 {width: 70px; height: 40px;}
-table .select.type02 .lay {height: 40px; border: 0;background-color: #fff; border-radius: 8px; border: 1px solid #E3EEF3;}
-table .select.type02 .lay a {height: 40px; line-height: 40px; padding: 9px 0 0;}
-table .select.type02 .lay a::after {content: ""; display: block; position: absolute; right: 4px; top: 8px; width: 20px; height: 20px; 
-    background: url(../images/common/arrow_down.png) no-repeat center center; transform: rotate(0deg); -webkit-transform: rotate(0deg); transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;}
-table .select.type02.on .lay a::after {transform: rotate(180deg);-webkit-transform: rotate(180deg);}
-
-table .select.type02.on .lists {border-radius: 8px; height: 82px; overflow: hidden;}
-table .select.type02 .lists ul li a {height: 40px; border-top: 1px dotted #E3EEF3; padding: 9px 0 0 0;}
-table .select.type02 .lists ul li:first-child a {border-top:none;}
-table .select.type02 i {display: block;width:20px; height: 20px; margin: 0 20px; background: url(../images/common/icon_group.png) no-repeat;}
-table .select.type02 i.ico_x {background-position:0 -196px;}
-table .select.type02 i.ico_o {background-position:-24px -196px;}
 
 
 /* modal css*/
@@ -428,8 +389,82 @@ table .select.type02 i.ico_o {background-position:-24px -196px;}
 /* result 시작--------------------- */
 
 /* result 컨텐츠 시작*/
-.plus_box .inner.type02 {width:70%;}
-.plus_box .inner.type03 {width:30%;}
+.plus_box .inner.type02 {width:70%; height: 240px; justify-content: space-around; padding: 50px; gap: 30px;}
+.plus_box .inner.type03 {width:30%; height: 240px; justify-content: space-around; padding: 16px;}
+
+.plus_box .inner.type02 .group_box {display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; padding: 0px; gap: 10px;}
+.plus_box .inner.type02 .group_box .item {display: flex; }
+.plus_box .inner.type02 .group_box .item.num2 {align-items: center; gap: 20px; color: #4D8DE7; font-weight: 800;}
+.plus_box .inner.type02 .group_box .item.num2 ul li:first-child {margin-bottom:10px;}
+
+.plus_box .inner.type02 .report_box {width: 100%; display: flex;justify-content: center; gap: 20px;}
+.plus_box .inner.type02 .report_box .item {width:275px; display: block; text-align: center;}
+.plus_box .inner.type02 .report_box .item .report {padding: 28px 50px; border-radius: 8px; overflow: hidden;}
+.plus_box .inner.type02 .report_box .item .report.num1 {background: #FFF9C6; color: #E7A702;}
+.plus_box .inner.type02 .report_box .item .report.num2 {background: #FFDDEC; color: #FF1286;}
+.plus_box .inner.type02 .report_box .item .report.num3 {background: #BFE6D0; color: #199C88;}
+
+.plus_box .inner.type02 .report_box .item .report li:not(:last-child) {font-weight: 800; margin-bottom:10px;}
+.plus_box .inner.type02 .report_box .item .report li:last-child {font-weight: 400; font-size: 16px; color: #545454;}
+
+.plus_box .inner.type02 .report_box .item .report .per {display: flex; font-size: 24px; justify-content: center; line-height: 30px;}
+.plus_box .inner.type02 .report_box .item .report .per i {width:30px; height: 30px; display: block;}
+.plus_box .inner.type02 .report_box .item .report .per.num1 i {background:url(../images/common/result_step_img01.png) no-repeat;}
+.plus_box .inner.type02 .report_box .item .report .per.num2 i {background:url(../images/common/result_step_img02.png) no-repeat;}
+.plus_box .inner.type02 .report_box .item .report .per.num3 i {background:url(../images/common/result_step_img03.png) no-repeat;}
+
+
+/* select 타입별*/
+/* 공통*/
+.select {position: relative; margin: auto; border: none; border-radius: 4px; font-family: 'NanumSquareRound';}
+.select .lay {width: 100%;}
+.select .lay>strong {display: block; width: 100%; height: 100%;}
+.select .lay a {display: block; position: relative; width: 100%; font-size: 16px; font-weight: 800;}
+.select.on .lists {display: block; position: absolute; width: 100%; z-index: 10; border: 1px solid #E3EEF3; overflow-y: scroll;}
+.select .lists {display: none; background: #fff;}
+.select .lists ul li {text-align: center;}
+.select .lists ul li a {display: block;}
+
+/* select type01 :: 사용영역(헤더)*/
+.select.type01 {width: 240px; height: 48px;  background: #206CD8; border: none; font-family: 'NanumSquareRound';}
+.select.type01 .lay {height: 48px; border: none; background: transparent; border-radius:0; border-radius: 4px;}
+.select.type01 .lay a {height: 48px; line-height: 48px; padding: 0 20px; color: #fff;}
+.select.type01 .lay a::after {content: ""; display: block; position: absolute; right: 15px; top: 10px; width: 24px; height: 24px; 
+    background: url(../images/common/arrow_under_white.png) no-repeat; transform: rotate(0deg); -webkit-transform: rotate(0deg); transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;}
+.select.type01.on .lay a::after {transform: rotate(180deg);-webkit-transform: rotate(180deg);}
+.select.type01.on .lists {max-height: 200px; border-radius: 3px;}
+.select.type01 .lists ul li a {height: 48px; line-height: 48px; text-align: left; margin-left: 20px;}
+
+/*  select type02 :: 사용영역(학생목록)*/
+.select.type02 {width: 70px; height: 40px;}
+.select.type02 .lay {height: 40px; border: 0;background-color: #fff; border-radius: 8px; border: 1px solid #E3EEF3;}
+.select.type02 .lay a {height: 40px; line-height: 40px; padding: 9px 0 0;}
+.select.type02 .lay a::after {content: ""; display: block; position: absolute; right: 4px; top: 8px; width: 20px; height: 20px; 
+    background: url(../images/common/arrow_down.png) no-repeat center center; transform: rotate(0deg); -webkit-transform: rotate(0deg); transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;}
+.select.type02.on .lay a::after {transform: rotate(180deg);-webkit-transform: rotate(180deg);}
+.select.type02.on .lists {border-radius: 8px; height: 82px; overflow: hidden;}
+.select.type02 .lists ul li a {height: 40px; border-top: 1px dotted #E3EEF3; padding: 9px 0 0 0;}
+.select.type02 .lists ul li:first-child a {border-top:none;}
+.select.type02 i {display: block;width:20px; height: 20px; margin: 0 20px; background: url(../images/common/icon_group.png) no-repeat;}
+.select.type02 i.ico_x {background-position:0 -196px;}
+.select.type02 i.ico_o {background-position:-24px -196px;}
+
+/*  select type03 :: 사용영역(진단결과)*/
+.select.type03 {width: 240px; height: 48px;}
+.select.type03 .lay {height: 48px; border: 1px solid #4D8DE7; border-radius: 4px;}
+.select.type03 .lay a {height: 48px; line-height: 48px; padding: 0 20px; color: #4D8DE7;}
+.select.type03 .lay a::after {content: ""; display: block; position: absolute; right: 15px; top: 10px; width: 24px; height: 24px; 
+    background: url(../images/common/arrow_under_blue02.png) no-repeat; transform: rotate(0deg); -webkit-transform: rotate(0deg); transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;}
+.select.type03.on .lay a::after {transform: rotate(180deg);-webkit-transform: rotate(180deg);}
+.select.type03.on .lists {max-height: 200px; border-radius: 3px;}
+.select.type03 .lists ul li a {height: 48px; line-height: 48px; text-align: left; margin-left: 20px;}
+
+
+
+
 
 
 
