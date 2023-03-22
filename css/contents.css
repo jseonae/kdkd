@@ -164,7 +164,7 @@ footer .intro_ft p {color:#fff;}
 .std_list {width:100%;}
 .std_list h3 {font-size: 22px; line-height: 27px; color: #555; letter-spacing: -0.005em; font-weight: 800; font-family: 'NanumSquareNeo'; margin-bottom: 20px;}
 .std_list .table_wrap {display: flex; flex-direction: column; align-items: flex-start;}
-.std_list thead tr th {font-weight: 700;font-size: 18px;}
+.std_list thead tr th {font-weight: 700;font-size: 1.8rem;}
 .std_list tbody tr td {text-align: center;}
 .std_list thead tr:nth-child(1) th:first-child {border-radius: 10px 0 0 0;}
 .std_list thead tr:nth-child(1) th:last-child {border-radius: 0 10px 0 0 ;}
@@ -184,13 +184,13 @@ footer .intro_ft p {color:#fff;}
 .std_list .test_miss {color: #AFAFAF; font-size:18px; font-weight: 700; font-family: 'NanumSquareRound';}
 
 /* exam - 학생목록 테이블 헤더*/
-.std_list table thead .th_yellow_1 {background: #FFF9C6; color: #E7A702; border: none; border-right: 1px solid #FFDC81;}
-.std_list table thead .th_pink_1 {background: #FFDDEC; color: #FF1286; border: none; border-right: 1px solid #FFCFE5;}
-.std_list table thead .th_mint_1 {background: #D5EEE0; color: #00B799; border: none; border-right: 1px solid #BFE6D0;}
+.std_list table thead .th_yellow_1 {background:var(--c_yellow_2);color: var(--c_yellow_m);border: none; border-right:0}
+.std_list table thead .th_pink_1 {background:var(--c_pink_2); color: var(--c_pink_m); border: none; border-right:0 }
+.std_list table thead .th_mint_1 {background:var(--c_mint_2);; color: var(--c_mint_m); border: none; border-right:0 }
 
-.std_list table thead .th_yellow_2 {background: #FFFCE2; border-width: 1px 1px 1px 0px; border-style: solid; border-color: #FFDC81; color: #E9CA7A;}
-.std_list table thead .th_pink_2 {background: #FFEFF6;border-width: 1px 1px 1px 0px; border-style: solid; border-color: #FFCFE5; color: #FFAFD4;}
-.std_list table thead .th_mint_2 {background: #EBF9F1; border-width: 1px 1px 1px 0px; border-style: solid; border-color: #BFE6D0; color: #97D3B1;}
+.std_list table thead .th_yellow_2 {background: var(--c_yellow_1); border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_yellow_3); color:var(--c_yellow);}
+.std_list table thead .th_pink_2 {background: var(--c_pink_1);border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_pink_3); color:var(--c_pink);}
+.std_list table thead .th_mint_2 {background:var(--c_mint_1); border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_mint_3); color:var(--c_mint);}
 
 .std_list table thead th span.step_tit {display: flex; justify-content: center; gap: 5px;}
 
