@@ -415,7 +415,7 @@ table .select.type02 i.ico_o {background-position:-24px -196px;}
 .test__start .start__con .btn.stage.on > i {background: url(../images/common/stage_btn_img_on.png.png);}
 .test__start .start__con .btn.save {background: #4D8DE7; color:#fff; height: 50px;}
 
-/* 진행단계 네비게이션 활성화 박스*/
+/* 진행단계 네비게이션 활성화 박스*/--------------------- */
 .test__start .start__con .stage__wrap {display: none;}
 .test__start .start__con .stage__wrap.on {display: flex; width:100%;}
 .test__start .start__con .stage__wrap.on th, .test__start .start__con .frame .stage__wrap td {width:5%;}
@@ -430,3 +430,10 @@ table .select.type02 i.ico_o {background-position:-24px -196px;}
 /* result 컨텐츠 시작*/
 .plus_box .inner.type02 {width:70%;}
 .plus_box .inner.type03 {width:30%;}
+
+
+
+
+
+/* --------------------- 업데이트 기록 --------------------- */
+/* 20230321 18:40 커밋 */

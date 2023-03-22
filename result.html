@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="css/contents.css">    
 
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<<<<<<< Updated upstream
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+=======
+    
+>>>>>>> Stashed changes
 
 </head>
 
@@ -47,6 +51,17 @@
         $('.stage_nav .stage__wrap').toggleClass('on');
         $('.stage_nav .grap__wrap').toggleClass('off');s
         }); //진행단계 네비게이션 박스 활성화
+
+        var ctx = document.getElementById("chartType01");
+        var myDoughnutChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: ["30","20","10","10"],
+                backgroundColor: ["#4D8DE7", "rgba(109, 169, 224, 0.1)","#929EA9","#eee"]
+            }]
+        }
+        }); //진단결과 한글해득비율 차트
     });
 </script>
 
@@ -108,9 +123,9 @@
 
     <div class="plus_box">
         <div class="inner type02">
-            <ul class="flex_row">
-                <li class="level">
-                    <div>
+            <ul class="">
+                <li class="">
+                    <div class="level">
                         <div class="select type03">
                             <div class="lay category">
                                 <input type="hidden" name="catem" value="0">
@@ -125,11 +140,11 @@
                                     <li><a href="#" rel="">1학년 1반(2022)</a></li>
                                     <li><a href="#" rel="">1학년 1반(2023)</a></li>
                                 </ul>
-                            </div>					
-                        </div>                    
+                            </div>
+                        </div>
                     </div>
                 </li>
-                <li class="flex_col">
+                <li class="">
                     <span><img src="../images/common/result_count_img.png" alt="진단 등록인원 아이콘 이미지"></span>
                     <ul>
                         <li class="ts_18">진단 등록인원</li>
@@ -137,7 +152,7 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="flex_row">
+            <ul class="">
                 <li>
                     <ul>
                         <li>1차 진단</li>
@@ -163,7 +178,7 @@
         </div>
 
         <div class="inner type03">
-            <div class="legend_wrap">
+            <div class="info_wrap">
                 <h4>한글해득 비율</h4>
                 <ul>
                     <li class="item num1">
@@ -190,11 +205,13 @@
             </div>
             <div class="chart_wrap">
                 <div class="chart_donut">
-
+                    <canvas id="chartType01" width="200" height="200"></canvas>
                 </div>
             </div>
         </div>        
     </div>
+
+
 
     <div class="std_list">
         <h3>학생개별 진단결과</h3>
@@ -284,7 +301,8 @@
     </div>
 </footer><!--FOOTER :: End -->
 
-<!--업데이트 완료-->
-<!--업데이트 완료 추가추가-->
+
 </body>
 </html>
+
+<!--20230321 18:40 커밋-->
