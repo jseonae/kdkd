@@ -16,7 +16,7 @@ h1:first-child,
 h2:first-child,
 h3:first-child {margin-top: 0;}
 
-h2 {font-weight: 800;font-size: 22px;line-height: 30px;letter-spacing: -0.005em;color: #555;}
+h2 {font-weight: 800;font-size: 2.2rem;line-height: 3rem;letter-spacing: -0.005em;color: #555;}
 /* h1 {margin: 60px 0 30px;font-weight: 700;font-size: 26px;line-height: 38px;letter-spacing: -0.05em;color: #213F57;} 
 
 h3 {margin: 40px 0 16px;font-weight: 700;font-size: 18px;line-height: 27px;letter-spacing: -0.05em;color: #1F1F1F;}
@@ -27,7 +27,7 @@ h5::before {content: '';display: inline-block;width: 8px;height: 2px;margin-righ
 h6 {margin-right: 6px;font-weight: 700;font-size: 16px;line-height: 24px;letter-spacing: -0.05em;color: #1F1F1F;}
 h6::before {content: '';display: inline-block;width: 3px;height: 2px;background: #213F57;transform: rotate(180deg);vertical-align: middle;}*/
 
-p {font-weight: 400;font-size: 16px;line-height: 1.7;color: #333;}
+p {font-weight: 400;font-size: 1.6rem;line-height: 1.7;color: #333;}
 .txtp {margin-bottom: 8px;}
 .txt-right {text-align: right;}
 .txt-sm {font-size: 14px;color: #959595;}
@@ -54,14 +54,14 @@ p {font-weight: 400;font-size: 16px;line-height: 1.7;color: #333;}
 .tw_800 {font-weight: 800;}
 .tw_900 {font-weight: 900;}
 
-.ts_14 {font-size:14px;}    
-.ts_15 {font-size:15px;}
-.ts_16 {font-size:16px;}
-.ts_18 {font-size:18px;}
-.ts_19 {font-size:19px;}
-.ts_20 {font-size:20px;}
-.ts_24 {font-size:24px;}
-.ts_28 {font-size:28px;}
+.ts_14 {font-size:1.4rem;}    
+.ts_15 {font-size:1.5rem;}
+.ts_16 {font-size:1.6rem;}
+.ts_18 {font-size:1.8rem;}
+.ts_19 {font-size:1.9rem;}
+.ts_20 {font-size:2.0rem;}
+.ts_24 {font-size:2.4rem;}
+.ts_28 {font-size:2.8rem;}
 
 /* font-family*/
 .font-nsN {font-family: 'NanumSquareNeo';}
@@ -73,16 +73,16 @@ fieldset {border: none;}
 
 /* LIST */
 ol {color: #333;line-height: 1.5;}
-.list-tit > li {display: flex;align-items: baseline;font-size: 16px;line-height: 1.5;letter-spacing: -0.05em;color: #757575;}
+.list-tit > li {display: flex;align-items: baseline;font-size: 1.6rem;line-height: 1.5;letter-spacing: -0.05em;color: #757575;}
 .list-tit > li:not(:last-child) {margin-bottom: 40px;}
-.list-tit__tit {display: block;width: 120px;height: 37px;margin-right: 20px;padding: 5px 20px;border: 1px solid #AFAFAF;border-radius: 100px;text-align: center;font-size: 16px;line-height: 1.7;letter-spacing: -0.05em;color: #141414;}
+.list-tit__tit {display: block;width: 12rem;height: 37px;margin-right: 20px;padding: 5px 20px;border: 1px solid #AFAFAF;border-radius: 100px;text-align: center;font-size: 1.6rem;line-height: 1.7;letter-spacing: -0.05em;color: #141414;}
 
 .list-dots {margin-left: 4px;}
-.list-dots > li {position: relative;margin-bottom: 6px;padding-left: 10px;font-weight: 400;font-size: 16px;line-height: 1.6;letter-spacing: -0.05em;color: #545454;}
+.list-dots > li {position: relative;margin-bottom: 6px;padding-left: 10px;font-weight: 400;font-size: 1.6rem;line-height: 1.6;letter-spacing: -0.05em;color: #545454;}
 .list-dots > li::before {content: '';position: absolute;top: 10px;left: 0;width: 4px;height: 4px;background: #757575;border-radius: 50%;}
 
 .list-bar {margin-left: 4px;}
-.list-bar > li {position: relative;margin-bottom: 6px;padding-left: 12px;font-weight: 400;font-size: 16px;line-height: 1.6;letter-spacing: -0.05em;color: #545454;}
+.list-bar > li {position: relative;margin-bottom: 6px;padding-left: 12px;font-weight: 400;font-size: 1.6rem;line-height: 1.6;letter-spacing: -0.05em;color: #545454;}
 .list-bar > li::before {content: '';position: absolute;top: 13px;left: 0;width: 6px;height: 1px;background: #757575;border-radius: 50%;}
 
 
@@ -105,7 +105,7 @@ table ul li {font-size:14px}
 /* BUTTON */
 .btn-box {margin: 72px 0 24px;}
 .btn-box.center {text-align: center;}
-.btn {display: inline-block; font-weight: 700;font-size: 16px; letter-spacing: -0.01em; color: #fff; background: #4D8DE7;border-radius: 4px; padding: 12px 16px;}
+.btn {display: inline-block; font-weight: 700;font-size: 1.6rem; letter-spacing: -0.01em; color: #fff; background: #4D8DE7;border-radius: 4px; padding: 12px 16px;}
 
 .btn.white {background: #ffffff;border: 1px solid #4D8DE7; color: #4D8DE7;}
 
