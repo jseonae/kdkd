@@ -250,7 +250,7 @@ footer p{font-size:1.5rem}
 .test__intro .test_intro_hd .title_box .btn_wrap .btn.start {background: var(--c_blue); color: #FFF;}
 
 .test__intro .test_intro_hd .test_check ul {display:flex; gap: 20px;}
-.test__intro .test_intro_hd .test_check li {display: flex; flex-direction: column; justify-content: flex-end; align-items: center;width: 130px; height: 125px; gap: 20px;font-size:2.4rem}
+.test__intro .test_intro_hd .test_check li {display: flex; flex-direction: column; justify-content: flex-end; align-items: center;gap:2rem;font-size:2.4rem}
 .test__intro .test_intro_hd .test_check ul li i {display:block; width: 90px; height: 90px; background: url(../images/common/icon_group.png) no-repeat;}
 .test__intro .test_intro_hd .test_check ul li i.num1 {background-position: 0 -306px;}
 .test__intro .test_intro_hd .test_check ul li i.num2 {background-position: -90px -306px;}
