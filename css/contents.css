@@ -27,7 +27,7 @@ footer {width: 100%; text-align: center; font-size: 15px;}
 #intro .btn__card ul .card__item {display: block; position:relative; float: left; width: 270px; height: 300px; border-radius:40px; box-shadow: 13px 13px 5px 0 #d7d7d7;}
 #intro .btn__card ul .card__item:not(:last-child) {margin-right:80px;}
 #intro .btn__card ul .card__item.num1 {background: #57bbad; border:13px solid #3dab9b;}
-#intro .btn__card ul .card__item.num2 {background: #4d8de7; border:13px solid #377de0;}
+#intro .btn__card ul .card__item.num2 {background: var(--c_blue); border:13px solid #377de0;}
 #intro .btn__card ul .card__item.num3 {background: #ff82bb; border:13px solid #ff68af;}
 #intro .btn__card ul .card__item.num4 {background: #ff7754; border:13px solid #ff623b;}
 #intro .btn__card ul .card__item:not(:last-child)::after {position: absolute; overflow: hidden; content: ''; width: 36px; height: 36px;
@@ -126,7 +126,7 @@ footer .intro_ft p {color:#fff;}
 
 /* exam - location*/
 .lct_box {font-family: 'NanumSquareRound'; width:100%; height: 68px; display: flex; flex-direction: row; align-items: center; gap: 12px;}
-.lct_box .title {font-style: normal; font-weight: 800; font-size: 4rem; line-height: 4.5rem; letter-spacing: -0.01em; display: flex;flex-direction: row; align-items: center; color: #4D8DE7;}
+.lct_box .title {font-style: normal; font-weight: 800; font-size: 4rem; line-height: 4.5rem; letter-spacing: -0.01em; display: flex;flex-direction: row; align-items: center; color: var(--c_blue);}
 .lct_box .location {width: 275px; height: 46px;display: flex;align-items: center; padding: 15px 4px 6px; gap: 35px;}
 .lct_box .location li {position:relative; line-height:1;font-size:1.5rem}
 .lct_box .location li i {display: block; width: 25px; height: 25px; background: url(../images/common/home.png) no-repeat;}
@@ -149,7 +149,7 @@ footer .intro_ft p {color:#fff;}
 .plus_box .std .btn_group button.circle_btn {width: 36px; height: 36px;}
 
 .plus_box .file {display: inline-flex;align-items: center; padding: 0px; gap: 10px;}
-.plus_box .inner .item p {line-height: 32px;font-weight: 800; font-size: 18px; color: #4D8DE7;transform: skew(-0.001deg);}
+.plus_box .inner .item p {line-height:1;font-weight: 800; font-size: 1.6rem; color: var(--c_blue);transform: skew(-0.001deg);}
 
 /* exam - plus_box icon*/
 .ico_32 {display: block; width: 32px; height: 32px; background: url(../images/common/icon_group.png) no-repeat;}
@@ -180,7 +180,7 @@ footer .intro_ft p {color:#fff;}
 .std_list .miss {width:32px; background-position:-65px -225px;}
 .std_list .more {width:60px; background-position:-101px -225px;}
 .std_list .basket {width:32px; background-position:-173px -225px;}
-.std_list .test_learn {color:#4D8DE7; font-size:18px; font-weight: 700; font-family: 'NanumSquareRound';}
+.std_list .test_learn {color:var(--c_blue); font-size:18px; font-weight: 700; font-family: 'NanumSquareRound';}
 .std_list .test_miss {color: #AFAFAF; font-size:18px; font-weight: 700; font-family: 'NanumSquareRound';}
 
 /* exam - 학생목록 테이블 헤더*/
@@ -244,9 +244,9 @@ footer .main_ft {padding: 3vh 0;}
 .test__intro .test_intro_hd .title_cover .round_box {border-radius: 8px; padding: 10px; color:#fff; font-size: 58px; line-height: 66px; height: 82px; font-weight: 700;}
 
 .test__intro .test_intro_hd .title_box .btn_wrap {display:flex; gap: 10px;}  
-.test__intro .test_intro_hd .title_box .btn_wrap .btn {text-align: center; padding: 0; width: 290px; height: 68px; border-radius: 4px; font-weight: 800; font-size: 20px; line-height: 66px; border: 1px solid #4D8DE7;}
-.test__intro .test_intro_hd .title_box .btn_wrap .btn.prep {background: #FFF;  color: #4D8DE7;}
-.test__intro .test_intro_hd .title_box .btn_wrap .btn.start {background: #4D8DE7; color: #FFF;}
+.test__intro .test_intro_hd .title_box .btn_wrap .btn {text-align: center; padding: 0; width: 290px; height: 68px; border-radius: 4px; font-weight: 800; font-size: 20px; line-height: 66px; border: 1px solid var(--c_blue);}
+.test__intro .test_intro_hd .title_box .btn_wrap .btn.prep {background: #FFF;  color: var(--c_blue);}
+.test__intro .test_intro_hd .title_box .btn_wrap .btn.start {background: var(--c_blue); color: #FFF;}
 
 .test__intro .test_intro_hd .test_check ul {display:flex; gap: 20px;}
 .test__intro .test_intro_hd .test_check li {display: flex; flex-direction: column; justify-content: flex-end; align-items: center;width: 130px; height: 125px; gap: 20px;}
@@ -287,14 +287,14 @@ footer .main_ft {padding: 3vh 0;}
 
 .test__intro .test_exp .checklist .box_item.num3 {width: 35%; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; padding: 39px 30px; gap: 10px; isolation: isolate;}
 .test__intro .test_exp .checklist .box_item.num3 .col_item {width: 100%;}
-.test__intro .test_exp .checklist .box_item.num3 .col_item .sub_title {display: flex;flex-direction: row;align-items: center;margin-bottom: 15px; color:#4D8DE7; gap: 4px;}
+.test__intro .test_exp .checklist .box_item.num3 .col_item .sub_title {display: flex;flex-direction: row;align-items: center;margin-bottom: 15px; color:var(--c_blue); gap: 4px;}
 .test__intro .test_exp .checklist .box_item.num3 .col_item .sub_title span {font-weight: 900;font-size: 16px;line-height: 18px;}
 .test__intro .test_exp .checklist .box_item.num3 .col_item .sub_title i {display:block;width:32px;height:32px;background:url(../images/common/icon_group.png) no-repeat;background-position:0 -401px;}
 .test__intro .test_exp .checklist .box_item.num3 .col_item .chart_wrap {display: flex; flex-direction: row; gap: 20px; align-items: center;}
 .test__intro .test_exp .checklist .box_item.num3 .col_item .chart_wrap .chart_bar {width: 100%; background: #fff; border-radius: 15px; overflow:hidden;}
-.test__intro .test_exp .checklist .box_item.num3 .col_item .chart_wrap .chart_bar .percent {display: block; width:40%; height: 15px; border-radius: 15px; background: #4D8DE7;}
+.test__intro .test_exp .checklist .box_item.num3 .col_item .chart_wrap .chart_bar .percent {display: block; width:40%; height: 15px; border-radius: 15px; background: var(--c_blue);}
 .test__intro .test_exp .checklist .box_item.num3 .col_item .chart_wrap .count_wrap {display: flex; align-items: center; gap: 10px; color:#fff;}
-.test__intro .test_exp .checklist .box_item.num3 .col_item .chart_wrap .count_wrap .circle {width: 24px; height: 24px;background: #4D8DE7;border-radius: 100px;color: #FFFFFF;text-align: center;line-height: 24px;}
+.test__intro .test_exp .checklist .box_item.num3 .col_item .chart_wrap .count_wrap .circle {width: 24px; height: 24px;background: var(--c_blue);border-radius: 100px;color: #FFFFFF;text-align: center;line-height: 24px;}
 
 .test__intro .test_exp .checklist .box_item.num4 {width: 22%; display: flex; flex-direction: column; align-items: center;justify-content: flex-end;}
 .test__intro .test_exp .checklist .box_item.num4 div {margin-bottom:30px;}
@@ -306,8 +306,8 @@ footer .main_ft {padding: 3vh 0;}
 .test__start .start__hd .start__title {display: flex;align-items: center; gap: 10px;}
 .test__start .start__hd .btn_close {right: 0; top: -24px;}
 .test__start .start__hd h2 {font-weight: 800; font-size: 36px; line-height: 41px; color:#fff; font-family: 'NanumSquareRound';}
-.test__start .start__hd .badge {font-family: 'NanumSquareRound'; border-radius: 8px; padding: 7px; font-size: 20px; line-height: 23px; font-weight: 700; color: #4D8DE7;
-    border: 1px solid #4D8DE7; background-color:#fff;}
+.test__start .start__hd .badge {font-family: 'NanumSquareRound'; border-radius: 8px; padding: 7px; font-size: 20px; line-height: 23px; font-weight: 700; color: var(--c_blue);
+    border: 1px solid var(--c_blue); background-color:#fff;}
 .test__start .start__hd .sub_txt {color:#fff;}
 
 /* 문제 유형 선택 버튼*/
@@ -315,10 +315,10 @@ footer .main_ft {padding: 3vh 0;}
 .test__start .start__con .btn__list {display: flex; justify-content: center; gap: 10px;}
 .test__start .start__con .btn__list li {position: relative; height: 100%;}
 .test__start .start__con .btn__list input[type="radio"] {position: absolute; display: flex; opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer;}
-.test__start .start__con .btn__list .type__btn {display: block; padding: 16px; border: 1px solid #4D8DE7; border-radius: 4px; color: #4D8DE7; }
+.test__start .start__con .btn__list .type__btn {display: block; padding: 16px; border: 1px solid var(--c_blue); border-radius: 4px; color: var(--c_blue); }
 .test__start .start__con .btn__list .type__btn i {display: none; }
 .test__start .start__con .btn__list input[type="radio"]:checked ~ .type__btn {background: #F7FAFD; display: flex;justify-content: space-between; gap: 5px; }
-.test__start .start__con .btn__list input[type="radio"]:checked ~ .type__btn i {display: block;border-color: #4D8DE7;border-right-width: 3px; border-bottom-width: 3px;
+.test__start .start__con .btn__list input[type="radio"]:checked ~ .type__btn i {display: block;border-color: var(--c_blue);border-right-width: 3px; border-bottom-width: 3px;
     border-right-style: solid;border-bottom-style: solid;width: 11px;height: 11px;transform: rotate(45deg);-webkit-transform: rotate(45deg); }
 
 /* 문제 출제 박스__슬라이더*/
@@ -326,9 +326,9 @@ footer .main_ft {padding: 3vh 0;}
 .test__start .start__con .slide_box {display: flex; flex-direction: column; margin: auto;}
 .test__start .start__con .slide_box .quest_num_box {text-align: center; font-size: 30px; line-height: 34px;}
 .test__start .start__con .slide_box .quest_num_box .quest_num {display: inline-flex; gap: 10px;}
-.test__start .start__con .slide_box .quest_num_box .quest_num p {font-weight: 800; font-size: 30px; color: #4D8DE7;}
+.test__start .start__con .slide_box .quest_num_box .quest_num p {font-weight: 800; font-size: 30px; color: var(--c_blue);}
 .test__start .start__con .slide_box .quest_num_box .quest_num .circle.type02 {display: block; width: 50px;height: 50px; background: rgba(109, 169, 224, 0.1);
-    border: 1px solid #4D8DE7; border-radius: 100px; text-align: center; line-height: 50px; color: #4D8DE7;}
+    border: 1px solid var(--c_blue); border-radius: 100px; text-align: center; line-height: 50px; color: var(--c_blue);}
 
 .test__start .start__con .slide_box .quest_item_wrap {width: 100%;}
 .test__start .start__con .slide_box .quest_item_wrap .quest_item {font-size: 332px; line-height: 377px;}
@@ -366,21 +366,21 @@ footer .main_ft {padding: 3vh 0;}
 .test__start .start__con .grap__wrap .sub_title span {line-height: 40px;}
 .test__start .start__con .grap__wrap .chart_wrap {width: 90%; display: flex; flex-direction: row; gap: 20px; align-items: center;}
 .test__start .start__con .grap__wrap .chart_wrap .chart_bar {width: 100%; background: #ddd; border-radius: 15px; overflow:hidden;}
-.test__start .start__con .grap__wrap .chart_wrap .chart_bar .percent {display: block; width:40%; height: 15px; border-radius: 15px; background: #4D8DE7;}
+.test__start .start__con .grap__wrap .chart_wrap .chart_bar .percent {display: block; width:40%; height: 15px; border-radius: 15px; background: var(--c_blue);}
 .test__start .start__con .grap__wrap .chart_wrap .count_wrap {display: flex; align-items: center; gap: 10px; color:#000;}
-.test__start .start__con .grap__wrap .chart_wrap .count_wrap .circle.type01 {width: 24px; height: 24px;background: #4D8DE7;border-radius: 100px;color: #FFFFFF;text-align: center;line-height: 24px;}
+.test__start .start__con .grap__wrap .chart_wrap .count_wrap .circle.type01 {width: 24px; height: 24px;background: var(--c_blue);border-radius: 100px;color: #FFFFFF;text-align: center;line-height: 24px;}
 .test__start .start__con .grap__wrap.off {display: none;}
 
 .test__start .start__con .btn.stage {width: 118px;height: 118px;display:block;border-radius: 118px;overflow: hidden;padding: 0;background: initial;float: left;}
 .test__start .start__con .btn.stage i {width: 118px;height: 118px; display:block; background: url(../images/common/stage_btn_img.png);}
 .test__start .start__con .btn.stage.on > i {background: url(../images/common/stage_btn_img_on.png.png);}
-.test__start .start__con .btn.save {background: #4D8DE7; color:#fff; height: 50px;}
+.test__start .start__con .btn.save {background: var(--c_blue); color:#fff; height: 50px;}
 
 /* 진행단계 네비게이션 활성화 박스*/--------------------- */
 .test__start .start__con .stage__wrap {display: none;}
 .test__start .start__con .stage__wrap.on {display: flex; width:100%;}
 .test__start .start__con .stage__wrap.on th, .test__start .start__con .frame .stage__wrap td {width:5%;}
-.test__start .start__con .stage__wrap.on .thead.type02 th {background: #F7FAFD; border-width: 1px 1px 1px 0px; border-style: solid; border-color: rgba(77, 141, 231, 0.5); color: #4D8DE7;}
+.test__start .start__con .stage__wrap.on .thead.type02 th {background: #F7FAFD; border-width: 1px 1px 1px 0px; border-style: solid; border-color: rgba(77, 141, 231, 0.5); color: var(--c_blue);}
 .test__start .start__con .stage__wrap.on .tbody.type02 td {background: #FFFFFF; border-width: 0px 1px 1px 0px; border-style: solid; border-color: #E3EEF3;}
 .test__start .start__con .stage__wrap.on .thead.type02 th:last-child {border-right:none;}
 .test__start .start__con .stage__wrap.on .tbody.type02 td:last-child {border-right:none;}
@@ -394,7 +394,7 @@ footer .main_ft {padding: 3vh 0;}
 
 .plus_box .inner.type02 .group_box {display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; padding: 0px; gap: 10px;}
 .plus_box .inner.type02 .group_box .item {display: flex; }
-.plus_box .inner.type02 .group_box .item.num2 {align-items: center; gap: 20px; color: #4D8DE7; font-weight: 800;}
+.plus_box .inner.type02 .group_box .item.num2 {align-items: center; gap: 20px; color: var(--c_blue); font-weight: 800;}
 .plus_box .inner.type02 .group_box .item.num2 ul li:first-child {margin-bottom:10px;}
 
 .plus_box .inner.type02 .report_box {width: 100%; display: flex;justify-content: center; gap: 20px;}
@@ -453,8 +453,8 @@ footer .main_ft {padding: 3vh 0;}
 
 /*  select type03 :: 사용영역(진단결과)*/
 .select.type03 {width: 240px; height: 48px;}
-.select.type03 .lay {height: 48px; border: 1px solid #4D8DE7; border-radius: 4px;}
-.select.type03 .lay a {height: 48px; line-height: 48px; padding: 0 20px; color: #4D8DE7;}
+.select.type03 .lay {height: 48px; border: 1px solid var(--c_blue); border-radius: 4px;}
+.select.type03 .lay a {height: 48px; line-height: 48px; padding: 0 20px; color: var(--c_blue);}
 .select.type03 .lay a::after {content: ""; display: block; position: absolute; right: 15px; top: 10px; width: 24px; height: 24px; 
     background: url(../images/common/arrow_under_blue02.png) no-repeat; transform: rotate(0deg); -webkit-transform: rotate(0deg); transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;}
