@@ -13,25 +13,21 @@
 
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-latest.min.js"></script>
-<<<<<<< Updated upstream
     <script type="text/javascript" src="js/Chart.min.js"></script>
-=======
-    
->>>>>>> Stashed changes
 
 </head>
 
  <script type="text/javascript">
     $(document).ready(function() {
-        $('.select.type01, .select.type02, #stageBtn').on('click', function (event) {
+        $('.select.type01, .select.type02, .select.type03, #stageBtn').on('click', function (event) {
         $(this).toggleClass('on');
         });
         $('body').on('click', function (e) {
-        if (!$('.select.type01, .select.type02, #stageBtne').is(e.target) 
-            && $('.select.type01, .select.type02, #stageBtn').has(e.target).length === 0 
+        if (!$('.select.type01, .select.type02, .select.type03, #stageBtne').is(e.target) 
+            && $('.select.type01, .select.type02, .select.type03, #stageBtn').has(e.target).length === 0 
             && $('.on').has(e.target).length === 0
         ) {
-            $('.select.type01, .select.type02, #stageBtn').removeClass('on');
+            $('.select.type01, .select.type02, .select.type03, #stageBtn').removeClass('on');
         }
         }); // select
 
@@ -123,11 +119,11 @@
 
     <div class="plus_box">
         <div class="inner type02">
-            <ul class="">
-                <li class="">
+            <ul class="group_box">
+                <li class="item num1">
                     <div class="level">
                         <div class="select type03">
-                            <div class="lay category">
+                            <div class="lay">
                                 <input type="hidden" name="catem" value="0">
                                 <strong><a href="#">1학년 1반(2023)</a></strong>
                             </div>
@@ -144,34 +140,34 @@
                         </div>
                     </div>
                 </li>
-                <li class="">
+                <li class="item num2">
                     <span><img src="../images/common/result_count_img.png" alt="진단 등록인원 아이콘 이미지"></span>
                     <ul>
-                        <li class="ts_18">진단 등록인원</li>
+                        <li class="ts_19">진단 등록인원</li>
                         <li class="ts_28">20명</li>
                     </ul>
                 </li>
             </ul>
-            <ul class="">
-                <li>
-                    <ul>
+            <ul class="report_box">
+                <li class="item num1">
+                    <ul class="report num1">
                         <li>1차 진단</li>
-                        <li><i></i>0%</li>
+                        <li class="per num1"><i></i>0%</li>
                         <li>(0명)</li>
                     </ul>
                 </li>
-                <li>
-                    <ul>
+                <li class="item num2">
+                    <ul class="report num2">
                         <li>2차 진단</li>
-                        <li><i></i>0%</li>
-                        <li>(0명)</li>
+                        <li class="per num2"><i></i>100%</li>
+                        <li>(20명)</li>
                     </ul>
                 </li>
-                <li>
-                    <ul>
+                <li class="item num3">
+                    <ul class="report num3">
                         <li>3차 진단</li>
-                        <li><i></i>0%</li>
-                        <li>(0명)</li>
+                        <li class="per num3"><i></i>85%</li>
+                        <li>(17명)</li>
                     </ul>
                 </li> 
             </ul>
@@ -210,8 +206,6 @@
             </div>
         </div>        
     </div>
-
-
 
     <div class="std_list">
         <h3>학생개별 진단결과</h3>
