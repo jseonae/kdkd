@@ -184,9 +184,9 @@ footer .intro_ft p {color:#fff;}
 .std_list .test_miss {color: #AFAFAF; font-size:18px; font-weight: 700; font-family: 'NanumSquareRound';}
 
 /* exam - 학생목록 테이블 헤더*/
-.std_list table thead .th_yellow_1 {background:var(--c_yellow_2);color: var(--c_yellow_m);border: none; border-right:0}
-.std_list table thead .th_pink_1 {background:var(--c_pink_2); color: var(--c_pink_m); border: none; border-right:0 }
-.std_list table thead .th_mint_1 {background:var(--c_mint_2);; color: var(--c_mint_m); border: none; border-right:0 }
+.std_list table thead .th_yellow_1 {background:var(--c_yellow_2);color: var(--c_yellow_m);border: none; border-right: 1px solid var(--c_yellow_2);}
+.std_list table thead .th_pink_1 {background:var(--c_pink_2); color: var(--c_pink_m); border: none; border-right: 1px solid var(--c_pink_2);}
+.std_list table thead .th_mint_1 {background:var(--c_mint_2); color: var(--c_mint_m); border: none; border-right: 1px solid var(--c_mint_2);}
 
 .std_list table thead .th_yellow_2 {background: var(--c_yellow_1); border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_yellow_3); color:var(--c_yellow);}
 .std_list table thead .th_pink_2 {background: var(--c_pink_1);border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_pink_3); color:var(--c_pink);}
