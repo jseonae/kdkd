@@ -162,14 +162,14 @@ footer .intro_ft p {color:#fff;}
 
 /* exam - 학생목록*/
 .std_list {width:100%;}
-.std_list h3 {font-size: 22px; line-height: 27px; color: #555; letter-spacing: -0.005em; font-weight: 800; font-family: 'NanumSquareNeo'; margin-bottom: 20px;}
+.std_list h3 {font-size:2.2rem; line-height:1; color: #555; letter-spacing: -0.005em; font-weight: 800; font-family:'NanumSquareNeo'; margin-bottom: 20px;}
 .std_list .table_wrap {display: flex; flex-direction: column; align-items: flex-start;}
 .std_list thead tr th {font-weight: 700;font-size: 1.6rem;}
 .std_list tbody tr td {text-align: center;}
 .std_list thead tr:nth-child(1) th:first-child {border-radius: 10px 0 0 0;}
 .std_list thead tr:nth-child(1) th:last-child {border-radius: 0 10px 0 0 ;}
 .std_list tbody tr td .input_txt {display: none;}
-.std_list tbody tr input, .std_list tbody tr select {width:70px; height: 40px; border: none; text-align: center;font-size: 20px;font-weight: 700;
+.std_list tbody tr input, .std_list tbody tr select {width:70px; height: 40px; border: none; text-align: center;font-size:1.6rem;font-weight:400;
     font-family: 'NanumSquareRound'; color: #555;border-radius: 8px; border: 1px solid #E3EEF3;}
 .std_list tbody tr .input_name {width:140px;}
 
