@@ -428,7 +428,7 @@ footer .main_ft {padding: 3vh 0;}
 /* select type01 :: 사용영역(헤더)*/
 .select.type01 {width: 24rem; height: 4.8rem;  background: #206CD8; border: none; font-family: 'NanumSquareRound';}
 .select.type01 .lay {height: 4.8rem; border: none; background: transparent; border-radius:0; border-radius: 4px;}
-.select.type01 .lay a {height: 4.8rem; line-height:1; padding: 0 20px; color: #fff;}
+.select.type01 .lay a {display:flex;align-items:center;height: 4.8rem; line-height:1; padding: 0 20px; color: #fff;}
 .select.type01 .lay a::after {content: ""; display: block; position: absolute; right: 15px; top: 10px; width: 24px; height: 24px; 
     background: url(../images/common/arrow_under_white.png) no-repeat; transform: rotate(0deg); -webkit-transform: rotate(0deg); transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;}
