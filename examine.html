@@ -22,13 +22,13 @@
         $(this).toggleClass('on');
         });
         $('body').on('click', function (e) {
-        if (!$('.select.type01, .select.type02, #stageBtne').is(e.target) 
-            && $('.select.type01, .select.type02, #stageBtn').has(e.target).length === 0 
+        if (!$('.select.type01, .select.type02').is(e.target) 
+            && $('.select.type01, .select.type02').has(e.target).length === 0 
             && $('.on').has(e.target).length === 0
         ) {
-            $('.select.type01, .select.type02, #stageBtn').removeClass('on');
+            $('.select.type01, .select.type02').removeClass('on');
         }
-        }); // select
+        }); // add class 'on' :: 적용태그 select, button
 
         $('.std_list table td button').click(function() {
             var modal_id = $(this).attr('id');
@@ -44,7 +44,7 @@
 
         $('#stageBtn').on('click', function (event) {
         $('.stage_nav .stage__wrap').toggleClass('on');
-        $('.stage_nav .grap__wrap').toggleClass('off');s
+        $('.stage_nav .grap__wrap').toggleClass('off');
         }); //진행단계 네비게이션 박스 활성화
     });
 </script>
@@ -54,7 +54,7 @@
 <!--HEADER :: Start -->
 <header>
     <div class="header main">
-        <h1 class="logo_w"><img src="images/common/logo_w.png" alt="온채움 한글해득 지원 시스템 키득키득"></a></h1>
+        <h1 class="logo_w"><a href="/intro.html"><img src="images/common/logo_w.svg" alt="온채움 한글해득 지원 시스템 키득키득"></a></h1>
         <ul class="member">
             <li class="name"><span>대한초등학교 홍길동</span>님,&nbsp;안녕하세요!<i></i></li>
             <li class="level">
@@ -78,7 +78,7 @@
                 </div>
             </li>
             <li>
-                <button class="btn white md">학급추가<i></i></button>
+                <button class="btn white">학급추가<i></i></button>
             </li>
         </ul>
     </div>
@@ -105,7 +105,7 @@
         </ul>
     </div>
 
-    <div class="plus_box">
+    <div class="top_box">
         <div class="inner">
             <div class="item std">
                 <i class="ico_32 student"></i>
@@ -114,14 +114,14 @@
                     <button type="button" class="circle_btn"><i class="ico_36 minus"></i><p class="ir">빼기</p></button>
                     <input type="text" class="count_txt_input tw_700 font-nsN ts_14" value="20명">
                     <button type="button" class="circle_btn"><i class="ico_36 plus"></i><p class="ir">더하기</p></button>
-                    <button type="button" class="btn bg_blue" name="btn_add">추가하기</button>
+                    <button type="button" class="btn" name="btn_add">추가하기</button>
                 </div>
             </div>
             <div class="item file">
                 <i class="ico_32 excel"></i>
                 <p>학생목록 엑셀 일괄추가</p>
-                <button type="button" class="btn white line" name="download">엑셀양식 다운로드</button>
-                <button type="button" class="btn bg_blue" name="upload">엑셀파일 업로드</button>
+                <button type="button" class="btn white" name="download">엑셀양식 다운로드</button>
+                <button type="button" class="btn" name="upload">엑셀파일 업로드</button>
             </div>
         </div>
     </div>
@@ -137,21 +137,7 @@
                     </details>
                 </caption>
                 <colgroup>
-                    <col style="width: 3%">
-                    <col style="width: 2%">
-                    <col style="width: 2%">
-                    <col style="width: 2%">
-                    <col style="width: 2%">
-                    <col style="width: 5%">
-                    <col style="width: 5%">
-                    <col style="width: 5%">
-                    <col style="width: 5%">
-                    <col style="width: 5%">
-                    <col style="width: 5%">
-                    <col style="width: 5%">
-                    <col style="width: 5%">
-                    <col style="width: 5%">  
-                    <col style="width: 3%">                                     
+                    <col >                                    
                 </colgroup>
                 <thead>
                     <tr>
@@ -295,10 +281,10 @@
                       
                         <div class="title_box">
                             <h3 class="txt_gray_5">한글키득키득</h3>
-                            <span class="title_cover"><h2 class="txt_blue2 font-nsR">진단하기</h2><p class="round_box bg_blue2 font-nsR">읽기</p></span>
+                            <span class="title_cover"><h2>진단하기</h2><p class="badge big">읽기</p></span>
                             <p class="sub_txt">제시되는 단어 또는 문장을 바르게 읽어봅시다.</p>
                             <div class="btn_wrap">
-                                <div><a href="#" class="btn prep">연습하기</a></div>
+                                <div><a href="#" class="btn white prep">연습하기</a></div>
                                 <div><a href="#" class="btn start" id="reading">검사시작</a></div>
                             </div>
                         </div>
@@ -320,30 +306,38 @@
                     <div class="con_wrap bg_indigo test_exp">
                         <div class="inner checklist">
                             <div class="box_item num1">
-                                <h2 class="font-nsR">시작 전,<br><span class="txt_green">알아둘 것!</span></h2>
+                                <h2>시작 전,<br><span>알아둘 것!</span></h2>
                             </div>
 
                             <div class="box_item num2">
-                                <span class="badge">방향키</span>
+                                <span class="badge round">방향키</span>
                                 <ul>
                                     <li><span class="txt_green">키보드 방향키로<br>채점 및 진행</span></li>
-                                    <li><img src="images/common/img_key.png" alt="방향키 조작에 대한 설명 이미지입니다 왼쪽은 이전문항 오른쪽은 다음문항 위쪽은 정답 아래쪽은 오답"></li>
+                                    <li><img src="images/common/img_key.svg" alt="방향키 조작에 대한 설명 이미지입니다. 왼쪽은 이전문항 오른쪽은 다음문항 위쪽은 정답 아래쪽은 오답"></li>
                                     <li>
                                         <ul class="row_item num1">
                                             <li class="txt_green">진행</li>
-                                            <li><i class="prev"><p class="ir">왼쪽 방향키</p></i><span>이전문항</span></li>
-                                            <li><i class="next"><p class="ir">오른쪽 방향키</p></i><span>다음문항</span></li>  
+                                            <li>
+                                               <i class="prev"></i><p class="ir">왼쪽 방향키</p>이전문항
+                                            </li>
+                                            <li>
+                                                <i class="next"></i><p class="ir">오른쪽 방향키</p>다음문항
+                                            </li>  
                                         </ul>
                                         <ul class="row_item num2">
                                             <li class="txt_green">채점</li>
-                                            <li><i class="top"><p class="ir">위쪽 방향키</p></i><span>정답</span><i class="sun small"><p class="ir">해</p></i></li>
-                                            <li><i class="foot"><p class="ir">아래쪽 방향키</p></i><span>오답</span><i class="moon small"><p class="ir">달</p></i></li>
+                                            <li>
+                                                <i class="top"></i><p class="ir">위쪽 방향키</p>정답<i class="sun small"></i><p class="ir">해</p>
+                                            </li>
+                                            <li>
+                                                <i class="foot"></i><p class="ir">아래쪽 방향키</p>오답<i class="moon small"></i><p class="ir">달</p>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
                             </div>
                             <div class="box_item num3">
-                                <span class="badge">진행률</span>
+                                <span class="badge round">진행률</span>
                                 <ul class="col_item">
                                     <li class="sub_title"><i></i><span>진행단계</span></li>
                                     <li>
@@ -361,7 +355,7 @@
                                 </ul>
                             </div>
                             <div class="box_item num4">
-                                <span class="badge">네비게이션 활성화</span>
+                                <span class="badge round">네비게이션 활성화</span>
                                 <div><img src="images/common/test_intro_img01.png"></div>
                             </div>
                         </div>
@@ -377,7 +371,7 @@
                     <div class="start__hd">
                         <div class="start__title">
                         <h2>진단하기</h2>
-                        <p class="round_box badge">읽기</p>
+                        <p class="badge small">읽기</p>
                         <p class="sub_txt">제시되는 단어 또는 문장을 바르게 읽어봅시다.</p>
                         </div>
                         <button type="button" class="btn_close"><i></i><p class="ir">닫기</p></button>
@@ -511,7 +505,7 @@
                     </div>
                 </div>
             </div>
-        </div><!--읽기 검사 :: Endt-->
+        </div><!--읽기 검사 :: End-->
 
     </div>
 </div><!--진단하기 modal :: End -->
@@ -520,5 +514,3 @@
 
 </body>
 </html>
-
-<!--20230321 18:40 커밋-->
