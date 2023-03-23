@@ -96,8 +96,8 @@ footer .intro_ft p {color:#fff;}
 .header.main h1 {width: 149px;height: 40px;}
 
 .member {display: flex;flex-direction: row;align-items: center;padding: 0px;gap: 20px;}
-.member .name {color:#fff;display: flex;flex-direction: row;align-items: center;padding: 0px;gap: 8px;}
-.member .name span {font-weight: 900;}
+.member .name {color:#fff;display: flex;flex-direction: row;align-items: center;padding: 0px;gap: 8px; font-size:1.8rem;}
+/* .member .name span {font-weight: 900;} */
 .member .name i {width: 24px;height: 24px; background: url(../images/common/arrow_circle_white.svg) no-repeat;}
 
 .member button.btn {font-family: 'NanumSquareRound'; font-weight: 900; display: flex;flex-direction: row; align-items: center;}
@@ -106,7 +106,7 @@ footer .intro_ft p {color:#fff;}
 /* exam - nav*/
 .gnb {background: #fff; border-bottom: 1px solid #6DA9E0; font-family: 'NanumSquareRound'; font-weight: 900;}
 .gnb ul {display:flex; flex-direction: row;justify-content: center;align-items: center;padding: 24px 110px;gap: 50px;}
-.gnb ul li a {display: flex;flex-direction: row; align-items: center; padding: 0px; gap: 4px; color:#CACACA;}
+.gnb ul li a {display: flex;flex-direction: row; align-items: center; padding: 0px; gap: 4px; color:#CACACA; font-size:2rem;}
 .gnb ul li .menu_ico {width:28px; height:28px; background: url(../images/common/icon_group.png) no-repeat;}
 
 .gnb ul li .menu_ico.num1 {background-position: 0 0;}
@@ -128,7 +128,7 @@ footer .intro_ft p {color:#fff;}
 .lct_box {font-family: 'NanumSquareRound'; width:100%; height: 68px; display: flex; flex-direction: row; align-items: center; gap: 12px;}
 .lct_box .title {font-style: normal; font-weight: 800; font-size: 40px; line-height: 45px; letter-spacing: -0.01em; display: flex;flex-direction: row; align-items: center; color: #4D8DE7;}
 .lct_box .location {width: 275px; height: 46px;display: flex; flex-direction: row; align-items: center; padding: 15px 4px 6px; gap: 35px;}
-.lct_box .location li {position:relative; line-height: 25px;}
+.lct_box .location li {position:relative; line-height: 25px; font-size: 1.5rem;}
 .lct_box .location li i {display: block; width: 25px; height: 25px; background: url(../images/common/home.png) no-repeat;}
 .lct_box .location li:not(:last-child)::before {right: -20px; top: 5px; width: 14px;height: 14px;content: ''; position: absolute;border-color: #777;
     border-right-width: 1px;border-bottom-width: 1px;border-right-style: solid;border-bottom-style: solid; transform: rotate(315deg);}
@@ -162,7 +162,7 @@ footer .intro_ft p {color:#fff;}
 
 /* exam - 학생목록*/
 .std_list {width:100%;}
-.std_list h3 {font-size: 22px; line-height: 27px; color: #555; letter-spacing: -0.005em; font-weight: 800; font-family: 'NanumSquareNeo'; margin-bottom: 20px;}
+.std_list h3 {font-size: 2.2rem; line-height: 27px; color: #555; letter-spacing: -0.005em; font-weight: 800; font-family: 'NanumSquareNeo'; margin-bottom: 20px;}
 .std_list .table_wrap {display: flex; flex-direction: column; align-items: flex-start;}
 .std_list thead tr th {font-weight: 700;font-size: 18px;}
 .std_list tbody tr td {text-align: center;}
@@ -390,16 +390,17 @@ footer .main_ft {padding: 3vh 0;}
 
 /* result 컨텐츠 시작*/
 .plus_box .inner.type02 {width:70%; height: 240px; justify-content: space-around; padding: 50px; gap: 30px;}
-.plus_box .inner.type03 {width:30%; height: 240px; justify-content: space-around; padding: 16px;}
+.plus_box .inner.type03 {width:30%; height: 240px; justify-content: space-between; padding: 16px 50px; gap: 30px}
 
 .plus_box .inner.type02 .group_box {display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; padding: 0px; gap: 10px;}
 .plus_box .inner.type02 .group_box .item {display: flex; }
 .plus_box .inner.type02 .group_box .item.num2 {align-items: center; gap: 20px; color: #4D8DE7; font-weight: 800;}
-.plus_box .inner.type02 .group_box .item.num2 ul li:first-child {margin-bottom:10px;}
+.plus_box .inner.type02 .group_box .item.num2 ul li:first-child {margin-bottom:10px; font-size: 1.9rem;}
+.plus_box .inner.type02 .group_box .item.num2 ul li:last-child {font-size: 2.8rem;}
 
 .plus_box .inner.type02 .report_box {width: 100%; display: flex;justify-content: center; gap: 20px;}
 .plus_box .inner.type02 .report_box .item {width:275px; display: block; text-align: center;}
-.plus_box .inner.type02 .report_box .item .report {padding: 28px 50px; border-radius: 8px; overflow: hidden;}
+.plus_box .inner.type02 .report_box .item .report {padding: 28px 50px; border-radius: 8px; overflow: hidden; font-size: 1.6rem;}
 .plus_box .inner.type02 .report_box .item .report.num1 {background: #FFF9C6; color: #E7A702;}
 .plus_box .inner.type02 .report_box .item .report.num2 {background: #FFDDEC; color: #FF1286;}
 .plus_box .inner.type02 .report_box .item .report.num3 {background: #BFE6D0; color: #199C88;}
@@ -413,13 +414,25 @@ footer .main_ft {padding: 3vh 0;}
 .plus_box .inner.type02 .report_box .item .report .per.num2 i {background:url(../images/common/result_step_img02.png) no-repeat;}
 .plus_box .inner.type02 .report_box .item .report .per.num3 i {background:url(../images/common/result_step_img03.png) no-repeat;}
 
+.plus_box .inner.type03 .info_wrap {padding: 35px 0;}
+.plus_box .inner.type03 .info_wrap h4 {font-weight: 800; font-size: 1.6rem; color: #4D8DE7; margin-bottom:20px;}
+.plus_box .inner.type03 .info_wrap ul {display: flex; flex-direction: column; gap: 10px;}
+.plus_box .inner.type03 .info_wrap ul .item {display: flex;justify-content: flex-start; gap:10px;}
+.plus_box .inner.type03 .info_wrap ul .item span {font-weight: 400; font-size: 1.5rem; color: #545454;}
+.plus_box .inner.type03 .info_wrap ul .item span:nth-child(3) {right:-25px; }
+
+.plus_box .inner.type03 .info_wrap ul .item i {display: block;width: 18px;height: 18px;border-radius: 50px;overflow: hidden;}
+.plus_box .inner.type03 .info_wrap ul .item.num1 i {background: #4D8DE7;}
+.plus_box .inner.type03 .info_wrap ul .item.num2 i {background: #F0F6FC;}
+.plus_box .inner.type03 .info_wrap ul .item.num3 i {background: #929EA9;}
+.plus_box .inner.type03 .info_wrap ul .item.num4 i {background: #eee;}
 
 /* select 타입별*/
 /* 공통*/
 .select {position: relative; margin: auto; border: none; border-radius: 4px; font-family: 'NanumSquareRound';}
 .select .lay {width: 100%;}
 .select .lay>strong {display: block; width: 100%; height: 100%;}
-.select .lay a {display: block; position: relative; width: 100%; font-size: 16px; font-weight: 800;}
+.select .lay a {display: block; position: relative; width: 100%; font-size: 1.6rem;}
 .select.on .lists {display: block; position: absolute; width: 100%; z-index: 10; border: 1px solid #E3EEF3; overflow-y: scroll;}
 .select .lists {display: none; background: #fff;}
 .select .lists ul li {text-align: center;}
@@ -463,12 +476,3 @@ footer .main_ft {padding: 3vh 0;}
 .select.type03 .lists ul li a {height: 48px; line-height: 48px; text-align: left; margin-left: 20px;}
 
 
-
-
-
-
-
-
-
-/* --------------------- 업데이트 기록 --------------------- */
-/* 20230321 18:40 커밋 */
