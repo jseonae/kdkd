@@ -29,7 +29,7 @@
         ) {
             $('.select.type01, .select.type02, .select.type03, #stageBtn').removeClass('on');
         }
-        }); // select
+        }); // add class 'on' :: 적용태그 select, button
 
         $('.std_list table td button').click(function() {
             var modal_id = $(this).attr('id');
@@ -43,11 +43,6 @@
             });
         }) // modal
 
-        $('#stageBtn').on('click', function (event) {
-        $('.stage_nav .stage__wrap').toggleClass('on');
-        $('.stage_nav .grap__wrap').toggleClass('off');s
-        }); //진행단계 네비게이션 박스 활성화
-
         var ctx = document.getElementById("chartType01");
         var myDoughnutChart = new Chart(ctx, {
         type: 'doughnut',
@@ -57,7 +52,31 @@
                 backgroundColor: ["#4D8DE7", "#F0F6FC","#929EA9","#eee"]
             }]
         }
-        }); //진단결과 한글해득비율 차트
+        }); // 진단결과 한글해득비율 차트
+
+        $('#step1').click(function(){
+            if($("input:checkbox[id='step1']") .prop("checked")) {
+            $("input:checkbox[name='step_all_1']") .prop("checked" , true);
+            } else {                                                         
+            $("input:checkbox[name='step_all_1']") .prop("checked", false);
+            }
+        });
+
+        $('#step2').click(function(){
+            if($("input:checkbox[id='step2']") .prop("checked")) {  
+            $("input:checkbox[name='step_all_2']") .prop("checked" , true); 
+            } else {                                                         
+            $("input:checkbox[name='step_all_2']") .prop("checked", false); 
+            }
+        });
+
+        $('#step3').click(function(){
+            if($("input:checkbox[id='step3']") .prop("checked")) {
+            $("input:checkbox[name='step_all_3']") .prop("checked" , true);
+            } else {                                                         
+            $("input:checkbox[name='step_all_3']") .prop("checked", false);
+            }
+        }); // checkbox 전체선택
     });
 </script>
 
@@ -66,7 +85,7 @@
 <!--HEADER :: Start -->
 <header>
     <div class="header main">
-        <h1 class="logo_w"><img src="images/common/logo_w.png" alt="온채움 한글해득 지원 시스템 키득키득"></a></h1>
+        <h1 class="logo_w"><a href="/intro.html"><img src="images/common/logo_w.svg" alt="온채움 한글해득 지원 시스템 키득키득"></a></h1>
         <ul class="member">
             <li class="name"><span>대한초등학교 홍길동</span>님,&nbsp;안녕하세요!<i></i></li>
             <li class="level">
@@ -90,7 +109,7 @@
                 </div>
             </li>
             <li>
-                <button class="btn white md">학급추가<i></i></button>
+                <button class="btn white">학급추가<i></i></button>
             </li>
         </ul>
     </div>
@@ -117,7 +136,7 @@
         </ul>
     </div>
 
-    <div class="plus_box">
+    <div class="top_box">
         <div class="inner type02">
             <ul class="group_box">
                 <li class="item num1">
@@ -141,7 +160,7 @@
                     </div>
                 </li>
                 <li class="item num2">
-                    <span><img src="../images/common/result_count_img.png" alt="진단 등록인원 아이콘 이미지"></span>
+                    <span><img src="../images/common/result_count_img.svg" alt="진단 등록인원 아이콘 이미지"></span>
                     <ul>
                         <li>진단 등록인원</li>
                         <li>20명</li>
@@ -224,7 +243,7 @@
                     </details>
                 </caption>
                 <colgroup>
-                    <col style="width: 5%">                                  
+                    <col >                                  
                 </colgroup>
                 <thead>
                     <tr>
@@ -234,16 +253,22 @@
                         <th scope="col">번호</th>
                         <th scope="col">다문화</th>
                         <th scope="col" class="th_yellow_1">
-                            <input type="checkbox" id="step1" name="step_all_1">
-                            <label for="step1"><span class="step_tit"><i class="step num1"></i>1차 진단</span></label>
+                            <div class="th_inner">
+                                <input type="checkbox" id="step1" name="step_all_1" class="step_all_1">
+                                <label for="step1"><span class="step_tit"><i class="step num1"></i>1차 진단</span></label>
+                            </div>
                         </th>
                         <th scope="col" class="th_pink_1">
-                            <input type="checkbox" id="step2" name="step_all_2">
-                            <label for="step2"><span class="step_tit"><i class="step num2"></i>2차 진단</span></label>
+                            <div class="th_inner">
+                                <input type="checkbox" id="step2" name="step_all_2" class="step_all_2">
+                                <label for="step2"><span class="step_tit"><i class="step num2"></i>2차 진단</span></label>
+                            </div>
                         </th>
                         <th scope="col" class="th_mint_1">
-                            <input type="checkbox" id="step3" name="step_all_3">
-                            <label for="step3"><span class="step_tit"><i class="step num3"></i>3차 진단</span></label>
+                            <div class="th_inner">
+                                <input type="checkbox" id="step3" name="step_all_3">
+                                <label for="step3"><span class="step_tit"><i class="step num3"></i>3차 진단</span></label>
+                            </div>
                         </th>
                         <th scope="col">수준</th>
                     </tr>
@@ -256,32 +281,59 @@
                         <td><input type="text" name="std_number" value="1"><div id="std_number" class="input_txt">1</div></td>
                         <td>
                             <div class="select type02">
-                                <div class="lay category">
-                                    <input type="hidden" name="catem" value="0">
-                                    <strong><a href="#"><i class="ico_x"></i><p class="ir">해당없음</p></a></strong>
-                                </div>
-                                <div class="lists">
-                                    <ul>
-                                        <li><a href="#" rel=""><i class="ico_x"></i><p class="ir">해당없음</p></a></li>
-                                        <li><a href="#" rel=""><i class="ico_o"></i><p class="ir">해당</p></a></li>
-                                    </ul>
-                                </div>					
+                                <strong><a href="#" rel=""><i class="ico_o"></i><p class="ir">해당</p></a></strong>
                             </div>
-                        </td><!--다문화-->
-                        <td>
-                            <input type="checkbox" id="row_1_1" name="step_all_1">
-                            <label for="row_1_1"><i class="learn"><p class="ir">해득</p></i></label> 
                         </td>
                         <td>
-                            <input type="checkbox" id="row_1_2" name="step_all_2">
-                            <label for="row_1_2"><i class="miss"><p class="ir">미해득</p></i></label> 
+                            <div class="td_inner">
+                                <input type="checkbox" id="row_1_1" name="step_all_1" class="step_all_1">
+                                <label for="row_1_1"><i class="learn"><p class="ir">해득</p></i></label>
+                            </div>
                         </td>
                         <td>
-                            <input type="checkbox" id="row_1_3" name="step_all_3">
-                            <label for="row_1_3"><i class="test"><p class="ir">검사시작</p></i></label> 
+                            <div class="td_inner">
+                                <input type="checkbox" id="row_1_2" name="step_all_2" class="step_all_2">
+                                <label for="row_1_2"><i class="miss"><p class="ir">미해득</p></i></label> 
+                            </div>
+                        </td>
+                        <td>
+                            <div class="td_inner">
+                                <input type="checkbox" id="row_1_3" name="step_all_3" class="step_all_3">
+                                <label for="row_1_3"><i class="test"><p class="ir">검사시작</p></i></label> 
+                            </div>
                         </td>
                         <td><p class="test_learn">해득</p></td>   
-                    </tr>             
+                    </tr>
+                    <tr>
+                        <td scope="row"><input type="text" name="std_name" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
+                        <td><input type="text" name="std_year" value="1"><div id="std_year" class="input_txt">1</div></td>
+                        <td><input type="text" name="std_class" value="1"><div id="std_class" class="input_txt">1</div></td>
+                        <td><input type="text" name="std_number" value="2"><div id="std_number" class="input_txt">2</div></td>
+                        <td>
+                            <div class="select type02">
+                                <strong><p class="ir">해당없음</p></strong> <!--해당없음일때는 출력되지 않게-->
+                            </div>
+                        </td>
+                        <td>
+                            <div class="td_inner">
+                                <input type="checkbox" id="row_2_1" name="step_all_1">
+                                <label for="row_2_1"><i class="learn"><p class="ir">해득</p></i></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="td_inner">
+                                <input type="checkbox" id="row_2_2" name="step_all_2">
+                                <label for="row_2_2"><i class="more"><p class="ir">보충</p></i></label> 
+                            </div>
+                        </td>
+                        <td>
+                            <div class="td_inner">
+                                <input type="checkbox" id="row_2_3" name="step_all_3">
+                                <label for="row_2_3"><i class="test"><p class="ir">검사시작</p></i></label> 
+                            </div>
+                        </td>
+                        <td><p class="test_miss">미해득</p></td>   
+                    </tr>    
                 </tbody>
             </table>
         </div>
