@@ -379,10 +379,10 @@ footer p{font-size:1.5rem}
 .test__start .start__con .btn.save:hover {background: var(--c_blue_m);}
 
 /* 진행단계 네비게이션 활성화 박스*/
-.test__start .start__con .stage__wrap table {display: none;}
+.test__start .start__con .stage__wrap table {display: none; font-size:1.6rem;}
 .test__start .start__con .stage__wrap.on {display:block; width:100%;}
 .test__start .start__con .stage__wrap.on table {display:block; width:100%;}
-.test__start .start__con .stage__wrap.on th, .test__start .start__con .frame .stage__wrap td {width:1%;}
+.test__start .start__con .stage__wrap.on th, .test__start .start__con .frame .stage__wrap td {width:1%; min-width: 57px;}
 .test__start .start__con .stage__wrap.on .thead.type02 th {background: #F7FAFD; border-width: 1px 1px 1px 0px; border-style: solid; border-color: #E3EEF3; color: var(--c_blue);}
 .test__start .start__con .stage__wrap.on .tbody.type02 td {background: #FFFFFF; border-width: 0px 1px 1px 0px; border-style: solid; border-color: #E3EEF3;}
 .test__start .start__con .stage__wrap.on .thead.type02 th:last-child {border-right:none;}
