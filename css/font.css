@@ -64,7 +64,7 @@
     font-weight: 300;
     font-style: normal;
     src: url('../font/NanumSquareRound/NanumSquareRound-Light.eot');
-    src: url('../font/NanumSquareRound//NanumSquareRound-Light.eot?#iefix') format('embedded-opentype'),
+    src: url('../font/NanumSquareRound/NanumSquareRound-Light.eot?#iefix') format('embedded-opentype'),
          url('../font/NanumSquareRound/NanumSquareRound-Light.woff2') format('woff2'),
          url('../font/NanumSquareRound/NanumSquareRound-Light.woff') format('woff'),
          url('../font/NanumSquareRound/NanumSquareRound-Light.ttf') format("truetype");
@@ -101,14 +101,5 @@
          url('../font/NanumSquareRound/NanumSquareRound-ExtraBold.woff2') format('woff2'),
          url('../font/NanumSquareRound/NanumSquareRound-ExtraBold.woff') format('woff'),
          url('../font/NanumSquareRound/NanumSquareRound-ExtraBold.ttf') format("truetype");
-    font-display: swap;
-} 
-
-@font-face {
-    font-family: 'NanumSquareRoundOTP';
-    font-weight: 800;
-    font-style: normal;
-    src: url('../font/NanumSquareRound/NanumSquareRound-ExtraBold.otf');
-    src: url('../font/NanumSquareRound/NanumSquareRound-ExtraBold.otf');
     font-display: swap;
 } 
