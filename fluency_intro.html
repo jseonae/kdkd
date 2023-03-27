@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키득키득</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/contents.css">    
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+<!--진단하기 modal :: Start -->
+<div id="test01" class="modal" style="display: flex;">
+    <div class="modal__wrap type01">
+        
+        <!--진단하기 인트로 :: Start-->
+        <div id="testIntro" class="window">
+            <div class="test__intro">
+                <div class="intro__wrap">
+                    <button type="button" class="btn_close"><i><p class="sr-only">닫기</p></i></button>
+                    <div class="con_wrap test_intro_hd">
+                      
+                        <div class="title_box">
+                            <h3 class="txt_gray_5">한글키득키득</h3>
+                            <span class="title_cover"><h2>진단하기</h2><p class="badge big">유창성</p></span>
+                            <p class="sub_txt">제시되는 단어 또는 문장을 정해진 시간 내에 읽어봅시다.</p>
+                            <div class="btn_wrap">
+                                <div><a href="#" class="btn white prep">연습하기</a></div>
+                                <div><a href="fluency_pop.html" class="btn start" id="reading">검사시작</a></div>
+                            </div>
+                        </div>
+
+                        <div class="test_check">
+                            <ul>
+                                <li>
+                                    <i class="test_check num1"></i>
+                                    <span>예상시간 <strong>2분</strong></span>
+                                </li>
+                                <li>
+                                    <i class="test_check num2"></i>
+                                    <span>문항 <strong>14개</strong></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="con_wrap test_exp">
+                        <div class="inner checklist">
+                            <div class="box_item num1">
+                                <h2>시작 전,<br><span>알아둘 것!</span></h2>
+                            </div>
+
+                            <div class="box_item num2">
+                                <span class="badge round">방향키</span>
+                                <ul>
+                                    <li><span class="txt_green">키보드 방향키로<br>채점 및 진행</span></li>
+                                    <li><img src="images/common/img_key.svg" alt="방향키 조작에 대한 설명 이미지입니다. 왼쪽은 이전문항 오른쪽은 다음문항 위쪽은 정답 아래쪽은 오답"></li>
+                                    <li>
+                                        <ul class="row_item num1">
+                                            <li class="txt_green">진행</li>
+                                            <li>
+                                               <i class="prev"></i><p class="sr-only">왼쪽 방향키</p>이전문항
+                                            </li>
+                                            <li>
+                                                <i class="next"></i><p class="sr-only">오른쪽 방향키</p>다음문항
+                                            </li>  
+                                        </ul>
+                                        <ul class="row_item num2">
+                                            <li class="txt_green">채점</li>
+                                            <li>
+                                                <i class="top"></i><p class="sr-only">위쪽 방향키</p>정답<i class="sun small"></i><p class="sr-only">해</p>
+                                            </li>
+                                            <li>
+                                                <i class="foot"></i><p class="sr-only">아래쪽 방향키</p>오답<i class="moon small"></i><p class="sr-only">달</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box_item num3">
+                                <span class="badge round">진행률</span>
+                                <ul class="col_item">
+                                    <li class="sub_title"><i></i><span>진행단계</span></li>
+                                    <li>
+                                        <div class="chart_wrap">
+                                            <div class="chart_bar">
+                                                <span class="percent"></span>
+                                            </div>
+                                            <div class="count_wrap">
+                                                <span>14</span>
+                                                <span>/</span>
+                                                <span class="circle type01">5</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box_item num4">
+                                <span class="badge round">네비게이션 활성화</span>
+                                <div><img src="images/common/test_intro_img01.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--진단하기 인트로 :: End-->
+
+    </div>
+</div><!--진단하기 modal :: End -->
+
+
+
+</body>
+</html>

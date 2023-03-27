@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키득키득</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/contents.css">    
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+
+</head>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.select.type01, .select.type02').on('click', function (event) {
+        $(this).toggleClass('on');
+        });
+        $('body').on('click', function (e) {
+        if (!$('.select.type01, .select.type02').is(e.target) 
+            && $('.select.type01, .select.type02').has(e.target).length === 0 
+            && $('.on').has(e.target).length === 0
+        ) {
+            $('.select.type01, .select.type02').removeClass('on');
+        }
+        }); // select add class 'on'
+
+        $('.std_list table td button').click(function() {
+            var modal_id = $(this).attr('id');
+            $('.modal' + '#' + modal_id).css({
+                display: 'flex', 
+            });
+        })
+        $('.btn_close').click(function() {
+            $('.modal').css({
+                display: 'none',
+            });
+        }) // modal
+        
+        $('#stageBtn').on('click', function (event) {
+        $(this).toggleClass('on');
+        $('.stage_nav .stage__wrap').toggleClass('on');
+        $('.stage_nav .grap__wrap').toggleClass('off');
+        });
+    }); // 진행단계 네비게이션 박스 활성화
+
+</script>
+
+
+<body>
+
+<!--1차 진단하기 modal :: Start -->
+<div id="test01" class="modal" style="display: flex;">
+    <div class="modal__wrap type01">
+
+        <!--읽기 검사 :: Start-->
+        <div id="reading" class="window">
+            <div class="test__start">
+                <div class="test__wrap">
+                    <div class="start__hd">
+                        <div class="start__title">
+                        <h2><a href="examine.html">진단하기</a></h2>
+                        <p class="badge small">읽기</p>
+                        <p class="sub_txt">제시되는 단어 또는 문장을 바르게 읽어봅시다.</p>
+                        </div>
+                        <button type="button" class="btn_close"><i></i><p class="sr-only">닫기</p></button>
+                    </div>
+
+                    <div class="start__con">
+                        <div class="con_wrap btn_group">
+                            <ul class="tabmenu">
+                                <li class="tab num1">
+                                    <button type="button" id="typeBnt01" class="tabBtn tabon"></button>
+                                    <div class="type__btn"><label for="typeBnt01">모음</label><i></i></div>
+                                </li>
+                                <li class="tab num2">
+                                    <button type="button" id="typeBnt02"  class="tabBtn"></button>
+                                    <div class="type__btn"><label for="typeBnt02">자음</label><i></i></div>
+                                </li>                               
+                                <li class="tab num3">
+                                    <button type="button" id="typeBnt03"  class="tabBtn"></button>
+                                    <div class="type__btn"><label for="typeBnt03">받침없는 글자</label><i></i></div>
+                                </li> 
+                                <li class="tab num4">                         
+                                    <button type="button" id="typeBnt04"  class="tabBtn"></button>
+                                    <div class="type__btn"><label for="typeBnt04">받침없는 낱말</label><i></i></div>
+                                </li>
+                                <li class="tab num5">
+                                    <button type="button" id="typeBnt05"  class="tabBtn"></button>
+                                    <div class="type__btn"><label for="typeBnt05">복잡한 모음</label><i></i></div>
+                                </li>
+                                <li class="tab num6">
+                                    <button type="button" id="typeBnt06"  class="tabBtn"></button>
+                                    <div class="type__btn"><label for="typeBnt06">받침있는 글자</label><i></i></div>
+                                </li> 
+                                <li class="tab num7">
+                                    <button type="button" id="typeBnt07"  class="tabBtn"></button>
+                                    <div class="type__btn"><label for="typeBnt07">복잡한 받침 낱말</label><i></i></div>
+                                </li> 
+                            </ul>
+                        </div>
+
+                        <div class="con_wrap quest_box">
+                            <div class="slide_box">
+                                <div class="quest_num_box">
+                                    <div class="quest_num"><p>문항 &ndash; </p><span class="circle type02">1</span></div>
+                                </div>
+                                <div class="quest_item_box">
+                                    <ul>
+                                        <li class="quest_item">가지</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="answer_box">
+                                <ul>
+                                    <li><a href="#"><i class="mark big sun"></i><p class="sr-only">정답 체크 버튼</p></a></li>
+                                    <li><a href="#"><i class="mark big moon"></i><p class="sr-only">오답 체크 버튼</p></a></li>
+                                </ul>
+                            </div>
+                            <div class="slide_btn_box">
+                                <div class="btn_prev"><a href="#"><p class="sr-only">왼쪽 화살표</p></a></div>
+                                <div class="btn_next"><a href="#"><p class="sr-only">오른쪽 화살표</p></a></div>
+                            </div>
+                        </div>
+
+                        <div class="con_wrap stage_nav">
+                            <div class="frame num1">
+                                <div class="grap__wrap">
+                                    <div class="sub_title"><i></i><span>진행단계</span></div>
+                                    <div class="chart_wrap">
+                                        <div class="chart_bar">
+                                            <span class="percent"></span>
+                                        </div>
+                                        <div class="count_wrap">
+                                            <span>14</span>
+                                            <span>/</span>
+                                            <span class="circle type01">5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="stage_box" class="stage__wrap"><!--btn stage 클릭하면 grap__wrap 위에 나타나게 하기-->
+                                    <table class="stage__table">
+                                        <caption>
+                                            <strong>진행단계</strong>
+                                            <details>
+                                                <p>진단 진행단계를 확인하기 위한 네비게이션으로 문항별로 정답과 오답을 표기하여 진행 상태를 확인할 수 있습니다</p>
+                                            </details>
+                                        </caption>
+                                        <colgroup>
+                                            <col >                                     
+                                        </colgroup>
+                                        <thead class="thead type02">
+                                            <tr>
+                                                <th>1</th>
+                                                <th>2</th>
+                                                <th>3</th>
+                                                <th>4</th>
+                                                <th>5</th>
+                                                <th>6</th>
+                                                <th>7</th>
+                                                <th>8</th>
+                                                <th>9</th>
+                                                <th>10</th>
+                                                <th>11</th>
+                                                <th>12</th>
+                                                <th>13</th>
+                                                <th>14</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody type02">
+                                            <tr>
+                                                <td><i class="mark small sun"></i><p class="sr-only">정답</p></td>
+                                                <td><i class="mark small moon"></i><p class="sr-only">오답</p></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="frame num2">
+                                <button type="button" class="btn stage" name="btn_stage" id="stageBtn"><i><p class="sr-only">진행단계 보기</p></i></button>
+                                <button type="button" class="btn start" name="btn_start">시작하기</button>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--읽기 검사 :: End-->
+
+    </div>
+</div><!--진단하기 modal :: End -->
+
+
+
+</body>
+</html>
