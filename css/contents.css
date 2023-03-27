@@ -4,15 +4,6 @@
 footer {width: 100%; text-align: center; font-size: 1.5rem;}
 .con_wrap {width: 100%;}
 
-/*테이블 헤더 스타일*/
-.th_yellow.type01 {background:var(--c_yellow_2);color: var(--c_yellow_m);border: none; border-right: 1px solid var(--c_yellow_2);}
-.th_pink.type01 {background:var(--c_pink_2); color: var(--c_pink_m); border: none; border-right: 1px solid var(--c_pink_2);}
-.th_mint.type01 {background:var(--c_mint_2); color: var(--c_mint_m); border: none; border-right: 1px solid var(--c_mint_2);}
-
-.th_yellow.type02 {background: var(--c_yellow_1); border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_yellow_3); color:var(--c_yellow);}
-.th_pink.type02 {background: var(--c_pink_1);border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_pink_3); color:var(--c_pink);}
-.th_mint.type02 {background:var(--c_mint_1); border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_mint_3); color:var(--c_mint);}
-
 /* nav*/
 .gnb {background: #fff; border-bottom: 1px solid #6DA9E0; font-family:var(--f_nsR); font-weight: 900;}
 .gnb ul {display:flex; flex-direction: row;justify-content: center;align-items: center;padding: 24px 110px;gap: 50px;}
