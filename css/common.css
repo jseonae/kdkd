@@ -58,8 +58,11 @@ table th, table td img {vertical-align:middle}
 .multi.ico_x {background: url(../images/common/ico_x.svg) no-repeat;}
 .multi.ico_o {background: url(../images/common/ico_o.svg) no-repeat;}
 
-
-
+/* n차 진단*/
+.step{border:1px solid;padding:.8rem;font-size:1.5rem;border-radius:.4rem;}
+.step.sp1{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}
+.step.sp2{background-color:var(--c_pink_1);color:var(--c_pink_m);border-color:var(--c_pink_m)}
+.step.sp3{background-color:var(--c_mint_1);color:var(--c_mint_m);border-color:var(--c_mint_m)}
 
 
 
