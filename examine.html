@@ -101,7 +101,7 @@
     <div class="con_wrap lct_box">
         <h2 class="title"><i class="tit_ico num1"></i>진단하기</h2>
         <ul class="location txt_gray_7 tw_700">
-            <li><i class="ico_home"></i><p class="sr-only">home</p></l></li>
+            <li><i class="ico_home"></i><span class="sr-only">home</span></l></li>
             <li>진단하기</li>
             <li>1. 읽기와 유창성</li>
         </ul>
@@ -113,9 +113,9 @@
                 <i class="ico_32 student"></i>
                 <p>학생 추가</p>
                 <div class="btn_group">
-                    <button type="button" class="circle_btn"><i class="ico_36 minus"></i><p class="sr-only">빼기</p></button>
+                    <button type="button" class="circle_btn"><i class="ico_36 minus"></i><span class="sr-only">빼기</span></button>
                     <input type="text" class="count_txt_input tw_700 font-nsN ts_14" value="20명">
-                    <button type="button" class="circle_btn"><i class="ico_36 plus"></i><p class="sr-only">더하기</p></button>
+                    <button type="button" class="circle_btn"><i class="ico_36 plus"></i><span class="sr-only">더하기</span></button>
                     <button type="button" class="btn" name="btn_add">추가하기</button>
                 </div>
             </div>
@@ -148,9 +148,9 @@
                         <th scope="col" rowspan="2">반</th>
                         <th scope="col" rowspan="2">번호</th>
                         <th scope="col" rowspan="2">다문화</th>
-                        <th scope="colgroup" colspan="3" class="th_yellow_1"><span class="step_tit"><i class="step num1"><p class="sr-only">step.1</p></i>1차 진단</span></th>
-                        <th scope="colgroup" colspan="3" class="th_pink_1"><span class="step_tit"><i class="step num2"><p class="sr-only">step.2</p></i>2차 진단</span></th>
-                        <th scope="colgroup" colspan="3" class="th_mint_1"><span class="step_tit"><i class="step num3"><p class="sr-only">step.3</p></i>3차 진단</span></th>
+                        <th scope="colgroup" colspan="3" class="th_yellow_1"><span class="step_tit"><i class="step num1"><span class="sr-only">step.1</span></i>1차 진단</span></th>
+                        <th scope="colgroup" colspan="3" class="th_pink_1"><span class="step_tit"><i class="step num2"><span class="sr-only">step.2</span></i>2차 진단</span></th>
+                        <th scope="colgroup" colspan="3" class="th_mint_1"><span class="step_tit"><i class="step num3"><span class="sr-only">step.3</span></i>3차 진단</span></th>
                         <th scope="col" rowspan="2">삭제</th>
                     </tr>
                     <tr>
@@ -175,26 +175,26 @@
                             <div class="select type02">
                                 <div class="lay category">
                                     <input type="hidden" name="catem" value="0">
-                                    <strong><a href="#"><i class="multi ico_x"></i><p class="sr-only">해당없음</p></a></strong>
+                                    <strong><a href="#"><i class="multi ico_x"></i><span class="sr-only">해당없음</span></a></strong>
                                 </div>
                                 <div class="lists">
                                     <ul>
-                                        <li><a href="#" rel=""><i class="multi ico_x"></i><p class="sr-only">해당없음</p></a></li>
-                                        <li><a href="#" rel=""><i class="multi ico_o"></i><p class="sr-only">해당</p></a></li>
+                                        <li><a href="#" rel=""><i class="multi ico_x"></i><span class="sr-only">해당없음</span></a></li>
+                                        <li><a href="#" rel=""><i class="multi ico_o"></i><span class="sr-only">해당</span></a></li>
                                     </ul>
                                 </div>					
                             </div>
                         </td><!--다문화-->
-                        <td><button type="button" name="st1_r" id="test01"><i class="test"><p class="sr-only">검사시작</p></i></button></td>
-                        <td><button type="button" name="st1_f" id="test02"><i class="test"><p class="sr-only">검사시작</p></i></button></td>
-                        <td><button type="button" name="st1_w" id="test03"><i class="test"><p class="sr-only">검사시작</p></i></button></td><!--1차진단 쓰기-->
-                        <td><button type="button" name="st2_r"><i class="test"><p class="sr-only">검사시작</p></i></button></td>
-                        <td><button type="button" name="st2_f"><i class="test"><p class="sr-only">검사시작</p></i></button></td>
-                        <td><button type="button" name="st2_w"><i class="test"><p class="sr-only">검사시작</p></i></button></td><!--2차진단 쓰기-->
-                        <td><button type="button" name="st3_r"><i class="test"><p class="sr-only">검사시작</p></i></button></td>
-                        <td><button type="button" name="st3_f"><i class="test"><p class="sr-only">검사시작</p></i></button></td>
-                        <td><button type="button" name="st3_w"><i class="test"><p class="sr-only">검사시작</p></i></button></td><!--3차진단 쓰기-->    
-                        <td><button type="button" name="basket"><i class="basket"><p class="sr-only">삭제</p></i></button></td><!--삭제-->         
+                        <td><button type="button" name="st1_r" id="test01"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button" name="st1_f" id="test02"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button" name="st1_w" id="test03"><i class="state test"><span class="sr-only">검사시작</span></i></button></td><!--1차진단 쓰기-->
+                        <td><button type="button" name="st2_r"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button" name="st2_f"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button" name="st2_w"><i class="state test"><span class="sr-only">검사시작</span></i></button></td><!--2차진단 쓰기-->
+                        <td><button type="button" name="st3_r"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button" name="st3_f"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button" name="st3_w"><i class="state test"><span class="sr-only">검사시작</span></i></button></td><!--3차진단 쓰기-->    
+                        <td><button type="button" name="basket"><i class="basket"><span class="sr-only">삭제</span></i></button></td><!--삭제-->         
                     </tr>
                     <tr>
                         <td><input type="text" name="std_name" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
@@ -205,26 +205,26 @@
                             <div class="select type02">
                                 <div class="lay category">
                                     <input type="hidden" name="catem" value="0">
-                                    <strong><a href="#"><i class="multi ico_o"></i><p class="sr-only">해당</p></a></strong>
+                                    <strong><a href="#"><i class="multi ico_o"></i><span class="sr-only">해당</span></a></strong>
                                 </div>
                                 <div class="lists">
                                     <ul>
-                                        <li><a href="#" rel=""><i class="multi ico_x"></i><p class="sr-only">해당없음</p></a></li>
-                                        <li><a href="#" rel=""><i class="multi ico_o"></i><p class="sr-only">해당</p></a></li>
+                                        <li><a href="#" rel=""><i class="multi ico_x"></i><span class="sr-only">해당없음</span></a></li>
+                                        <li><a href="#" rel=""><i class="multi ico_o"></i><span class="sr-only">해당</span></a></li>
                                     </ul>
                                 </div>					
                             </div>
                         </td><!--다문화-->
-                        <td><button type="button" name="st1_r"><i class="state learn"></i><p class="sr-only">해득</p></button></td>
-                        <td><button type="button" name="st1_f"><i class="state learn"></i><p class="sr-only">해득</p></button></td>
-                        <td><button type="button" name="st1_w"><i class="state more"></i><p class="sr-only">보충</p></button></td><!--1차진단 쓰기-->
-                        <td><button type="button" name="st2_r"><i class="state test"></i><p class="sr-only">검사시작</p></button></td>
-                        <td><button type="button" name="st2_f"><i class="state test"></i><p class="sr-only">검사시작</p></button></td>
-                        <td><button type="button" name="st2_w"><i class="state test"></i><p class="sr-only">검사시작</p></button></td><!--2차진단 쓰기-->
-                        <td><button type="button" name="st3_r"><i class="state test"></i><p class="sr-only">검사시작</p></button></td>
-                        <td><button type="button" name="st3_f"><i class="state test"></i><p class="sr-only">검사시작</p></button></td>
-                        <td><button type="button" name="st3_w"><i class="state test"></i><p class="sr-only">검사시작</p></button></td><!--3차진단 쓰기-->    
-                        <td><button type="button" name="basket"><i class="state basket"></i><p class="sr-only">삭제</p></button></td><!--삭제-->         
+                        <td><button type="button"><i class="state learn"></i><span class="sr-only">해득</span></button></td>
+                        <td><button type="button"><i class="state learn"></i><span class="sr-only">해득</span></button></td>
+                        <td><button type="button"><i class="state more"></i><span class="sr-only">보충</span></button></td><!--1차진단 쓰기-->
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td>
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td>
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td><!--2차진단 쓰기-->
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td>
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td>
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td><!--3차진단 쓰기-->    
+                        <td><button type="button"><i class="state basket"></i><span class="sr-only">삭제</span></button></td><!--삭제-->         
                     </tr>   
                     <tr>
                         <td><input type="text" name="std_name" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
@@ -235,26 +235,26 @@
                             <div class="select type02">
                                 <div class="lay category">
                                     <input type="hidden" name="catem" value="0">
-                                    <strong><a href="#"><i class="multi ico_x"></i><p class="sr-only">해당없음</p></a></strong>
+                                    <strong><a href="#"><i class="multi ico_x"></i><span class="sr-only">해당없음</span></a></strong>
                                 </div>
                                 <div class="lists">
                                     <ul>
-                                        <li><a href="#" rel=""><i class="multi ico_x"></i><p class="sr-only">해당없음</p></a></li>
-                                        <li><a href="#" rel=""><i class="multi ico_o"></i><p class="sr-only">해당</p></a></li>
+                                        <li><a href="#" rel=""><i class="multi ico_x"></i><span class="sr-only">해당없음</span></a></li>
+                                        <li><a href="#" rel=""><i class="multi ico_o"></i><span class="sr-only">해당</span></a></li>
                                     </ul>
                                 </div>					
                             </div>
                         </td><!--다문화-->
-                        <td><button type="button" name="st1_r"><i class="miss"></i><p class="sr-only">미해득</p></button></td>
-                        <td><button type="button" name="st1_f"><i class="miss"></i><p class="sr-only">미해득</p></button></td>
-                        <td><button type="button" name="st1_w"><i class="miss"></i><p class="sr-only">미해득</p></button></td><!--1차진단 쓰기-->
-                        <td><button type="button" name="st2_r"><i class="test"></i><p class="sr-only">검사시작</p></button></td>
-                        <td><button type="button" name="st2_f"><i class="test"></i><p class="sr-only">검사시작</p></button></td>
-                        <td><button type="button" name="st2_w"><i class="test"></i><p class="sr-only">검사시작</p></button></td><!--2차진단 쓰기-->
-                        <td><button type="button" name="st3_r"><i class="test"></i><p class="sr-only">검사시작</p></button></td>
-                        <td><button type="button" name="st3_f"><i class="test"></i><p class="sr-only">검사시작</p></button></td>
-                        <td><button type="button" name="st3_w"><i class="test"></i><p class="sr-only">검사시작</p></button></td><!--3차진단 쓰기-->    
-                        <td><button type="button" name="basket"><i class="basket"></i><p class="sr-only">삭제</p></button></td><!--삭제-->         
+                        <td><button type="button"><i class="state miss"></i><span class="sr-only">미해득</span></button></td>
+                        <td><button type="button"><i class="state miss"></i><span class="sr-only">미해득</span></button></td>
+                        <td><button type="button"><i class="state miss"></i><span class="sr-only">미해득</span></button></td><!--1차진단 쓰기-->
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td>
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td>
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td><!--2차진단 쓰기-->
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td>
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td>
+                        <td><button type="button"><i class="state test"></i><span class="sr-only">검사시작</span></button></td><!--3차진단 쓰기-->    
+                        <td><button type="button"><i class="basket"></i><span class="sr-only">삭제</span></button></td><!--삭제-->         
                     </tr>                                     
                 </tbody>
             </table>
@@ -278,7 +278,7 @@
         <div id="testIntro" class="window">
             <div class="test__intro">
                 <div class="intro__wrap">
-                    <button type="button" class="btn_close"><i><p class="sr-only">닫기</p></i></button>
+                    <button type="button" class="btn_close"><i><span class="sr-only">닫기</span></i></button>
                     <div class="con_wrap test_intro_hd">
                       
                         <div class="title_box">
@@ -320,19 +320,19 @@
                                         <ul class="row_item num1">
                                             <li class="txt_green">진행</li>
                                             <li>
-                                               <i class="prev"></i><p class="sr-only">왼쪽 방향키</p>이전문항
+                                               <i class="prev"></i><span class="sr-only">왼쪽 방향키</span>이전문항
                                             </li>
                                             <li>
-                                                <i class="next"></i><p class="sr-only">오른쪽 방향키</p>다음문항
+                                                <i class="next"></i><span class="sr-only">오른쪽 방향키</span>다음문항
                                             </li>  
                                         </ul>
                                         <ul class="row_item num2">
                                             <li class="txt_green">채점</li>
                                             <li>
-                                                <i class="top"></i><p class="sr-only">위쪽 방향키</p>정답<i class="sun small"></i><p class="sr-only">해</p>
+                                                <i class="top"></i><span class="sr-only">위쪽 방향키</span>정답<i class="mark small sun"></i><span class="sr-only">해</span>
                                             </li>
                                             <li>
-                                                <i class="foot"></i><p class="sr-only">아래쪽 방향키</p>오답<i class="moon small"></i><p class="sr-only">달</p>
+                                                <i class="foot"></i><span class="sr-only">아래쪽 방향키</span>오답<i class="mark small moon"></i><span class="sr-only">달</span>
                                             </li>
                                         </ul>
                                     </li>
