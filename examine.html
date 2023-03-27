@@ -63,7 +63,7 @@
                 <div>
                     <div class="select type01">
                         <div class="lay category">
-                            <input type="hidden" name="catem" value="0">
+                            <input type="hidden">
                             <strong><a href="#">1학년 1반(2023)</a></strong>
                         </div>
                         <div class="lists">
@@ -100,8 +100,8 @@
 
     <div class="con_wrap lct_box">
         <h2 class="title"><i class="tit_ico num1"></i>진단하기</h2>
-        <ul class="location txt_gray_7 tw_700">
-            <li><i class="ico_home"></i><span class="sr-only">home</span></l></li>
+        <ul class="location">
+            <li><i class="ico home"></i><span class="sr-only">home</span></l></li>
             <li>진단하기</li>
             <li>1. 읽기와 유창성</li>
         </ul>
@@ -114,7 +114,7 @@
                 <p>학생 추가</p>
                 <div class="btn_group">
                     <button type="button" class="circle_btn"><i class="ico_36 minus"></i><span class="sr-only">빼기</span></button>
-                    <input type="text" class="count_txt_input tw_700 font-nsN ts_14" value="20명">
+                    <input type="text" class="count_txt_input" value="20명">
                     <button type="button" class="circle_btn"><i class="ico_36 plus"></i><span class="sr-only">더하기</span></button>
                     <button type="button" class="btn" name="btn_add">추가하기</button>
                 </div>
@@ -148,33 +148,33 @@
                         <th scope="col" rowspan="2">반</th>
                         <th scope="col" rowspan="2">번호</th>
                         <th scope="col" rowspan="2">다문화</th>
-                        <th scope="colgroup" colspan="3" class="th_yellow_1"><span class="step_tit"><i class="step num1"><span class="sr-only">step.1</span></i>1차 진단</span></th>
-                        <th scope="colgroup" colspan="3" class="th_pink_1"><span class="step_tit"><i class="step num2"><span class="sr-only">step.2</span></i>2차 진단</span></th>
-                        <th scope="colgroup" colspan="3" class="th_mint_1"><span class="step_tit"><i class="step num3"><span class="sr-only">step.3</span></i>3차 진단</span></th>
+                        <th scope="colgroup" colspan="3" class="th_yellow type01"><span class="step_tit"><i class="icon step-img num1"><span class="sr-only">step.1</span></i>1차 진단</span></th>
+                        <th scope="colgroup" colspan="3" class="th_pink type01"><span class="step_tit"><i class="icon step-img num2"><span class="sr-only">step.2</span></i>2차 진단</span></th>
+                        <th scope="colgroup" colspan="3" class="th_mint type01"><span class="step_tit"><i class="icon step-img num3"><span class="sr-only">step.3</span></i>3차 진단</span></th>
                         <th scope="col" rowspan="2">삭제</th>
                     </tr>
                     <tr>
-                        <th scope="col" class="th_yellow_2">읽기</th>
-                        <th scope="col" class="th_yellow_2">유창성</th>
-                        <th scope="col" class="th_yellow_2">쓰기</th>
-                        <th scope="col" class="th_pink_2">읽기</th>
-                        <th scope="col" class="th_pink_2">유창성</th>
-                        <th scope="col" class="th_pink_2">쓰기</th>
-                        <th scope="col" class="th_mint_2">읽기</th>
-                        <th scope="col" class="th_mint_2">유창성</th>
-                        <th scope="col" class="th_mint_2">쓰기</th>
+                        <th scope="col" class="th_yellow type02">읽기</th>
+                        <th scope="col" class="th_yellow type02">유창성</th>
+                        <th scope="col" class="th_yellow type02">쓰기</th>
+                        <th scope="col" class="th_pink type02">읽기</th>
+                        <th scope="col" class="th_pink type02">유창성</th>
+                        <th scope="col" class="th_pink type02">쓰기</th>
+                        <th scope="col" class="th_mint type02">읽기</th>
+                        <th scope="col" class="th_mint type02">유창성</th>
+                        <th scope="col" class="th_mint type02">쓰기</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td scope="row"><input type="text" name="std_name" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
-                        <td><input type="text" name="std_year" value="1"><div id="std_year" class="input_txt">1</div></td>
-                        <td><input type="text" name="std_class" value="1"><div id="std_class" class="input_txt">1</div></td>
-                        <td><input type="text" name="std_number" value="1"><div id="std_number" class="input_txt">1</div></td>
+                        <td scope="row"><input type="text" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
+                        <td><input type="text" value="1"><div id="std_year" class="input_txt">1</div></td>
+                        <td><input type="text" value="1"><div id="std_class" class="input_txt">1</div></td>
+                        <td><input type="text" value="1"><div id="std_number" class="input_txt">1</div></td>
                         <td>
                             <div class="select type02">
                                 <div class="lay category">
-                                    <input type="hidden" name="catem" value="0">
+                                    <input type="hidden">
                                     <strong><a href="#"><i class="multi ico_x"></i><span class="sr-only">해당없음</span></a></strong>
                                 </div>
                                 <div class="lists">
@@ -185,16 +185,16 @@
                                 </div>					
                             </div>
                         </td><!--다문화-->
-                        <td><button type="button" name="st1_r" id="test01"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
-                        <td><button type="button" name="st1_f" id="test02"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
-                        <td><button type="button" name="st1_w" id="test03"><i class="state test"><span class="sr-only">검사시작</span></i></button></td><!--1차진단 쓰기-->
-                        <td><button type="button" name="st2_r"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
-                        <td><button type="button" name="st2_f"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
-                        <td><button type="button" name="st2_w"><i class="state test"><span class="sr-only">검사시작</span></i></button></td><!--2차진단 쓰기-->
-                        <td><button type="button" name="st3_r"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
-                        <td><button type="button" name="st3_f"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
-                        <td><button type="button" name="st3_w"><i class="state test"><span class="sr-only">검사시작</span></i></button></td><!--3차진단 쓰기-->    
-                        <td><button type="button" name="basket"><i class="basket"><span class="sr-only">삭제</span></i></button></td><!--삭제-->         
+                        <td><button type="button" id="test01"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button" id="test02"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button" id="test03"><i class="state test"><span class="sr-only">검사시작</span></i></button></td><!--1차진단 쓰기-->
+                        <td><button type="button"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button"><i class="state test"><span class="sr-only">검사시작</span></i></button></td><!--2차진단 쓰기-->
+                        <td><button type="button"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button"><i class="state test"><span class="sr-only">검사시작</span></i></button></td>
+                        <td><button type="button"><i class="state test"><span class="sr-only">검사시작</span></i></button></td><!--3차진단 쓰기-->    
+                        <td><button type="button"><i class="basket"><span class="sr-only">삭제</span></i></button></td><!--삭제-->         
                     </tr>
                     <tr>
                         <td><input type="text" value="홍길동" class="input_name"><div id="std_name" class="input_txt">홍길동</div></td>
@@ -282,8 +282,8 @@
                     <div class="con_wrap test_intro_hd">
                       
                         <div class="title_box">
-                            <h3 class="txt_gray_5">한글키득키득</h3>
-                            <span class="title_cover"><h2>진단하기</h2><p class="badge big">읽기</p></span>
+                            <p class="brand-name">한글키득키득</p>
+                            <div class="title_cover"><h2>진단하기</h2><p class="badge big">읽기</p></div>
                             <p class="sub_txt">제시되는 단어 또는 문장을 바르게 읽어봅시다.</p>
                             <div class="btn_wrap">
                                 <div><a href="#" class="btn white prep">연습하기</a></div>
@@ -368,7 +368,6 @@
 
     </div>
 </div><!--진단하기 modal :: End -->
-
 
 
 </body>
