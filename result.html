@@ -4,125 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>키득키득</title>
-
+    <title>키득키득 > menu2(진단결과)</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/contents.css">    
 
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="js/Chart.min.js"></script>
+    <script type="text/javascript" src="js/contents.js"></script>
+    <script type="text/javascript" src="js/include.js"></script>
 
 </head>
 
- <script type="text/javascript">
-    $(document).ready(function() {
-        $('.select.type01, .select.type02, .select.type03').on('click', function (event) {
-        $(this).toggleClass('on');
-        });
-        $('body').on('click', function (e) {
-        if (!$('.select.type01, .select.type02, .select.type03').is(e.target) 
-            && $('.select.type01, .select.type02, .select.type03').has(e.target).length === 0 
-            && $('.on').has(e.target).length === 0
-        ) {
-            $('.select.type01, .select.type02, .select.type03').removeClass('on');
-        }
-        }); // select add class 'on'
-
-        $('.btn_group button#print').click(function() {
-            var modal_id = $(this).attr('id');
-            $('.modal' + '#' + modal_id).css({
-                display: 'flex', 
-            });
-        })
-        $('.btn_close').click(function() {
-            $('.modal').css({
-                display: 'none',
-            });
-        }) // modal
-
-        var ctx = document.getElementById("chartType01");
-        var myDoughnutChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-            datasets: [{
-                data: ["30","20","10","10"],
-                backgroundColor: ["#4D8DE7", "#F0F6FC","#929EA9","#eee"]
-            }]
-        }
-        }); // 진단결과 한글해득비율 차트
-
-        $('#step1').click(function(){
-            if($("input:checkbox[id='step1']") .prop("checked")) {
-            $("input:checkbox[name='step_all_1']") .prop("checked" , true);
-            } else {                                                         
-            $("input:checkbox[name='step_all_1']") .prop("checked", false);
-            }
-        });
-
-        $('#step2').click(function(){
-            if($("input:checkbox[id='step2']") .prop("checked")) {  
-            $("input:checkbox[name='step_all_2']") .prop("checked" , true); 
-            } else {                                                         
-            $("input:checkbox[name='step_all_2']") .prop("checked", false); 
-            }
-        });
-
-        $('#step3').click(function(){
-            if($("input:checkbox[id='step3']") .prop("checked")) {
-            $("input:checkbox[name='step_all_3']") .prop("checked" , true);
-            } else {                                                         
-            $("input:checkbox[name='step_all_3']") .prop("checked", false);
-            }
-        }); // checkbox 전체선택
-    });
+<script>
+    var ctx = document.getElementById("chartType01");
+    var myDoughnutChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        datasets: [{
+            data: ["30","20","10","10"],
+            backgroundColor: ["#4D8DE7", "#F0F6FC","#929EA9","#eee"]
+        }]
+    }
+    }); // 진단결과 한글해득비율 차트
 </script>
 
 <body>
 
-<!--HEADER :: Start -->
-<header>
-    <div class="header main">
-        <h1 class="logo_w"><a href="/intro.html"><img src="images/common/logo_w.svg" alt="온채움 한글해득 지원 시스템 키득키득"></a></h1>
-        <ul class="member">
-            <li class="name"><span>대한초등학교 홍길동</span>님,&nbsp;안녕하세요!<i></i></li>
-            <li class="level">
-                <div>
-                    <div class="select type01">
-                        <div class="lay category">
-                            <input type="hidden" name="catem" value="0">
-                            <strong><a href="#">1학년 1반(2023)</a></strong>
-                        </div>
-                        <div class="lists">
-                            <ul>
-                                <li><a href="#" rel="">1학년 1반(2018)</a></li>
-                                <li><a href="#" rel="">1학년 1반(2019)</a></li>
-                                <li><a href="#" rel="">1학년 1반(2020)</a></li>
-                                <li><a href="#" rel="">1학년 1반(2021)</a></li>
-                                <li><a href="#" rel="">1학년 1반(2022)</a></li>
-                                <li><a href="#" rel="">1학년 1반(2023)</a></li>
-                            </ul>
-                        </div>					
-                    </div>                    
-                </div>
-            </li>
-            <li>
-                <button class="btn white">학급추가<i></i></button>
-            </li>
-        </ul>
-    </div>
-
-    <nav class="gnb">
-        <ul>
-            <li><a href="examine.html"><i class="menu_ico num1"></i>진단하기</a></li>
-            <li class="gnb_on"><a href="#"><i class="menu_ico num2"></i>진단결과</a></li>
-            <li><a href="#"><i class="menu_ico num3"></i>나의학급</a></li>
-            <li><a href="#"><i class="menu_ico num4"></i>우리 학급 현황</a></li>
-        </ul>
-    </nav>
-</header><!--HEADER :: End -->
+<!--[include]HEADER :: Start -->
+<div id="header"></div>
+<!--[include]HEADER :: End -->
 
 <!--CONTENTS :: Start -->
 <div id="result" class="container">
@@ -266,7 +176,7 @@
                         </th>
                         <th scope="col" class="th_mint type01">
                             <div class="th_inner">
-                                <input type="checkbox" id="step3" name="step_all_3">
+                                <input type="checkbox" id="step3" name="step_all_3" class="step_all_3">
                                 <label for="step3"><span class="step_tit"><i class="icon step-img num3"><p class="sr-only">step.3</p></i>3차 진단</span></label>
                             </div>
                         </th>
@@ -340,13 +250,13 @@
     </div>
 </div><!--CONTENTS :: End -->
 
-<!--FOOTER :: Start -->
-<footer>
-    <div class="main_ft bg_gray">
-        <p>COPYRIGHT&copy; 2023 충청남도교육청. ALL RIGHTS RESERVED.</p>
-    </div>
-</footer><!--FOOTER :: End -->
+<!--[include]FOOTER :: Start -->
+<div id="footer"></div>
+<!--[include]FOOTER :: End -->
 
+
+
+<!--일괄인쇄 팝업-->
 <div id="print" class="modal">
     <div class="modal__wrap type02">
         <div id="all-print" class="window">
