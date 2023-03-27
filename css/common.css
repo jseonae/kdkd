@@ -44,22 +44,18 @@ table th, table td img {vertical-align:middle}
 
 /* 진단 상태 아이콘*/
 .state {margin: auto; height: 36px; width: 32px; display: block;}
-.state.test {background: url(../images/common/ico_test.svg) no-repeat;}
-.state.learn {background: url(../images/common/ico_learn.svg) no-repeat;}
-.state.miss {background: url(../images/common/ico_miss.svg) no-repeat;}
-.state.more {width: 60px; background: url(../images/common/ico_more.svg) no-repeat;}
+.state.test {background: url(../images/common/ico_test.svg) no-repeat;}  /*검사시작-모니터*/
+.state.learn {background: url(../images/common/ico_learn.svg) no-repeat;} /*해득*/
+.state.miss {background: url(../images/common/ico_miss.svg) no-repeat;} /*미해득*/
+.state.more {width: 60px; background: url(../images/common/ico_more.svg) no-repeat;} /*보충*/
+.state.test_learn {color:var(--c_blue); font-size:1.8rem; font-weight: 700;} /*진단결과 - 수준 - 해득*/
+.state.test_miss {color: #AFAFAF; font-size:1.8rem; font-weight: 700; } /*진단결과 - 수준 - 미해득*/
+
 
 /* 다문화 여부 아이콘*/
 .multi {display: block; width: 20px; height: 20px;}
 .multi.ico_x {background: url(../images/common/ico_x.svg) no-repeat;}
 .multi.ico_o {background: url(../images/common/ico_o.svg) no-repeat;}
-
-
-
-
-
-
-
 
 
 
@@ -95,10 +91,6 @@ ol {color: #333;line-height: 1.5;}
 .list-bar {margin-left: 4px;}
 .list-bar > li {position: relative;margin-bottom: 6px;padding-left: 12px;font-weight: 400;font-size: 1.6rem;line-height: 1.6;letter-spacing: -0.05em;color: #545454;}
 .list-bar > li::before {content: '';position: absolute;top: 13px;left: 0;width: 6px;height: 1px;background: #757575;border-radius: 50%;}
-
-
-
-
 
 .btn-box {margin: 72px 0 24px;}
 .btn-box.center {text-align: center;}
