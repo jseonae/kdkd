@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="k0">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,19 +19,19 @@
 
  <script type="text/javascript">
     $(document).ready(function() {
-        $('.select.type01, .select.type02, .select.type03, #stageBtn').on('click', function (event) {
+        $('.select.type01, .select.type02').on('click', function (event) {
         $(this).toggleClass('on');
         });
         $('body').on('click', function (e) {
-        if (!$('.select.type01, .select.type02, .select.type03, #stageBtne').is(e.target) 
-            && $('.select.type01, .select.type02, .select.type03, #stageBtn').has(e.target).length === 0 
+        if (!$('.select.type01, .select.type02').is(e.target) 
+            && $('.select.type01, .select.type02').has(e.target).length === 0 
             && $('.on').has(e.target).length === 0
         ) {
-            $('.select.type01, .select.type02, .select.type03, #stageBtn').removeClass('on');
+            $('.select.type01, .select.type02').removeClass('on');
         }
-        }); // add class 'on' :: 적용태그 select, button
+        }); // select add class 'on'
 
-        $('.std_list table td button').click(function() {
+        $('.btn_group button#print').click(function() {
             var modal_id = $(this).attr('id');
             $('.modal' + '#' + modal_id).css({
                 display: 'flex', 
@@ -130,7 +130,7 @@
     <div class="con_wrap lct_box">
         <h2 class="title"><i class="tit_ico num2"></i>진단결과</h2>
         <ul class="location txt_gray_7 tw_700">
-            <li><i class="ico_home"></i><p class="ir">home</p></l></li>
+            <li><i class="ico_home"></i><p class="sr-only">home</p></l></li>
             <li>진단결과</li>
             <li>나의학급결과</li>
         </ul>
@@ -230,7 +230,7 @@
         <h3>학생개별 진단결과</h3>
         <div class="btn_group">
             <ul>
-                <li><input type="checkbox" id="closing" name="class_close" value=""><label for="closing">학급마감</label></li>
+                <li><input type="checkbox" id="closing" name="class_close"><label for="closing">학급마감</label></li>
                 <li><button type="button" id="print" class="btn">일괄인쇄</button></li>
             </ul>
         </div>
@@ -255,19 +255,19 @@
                         <th scope="col" class="th_yellow_1">
                             <div class="th_inner">
                                 <input type="checkbox" id="step1" name="step_all_1" class="step_all_1">
-                                <label for="step1"><span class="step_tit"><i class="step num1"></i>1차 진단</span></label>
+                                <label for="step1"><span class="step_tit"><i class="step num1"><p class="sr-only">step.1</p></i>1차 진단</span></label>
                             </div>
                         </th>
                         <th scope="col" class="th_pink_1">
                             <div class="th_inner">
                                 <input type="checkbox" id="step2" name="step_all_2" class="step_all_2">
-                                <label for="step2"><span class="step_tit"><i class="step num2"></i>2차 진단</span></label>
+                                <label for="step2"><span class="step_tit"><i class="step num2"><p class="sr-only">step.2</p></i>2차 진단</span></label>
                             </div>
                         </th>
                         <th scope="col" class="th_mint_1">
                             <div class="th_inner">
                                 <input type="checkbox" id="step3" name="step_all_3">
-                                <label for="step3"><span class="step_tit"><i class="step num3"></i>3차 진단</span></label>
+                                <label for="step3"><span class="step_tit"><i class="step num3"><p class="sr-only">step.3</p></i>3차 진단</span></label>
                             </div>
                         </th>
                         <th scope="col">수준</th>
@@ -281,25 +281,25 @@
                         <td><input type="text" name="std_number" value="1"><div id="std_number" class="input_txt">1</div></td>
                         <td>
                             <div class="select type02">
-                                <strong><a href="#" rel=""><i class="ico_o"></i><p class="ir">해당</p></a></strong>
+                                <strong><a href="#" rel=""><i class="ico_o"><p class="sr-only">해당</p></i></a></strong>
                             </div>
                         </td>
                         <td>
                             <div class="td_inner">
                                 <input type="checkbox" id="row_1_1" name="step_all_1" class="step_all_1">
-                                <label for="row_1_1"><i class="learn"><p class="ir">해득</p></i></label>
+                                <label for="row_1_1"><i class="learn"><p class="sr-only">해득</p></i></label>
                             </div>
                         </td>
                         <td>
                             <div class="td_inner">
                                 <input type="checkbox" id="row_1_2" name="step_all_2" class="step_all_2">
-                                <label for="row_1_2"><i class="miss"><p class="ir">미해득</p></i></label> 
+                                <label for="row_1_2"><i class="miss"><p class="sr-only">미해득</p></i></label> 
                             </div>
                         </td>
                         <td>
                             <div class="td_inner">
                                 <input type="checkbox" id="row_1_3" name="step_all_3" class="step_all_3">
-                                <label for="row_1_3"><i class="test"><p class="ir">검사시작</p></i></label> 
+                                <label for="row_1_3"><i class="test"><p class="sr-only">검사시작</p></i></label> 
                             </div>
                         </td>
                         <td><p class="test_learn">해득</p></td>   
@@ -311,25 +311,25 @@
                         <td><input type="text" name="std_number" value="2"><div id="std_number" class="input_txt">2</div></td>
                         <td>
                             <div class="select type02">
-                                <strong><p class="ir">해당없음</p></strong> <!--해당없음일때는 출력되지 않게-->
+                                <strong><p class="sr-only">해당없음</p></strong> <!--해당없음일때는 출력되지 않게-->
                             </div>
                         </td>
                         <td>
                             <div class="td_inner">
                                 <input type="checkbox" id="row_2_1" name="step_all_1">
-                                <label for="row_2_1"><i class="learn"><p class="ir">해득</p></i></label>
+                                <label for="row_2_1"><i class="learn"><p class="sr-only">해득</p></i></label>
                             </div>
                         </td>
                         <td>
                             <div class="td_inner">
                                 <input type="checkbox" id="row_2_2" name="step_all_2">
-                                <label for="row_2_2"><i class="more"><p class="ir">보충</p></i></label> 
+                                <label for="row_2_2"><i class="more"><p class="sr-only">보충</p></i></label> 
                             </div>
                         </td>
                         <td>
                             <div class="td_inner">
                                 <input type="checkbox" id="row_2_3" name="step_all_3">
-                                <label for="row_2_3"><i class="test"><p class="ir">검사시작</p></i></label> 
+                                <label for="row_2_3"><i class="test"><p class="sr-only">검사시작</p></i></label> 
                             </div>
                         </td>
                         <td><p class="test_miss">미해득</p></td>   
@@ -347,8 +347,33 @@
     </div>
 </footer><!--FOOTER :: End -->
 
+<div id="print" class="modal">
+    <div class="modal__wrap type02">
+        <div id="allPrint" class="window">
+            <div class="result__print">
+                <div class="print__wrap">
+                    <button type="button" class="btn_close type02"><i><p class="sr-only">닫기</p></i></button>
+                    <div class="result_print_hd">
+                        <i class="ico_prt"></i>
+                        <h4>인쇄할 항목을 선택하세요</h4>
+                    </div>
+                    <div class="print_btn_wrap">
+                        <ul class="item num1">
+                            <button type="button" class="btn on">전체</button> <!--선택했을 때 on속성 활성화-->
+                        </ul>
+                        <ul class="item num2">
+                            <button type="button" class="btn">학생정보</button>
+                            <button type="button" class="btn">영역별 결과</button>
+                            <button type="button" class="btn">세부결과</button>
+                            <button type="button" class="btn">결과안내</button>
+                        </ul>
+                    </div>
+                    <a href="#" onclick="window.print(); return false;" target="_blank" class="btn">인쇄하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
-
-<!--20230321 18:40 커밋-->
