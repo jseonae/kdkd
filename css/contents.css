@@ -178,7 +178,7 @@ footer .intro_ft p {color:#fff;}
 .std_list .more {width:60px; background: url(../images/common/ico_more.svg) no-repeat 50%;}
 .std_list .basket {width:32px; background: url(../images/common/ico_basket.svg) no-repeat 50%;}
 .std_list .test_learn {color:var(--c_blue); font-size:1.8rem; font-weight: 700;}
-.std_list .test_miss {color: #AFAFAF; font-size:1.8rem; font-weight: 700; }
+.std_list .test_miss {color: #AFAFAF; font-size:1.8rem; font-weight: 700;}
 
 /* exam - 학생목록 테이블 헤더*/
 .std_list table thead .th_yellow_1 {background:var(--c_yellow_2);color: var(--c_yellow_m);border: none; border-right: 1px solid var(--c_yellow_2);}
