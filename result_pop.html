@@ -32,17 +32,14 @@
 .result-pop .container section.con1 .wrapper dl dd{display:flex;gap:1rem;padding:1rem 2rem 0 0}
 .result-pop .container section.con1 .wrapper dl dd.wide{width:100%;}
 .result-pop .container section.con1 .wrapper dl:last-child{gap:1.6rem;flex-wrap:nowrap;width:100%;}
-.result-pop .container section.con1 .wrapper dl:last-child dd{flex-direction:column;flex-basis:100%;align-items:center;padding:1.8rem;border:1px solid var(--line_gray);border-radius:.4em;}
-
+.result-pop .container section.con1 .wrapper dl:last-child dd{flex-direction:column;flex-basis:100%;align-items:center;padding:1.8rem;border:1px solid var(--line_gray);border-radius:.4em;color:#333;}
+.result-pop .container section.con1 .wrapper dl:last-child dd span{display:flex;align-items:center;gap:.4rem;}
 .result-pop .container section.con4 .wrapper{display:flex;gap:4rem}
 .result-pop .container section.con4 article h3{display:inline-block;padding:1rem 1.6rem;color:#fff;border-radius:10rem;font-size:1.5rem;background:var(--c_mint_m);}
 .result-pop .container section.con4 article:last-child h3{background:var(--c_blue_m)}
 .result-pop .container section.con4 article p{margin:1rem .8rem 0;}
 
-.step{border:1px solid;padding:.8rem;font-size:1.5rem;border-radius:.4rem;}
-.step.sp1{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}
-.step.sp2{background-color:var(--c_pink_1);color:var(--c_pink_m);border-color:var(--c_pink_m)}
-.step.sp3{background-color:var(--c_mint_1);color:var(--c_mint_m);border-color:var(--c_mint_m)}
+
 </style>
  <div class="result-pop">
 <!--CONTENTS :: Start -->
@@ -70,8 +67,8 @@
         <dl>
             <dt class="sr-only">검사정보</dt>
             <dd><b>유형</b> <span class="step sp3">3차진단</span></dd>
-            <dd><b>검사일시</b> 2023.9.23</dd>
-            <dd><b>검사결과</b> <i class="learn"><p class="ir">해득</p></i>해득</dd>
+            <dd><b>검사일시</b><span>2023.9.23</span></dd>
+            <dd><b>검사결과</b><span class="ing_learn"><i class="state learn"></i>해득</span></dd>
         </dl>
         </div>
     </section>
