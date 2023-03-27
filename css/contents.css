@@ -3,7 +3,6 @@
 /* 공통*/
 footer {width: 100%; text-align: center; font-size: 1.5rem;}
 .con_wrap {width: 100%;}
-.ir {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;} /*숨김텍스트*/
 
 /* intro */
 #intro {position: relative; background:url(../images/intro/main_bg.png) no-repeat center; background-color:#F6F6F6;}
@@ -304,27 +303,27 @@ footer p{font-size:1.5rem}
 .test__intro .test_exp .box_item.num4 {width: 22%; display: flex; flex-direction: column; align-items: center;justify-content: flex-end;}
 .test__intro .test_exp .box_item.num4 div {margin-bottom:30px;}
 
-/* 읽기 진단*/
+/* 진단하기 문제 시작*/
 .test__start {width: 100%; background:url(../images/common/sub_bg02.jpg) no-repeat; padding: 35px 45px; font-family: var(--f_nsR);}
-
 .test__start .start__hd {position: relative; width: 100%; display: flex; justify-content: space-between; margin-bottom:20px;}
 .test__start .start__hd .start__title {display: flex;align-items: center; gap: 10px;}
 .test__start .start__hd .btn_close {right: 0; top: -24px;}
 .test__start .start__hd h2 {font-weight: 800; font-size: 3.6rem; line-height: 41px; color:#fff;}
+.test__start .start__hd h2 a {color:#fff;}
 .test__start .start__hd .badge.small {border-radius: 8px; padding: 7px; font-size: 2rem; line-height: 23px; font-weight: 700; color: var(--c_blue);border: 1px solid var(--c_blue); background-color:#fff;}
 .test__start .start__hd .sub_txt {color:#fff;}
 
 /* 문제 유형 선택 버튼*/
-.test__start .start__con {width: 100%;display: flex; flex-direction: column; align-items: flex-start; padding: 30px 50px; background: #FFFFFF; border-radius: 40px;}
-.test__start .start__con .btn__list {display: flex; justify-content: center; gap: 10px;}
-.test__start .start__con .btn__list li {position: relative; height: 100%; font-size: 1.6rem;}
-.test__start .start__con .btn__list input[type="radio"] {position: absolute; display: flex; opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer;}
-.test__start .start__con .btn__list .type__btn {display: block; padding: 16px; border: 1px solid var(--c_blue); border-radius: 4px; color: var(--c_blue); font-weight: 800;}
-.test__start .start__con .btn__list .type__btn i {display: none; }
-.test__start .start__con .btn__list input[type="radio"]:checked ~ .type__btn {background: #F7FAFD; display: flex;justify-content: space-between; gap: 5px;}
-.test__start .start__con .btn__list input[type="radio"]:checked ~ .type__btn i {display: block; width: 16px;height: 16px; background: url(../images/common/arrow_under_blue.svg)no-repeat 50%;}
+.test__start .start__con {width: 100%;display: flex; flex-direction: column; align-items: flex-start; padding: 30px 50px; background: #FFF; border-radius: 40px;}
+.test__start .start__con .tabmenu {display: flex; justify-content: center; gap: 10px;}
+.test__start .start__con .tabmenu .tab {position: relative; height: 100%; font-size: 1.6rem;}
+.test__start .start__con .tabmenu .tab button {position: absolute; width: 100%; height: 100%;}
+.test__start .start__con .tabmenu .tab .type__btn {display: block; padding: 16px; border: 1px solid var(--c_blue); border-radius: 4px; color: var(--c_blue); font-weight: 800;}
+.test__start .start__con .tabmenu .tab .type__btn i {display: none;}
+.test__start .start__con .tabmenu .tab button.tabon ~ .type__btn {background: var(--c_blue_1); display: flex;justify-content: space-between; gap: 5px;}
+.test__start .start__con .tabmenu .tab button.tabon ~ .type__btn i {display: block; width: 16px;height: 16px; background: url(../images/common/arrow_under_blue.svg)no-repeat 50%;}
 
-/* 문제 출제 박스__슬라이더*/
+/* 문제 출제 박스*/
 .test__start .start__con .quest_box {position: relative; display: flex; justify-content: center; align-items: center; padding:40px 0; font-family: var(--f_nsR); font-weight: 800;}
 .test__start .start__con .slide_box {display: flex; flex-direction: column; margin: auto;}
 .test__start .start__con .slide_box .quest_num_box {text-align: center; font-size: 3rem; line-height: 34px;}
@@ -333,21 +332,20 @@ footer p{font-size:1.5rem}
 .test__start .start__con .slide_box .quest_num_box .quest_num .circle.type02 {display: block; width: 50px;height: 50px; background:var(--c_blue_1);
     border: 1px solid var(--c_blue); border-radius: 100px; text-align: center; line-height: 50px; color: var(--c_blue);}
 
-.test__start .start__con .slide_box .quest_item_wrap {width: 100%;}
-.test__start .start__con .slide_box .quest_item_wrap .quest_item {font-size: 33.2rem; line-height: 377px;}
+.test__start .start__con .slide_box .quest_item_box {width: 100%;}
+.test__start .start__con .slide_box .quest_item_box .quest_item {font-size: 33.2rem; line-height: 377px;}
+.test__start .start__con .slide_box .quest_item_box .quest_item.ready {color:#EDEDED;}
 
-/* 정답 표기 박스*/
+/* 정답 표기 버튼*/
 .test__start .start__con .answer_box {position: absolute; right: 0;}
 .test__start .start__con .answer_box li:first-child {margin-bottom: 155px;}
-
 .test__start .start__con .answer_box i {display: block; width: 110px; height: 110px;}
 .test__start .start__con .answer_box i.sun.big {background:url(../images/common/sun_big.svg) no-repeat 50%;}
 .test__start .start__con .answer_box i.moon.big {background:url(../images/common/moon_big.svg) no-repeat 50%;}
-
 .test__start .start__con .answer_box i.sun.big:hover {background:url(../images/common/sun_big_on.svg) no-repeat 50%;}
 .test__start .start__con .answer_box i.moon.big:hover {background:url(../images/common/moon_big_on.svg) no-repeat 50%;}
 
-/* 슬라이더 버튼*/
+/* 슬라이드 버튼*/
 .test__start .start__con .slide_btn_box {width: 100%; position: absolute;display: inline-flex; justify-content: space-between; height: 102px;}
 .test__start .start__con .slide_btn_box div {position: absolute; width: 102px; height: 102px; overflow: hidden; border-radius: 102px; transition: var(--ani_time);}
 .test__start .start__con .slide_btn_box div a {width: 102px; height: 102px; display: block;}
@@ -356,10 +354,13 @@ footer p{font-size:1.5rem}
 .test__start .start__con .slide_btn_box div.btn_prev:hover {background:url(../images/common/prev_big_ov.svg) no-repeat 50%;}
 .test__start .start__con .slide_btn_box div.btn_next:hover {background:url(../images/common/next_big_ov.svg) no-repeat 50%;}
 
+/* 진행단계 그래프*/
 .test__start .start__con .stage_nav {display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .test__start .start__con .stage_nav .frame {display: flex;}
-.test__start .start__con .stage_nav .frame.num1 {width:80%;}
+.test__start .start__con .stage_nav .frame.num1 {width:75%;}
 .test__start .start__con .stage_nav .frame.num2 {width: auto; position: relative; display: flex; align-items: center; gap: 20px;}
+
+#reading .test__start .start__con .stage_nav .frame.num1 {width:80%;}
 
 .test__start .start__con .grap__wrap {width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px;}
 .test__start .start__con .grap__wrap .sub_title {display: inline-flex;}
@@ -369,14 +370,21 @@ footer p{font-size:1.5rem}
 .test__start .start__con .grap__wrap .chart_wrap .chart_bar {width: 100%; background: #ddd; border-radius: 15px; overflow:hidden;}
 .test__start .start__con .grap__wrap .chart_wrap .chart_bar .percent {display: block; width:40%; height: 15px; border-radius: 15px; background: var(--c_blue);}
 .test__start .start__con .grap__wrap .chart_wrap .count_wrap {display: flex; align-items: center; gap: 10px; color:#000; font-size: 1.6rem;}
+.test__start .start__con .grap__wrap .chart_wrap .count_wrap span {color:#AFAFAF;font-weight: 800;}
 .test__start .start__con .grap__wrap .chart_wrap .count_wrap .circle.type01 {width: 24px; height: 24px;background: var(--c_blue);border-radius: 100px;color: #FFF;text-align: center;line-height: 24px;}
 .test__start .start__con .grap__wrap.off {display: none;}
 
-.test__start .start__con .btn.stage {width: 118px;height: 118px;display:block;border-radius: 118px;overflow: hidden;padding: 0;background: initial;float: left;}
-.test__start .start__con .btn.stage i {width: 118px;height: 118px; display:block; background: url(../images/common/stage_btn_img.svg)no-repeat 50%;}
+/* 문제 저장, 진행단계 활성화 버튼 등*/
+.test__start .start__con .btn.stage {width: 118px;display:block;border-radius: 118px;overflow: hidden;padding: 0;background: initial;float: left;}
+.test__start .start__con .btn.stage i {height: 118px; display:block; background: url(../images/common/stage_btn_img.svg)no-repeat 50%;}
 .test__start .start__con .btn.stage.on > i {background: url(../images/common/stage_btn_img_on.svg)no-repeat 50%;}
 .test__start .start__con .btn.save {background: var(--c_blue); color:#fff; font-family: var(--f_nsR); font-size: 1.5rem; padding: 20px 25px; transition: var(--ani_time);}
 .test__start .start__con .btn.save:hover {background: var(--c_blue_m);}
+
+.test__start .start__con .btn.record {background: #333;}
+.test__start .start__con .btn.record:hover {background: #555;}
+
+.test__start .start__con .time_label {font-weight: 800; font-size: 2rem; color: #1F1F1F;}
 
 /* 진행단계 네비게이션 활성화 박스*/
 .test__start .start__con .stage__wrap table {display: none; font-size:1.6rem;}
@@ -452,6 +460,30 @@ i.moon.small {background:url(../images/common/moon_small.svg) no-repeat 50%;}
 #result .table_wrap tbody .select.type02 strong {height: 38px; display: block; line-height: 5.5rem;}
 #result .table_wrap tbody .select.type02 strong a {display: inline-block;}
 
+/* modal type02 :: result 일괄인쇄 팝업창*/
+.modal__wrap.type02 {width:28%; height:34%; overflow-y: visible;}
+.modal__wrap .result__print {width: 100%; background-color: #fff;border: 3px solid var(--c_blue); border-radius: 8px; padding: 40px;}
+.modal__wrap .print__wrap {width: 100%; height: 100%; text-align: center; }
+
+.modal__wrap .result_print_hd {display: flex; line-height: 32px; gap: 10px;}
+.modal__wrap .result_print_hd i.ico_prt {width: 32px; height: 32px; background: url(../images/common/print_blue.svg) no-repeat;}
+.modal__wrap .result_print_hd h4 {font-weight: 800; font-size: 16px; color:var(--c_blue);}
+
+.modal__wrap .print_btn_wrap {display: flex;gap: 10px; margin: 31px 0;}
+.modal__wrap .print_btn_wrap .item {display: flex;}
+.modal__wrap .print_btn_wrap .item button {padding: 12px 16px; border: 1px solid #CACACA; border-radius: 4px; color: #757575; background: #fff;}
+.modal__wrap .print_btn_wrap .item button:hover {background:var(--c_blue); color: #fff; border: 1px solid var(--c_blue);}
+.modal__wrap .print_btn_wrap .item button.on {background:var(--c_blue); color: #fff; border: 1px solid var(--c_blue);}
+
+.modal__wrap .print_btn_wrap .item.num1 {width: 40%;}
+.modal__wrap .print_btn_wrap .item.num1 button {width:100%;}
+.modal__wrap .print_btn_wrap .item.num2 {width:60%; flex-wrap: wrap; gap: 10px;}
+.modal__wrap .print_btn_wrap .item.num2 button {width:calc(50% - 10px); }
+
+.modal__wrap .print__wrap a.btn {display: inline-block;}
+
+.btn_close.type02 {display: block; width: 40px;  height: 40px; background: url(../images/common/btn_ico_d.svg) no-repeat; position: absolute;right: 40px; top: 40px;}
+
 /* checkbox 커스텀*/
 input[type="checkbox"] {display: none;}
 input[type="checkbox"] + label::after {content: '';display: block;width: 16px;height: 16px;position: absolute;background: url(../images/common/checkbox.svg) no-repeat;}
@@ -489,9 +521,8 @@ input[type="checkbox"]:checked + label::after {content:'';background: url(../ima
 .select.type02.on .lists {border-radius: 8px; height: 82px; overflow: hidden;}
 .select.type02 .lists ul li a {height: 40px; border-top: 1px dotted #E3EEF3; padding: 9px 0 0 0;}
 .select.type02 .lists ul li:first-child a {border-top:none;}
-.select.type02 i {display: block;width:20px; height: 20px; margin: 0 20px;}
-.select.type02 i.ico_x {background: url(../images/common/ico_x.svg) no-repeat 50%;}
-.select.type02 i.ico_o {background: url(../images/common/ico_o.svg) no-repeat 50%;}
+.select.type02 i {margin: 0 20px;}
+
 
 /*  select type03 :: 사용영역(진단결과)*/
 .select.type03 {width: 240px; height: 48px;}
