@@ -37,6 +37,7 @@
 	
 	/* bg / line - color */
 	--bg_body : #F5F7FB;
+	--line_gray:#cacaca;
 
 	--f_nsN:'NanumSquareNeo';
 	--f_nsR:'NanumSquareRound';
