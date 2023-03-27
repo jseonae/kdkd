@@ -30,7 +30,14 @@ table th:first-child, table td:first-child {border-left:none;}
 table th:last-child, table td:last-child {border-right:none;}
 table th, table td img {vertical-align:middle}
 
+/*테이블 헤더 스타일*/
+.th_yellow.type01 {background:var(--c_yellow_2);color: var(--c_yellow_m);border: none; border-right: 1px solid var(--c_yellow_2);}
+.th_pink.type01 {background:var(--c_pink_2); color: var(--c_pink_m); border: none; border-right: 1px solid var(--c_pink_2);}
+.th_mint.type01 {background:var(--c_mint_2); color: var(--c_mint_m); border: none; border-right: 1px solid var(--c_mint_2);}
 
+.th_yellow.type02 {background: var(--c_yellow_1); border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_yellow_3); color:var(--c_yellow);}
+.th_pink.type02 {background: var(--c_pink_1);border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_pink_3); color:var(--c_pink);}
+.th_mint.type02 {background:var(--c_mint_1); border-width: 1px 1px 1px 0px; border-style: solid; border-color:var(--c_mint_3); color:var(--c_mint);}
 
 
 /* 공통 아이콘*/
