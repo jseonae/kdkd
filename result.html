@@ -19,15 +19,15 @@
 
  <script type="text/javascript">
     $(document).ready(function() {
-        $('.select.type01, .select.type02').on('click', function (event) {
+        $('.select.type01, .select.type02, .select.type03').on('click', function (event) {
         $(this).toggleClass('on');
         });
         $('body').on('click', function (e) {
-        if (!$('.select.type01, .select.type02').is(e.target) 
-            && $('.select.type01, .select.type02').has(e.target).length === 0 
+        if (!$('.select.type01, .select.type02, .select.type03').is(e.target) 
+            && $('.select.type01, .select.type02, .select.type03').has(e.target).length === 0 
             && $('.on').has(e.target).length === 0
         ) {
-            $('.select.type01, .select.type02').removeClass('on');
+            $('.select.type01, .select.type02, .select.type03').removeClass('on');
         }
         }); // select add class 'on'
 
@@ -129,8 +129,8 @@
 
     <div class="con_wrap lct_box">
         <h2 class="title"><i class="tit_ico num2"></i>진단결과</h2>
-        <ul class="location txt_gray_7 tw_700">
-            <li><i class="ico_home"></i><p class="sr-only">home</p></l></li>
+        <ul class="location">
+            <li><i class="ico_home"><span class="sr-only">home</span></i></li>
             <li>진단결과</li>
             <li>나의학급결과</li>
         </ul>
@@ -252,22 +252,22 @@
                         <th scope="col">반</th>
                         <th scope="col">번호</th>
                         <th scope="col">다문화</th>
-                        <th scope="col" class="th_yellow_1">
+                        <th scope="col" class="th_yellow type01">
                             <div class="th_inner">
                                 <input type="checkbox" id="step1" name="step_all_1" class="step_all_1">
-                                <label for="step1"><span class="step_tit"><i class="step num1"><p class="sr-only">step.1</p></i>1차 진단</span></label>
+                                <label for="step1"><span class="step_tit"><i class="icon step-img num1"><p class="sr-only">step.1</p></i>1차 진단</span></label>
                             </div>
                         </th>
-                        <th scope="col" class="th_pink_1">
+                        <th scope="col" class="th_pink type01">
                             <div class="th_inner">
                                 <input type="checkbox" id="step2" name="step_all_2" class="step_all_2">
-                                <label for="step2"><span class="step_tit"><i class="step num2"><p class="sr-only">step.2</p></i>2차 진단</span></label>
+                                <label for="step2"><span class="step_tit"><i class="icon step-img num2"><p class="sr-only">step.2</p></i>2차 진단</span></label>
                             </div>
                         </th>
-                        <th scope="col" class="th_mint_1">
+                        <th scope="col" class="th_mint type01">
                             <div class="th_inner">
                                 <input type="checkbox" id="step3" name="step_all_3">
-                                <label for="step3"><span class="step_tit"><i class="step num3"><p class="sr-only">step.3</p></i>3차 진단</span></label>
+                                <label for="step3"><span class="step_tit"><i class="icon step-img num3"><p class="sr-only">step.3</p></i>3차 진단</span></label>
                             </div>
                         </th>
                         <th scope="col">수준</th>

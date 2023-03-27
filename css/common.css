@@ -19,7 +19,6 @@ button {border: 0; background: none; cursor: pointer;}
 .btn.white {background: #fff; border: 1px solid var(--c_blue); color:var(--c_blue);}
 .btn.white:hover {background: var(--c_blue_1);}
 
-
 /* TABLE */
 table {display:table;width:100%;font-weight: 400;}
 table caption {overflow: hidden;position: absolute;border: 0;width: 1px;height: 1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
@@ -30,6 +29,8 @@ table tbody th {border-color: #E3EEF3;color: #757575;}
 table th:first-child, table td:first-child {border-left:none;}
 table th:last-child, table td:last-child {border-right:none;}
 table th, table td img {vertical-align:middle}
+
+
 
 
 /* 공통 아이콘*/
@@ -43,6 +44,7 @@ table th, table td img {vertical-align:middle}
 .big.sun:hover {background:url(../images/common/sun_big_on.svg) no-repeat 50%;}
 .big.moon:hover {background:url(../images/common/moon_big_on.svg) no-repeat 50%;}
 
+.ico.home {display: block; width: 25px; height: 25px; background: url(../images/common/home.svg) no-repeat;}
 
 /* 진단 상태 아이콘*/
 .state {margin: auto; height: 36px; width: 32px; display: block;background-repeat:no-repeat;}
@@ -64,73 +66,8 @@ table th, table td img {vertical-align:middle}
 .step.sp1{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}
 .step.sp2{background-color:var(--c_pink_1);color:var(--c_pink_m);border-color:var(--c_pink_m)}
 .step.sp3{background-color:var(--c_mint_1);color:var(--c_mint_m);border-color:var(--c_mint_m)}
-
-/* common css 정리 중 아래 하나씩 지워나갈 예정*/
-h1:first-child,
-h2:first-child,
-h3:first-child {margin-top: 0;}
-
-p {font-weight: 400;font-size: 1.6rem;line-height: 1.7;color: #333;}
-.txtp {margin-bottom: 8px;}
-.txt-right {text-align: right;}
-.txt-sm {font-size: 14px;color: #959595;}
-.txt-tip {color: #d2262b;}
-.txt-tip::before {content: '!';display: inline-block;width: 16px;height: 16px;margin-right: 4px;background: #d2262b;color: #fff;font-weight: 700;font-size: 11px;line-height: 1.55;border-radius: 50%;text-align: center;}
-
-img {max-width: 100%;}
-img, fieldset {border: none;}
-
-/* LIST */
-ol {color: #333;line-height: 1.5;}
-.list-tit > li {display: flex;align-items: baseline;font-size: 1.6rem;line-height: 1.5;letter-spacing: -0.05em;color: #757575;}
-.list-tit > li:not(:last-child) {margin-bottom: 40px;}
-.list-tit__tit {display: block;width: 12rem;height: 37px;margin-right: 20px;padding: 5px 20px;border: 1px solid #AFAFAF;border-radius: 100px;text-align: center;font-size: 1.6rem;line-height: 1.7;letter-spacing: -0.05em;color: #141414;}
-
-.list-dots {margin-left: 4px;}
-.list-dots > li {position: relative;margin-bottom: 6px;padding-left: 10px;font-weight: 400;font-size: 1.6rem;line-height: 1.6;letter-spacing: -0.05em;color: #545454;}
-.list-dots > li::before {content: '';position: absolute;top: 10px;left: 0;width: 4px;height: 4px;background: #757575;border-radius: 50%;}
-
-.list-bar {margin-left: 4px;}
-.list-bar > li {position: relative;margin-bottom: 6px;padding-left: 12px;font-weight: 400;font-size: 1.6rem;line-height: 1.6;letter-spacing: -0.05em;color: #545454;}
-.list-bar > li::before {content: '';position: absolute;top: 13px;left: 0;width: 6px;height: 1px;background: #757575;border-radius: 50%;}
-
-.btn-box {margin: 72px 0 24px;}
-.btn-box.center {text-align: center;}
-
-.btn.blue {background: #79A8CF;border: 1px solid #79A8CF;}
-.btn.navy {background: #213F57;border: 1px solid #213F57;}
-.btn.gray {background: #808E9A;border: 1px solid #808E9A;}
-.btn.line.blue {background: transparent;color: #79A8CF;}
-.btn.line.navy {background: transparent;color: #213F57;}
-.btn.line.gray {background: transparent;color: #808E9A;}
-
-/* bg 색상*/
-.bg_indigo {background: #000e3e;} 
-.bg_blue {background: #206cd8;}
-.bg_blue2 {background: #4D8DE7;}
-.bg_white {background: #ffffff;}
-.bg_gray {background:#F5F7FB;}
-.bg_green {background:#1AD5D1;}
-
-
-/* 여백 */
-.lg {padding: 16px 24px;}
-.md {padding: 12px 16px;}
-.sm {padding: 6px 12px;}
-
-.mb-10 {margin-bottom: 10px;}
-.mb-20 {margin-bottom: 20px;}
-.mb-30 {margin-bottom: 30px;}
-.mb-50 {margin-bottom: 50px;}
-.mb-80 {margin-bottom: 80px;}
-
-.mt-10 {margin-top: 10px;}
-.mt-20 {margin-top: 20px;}
-.mt-30 {margin-top: 30px;}
-
-.ml-10 {margin-left: 10px;}
-.ml-20 {margin-left: 20px;}
-
-.mr-10 {margin-right: 10px;}
-.mr-20 {margin-right: 20px;}
-
+/* n차 진단 - icon*/
+.icon.step-img {display: block; width: 57px; height: 22px;}
+.icon.step-img.num1 {background: url(../images/common/ico_step01.svg) no-repeat 50%;}
+.icon.step-img.num2 {background: url(../images/common/ico_step02.svg) no-repeat 50%;}
+.icon.step-img.num3 {background: url(../images/common/ico_step03.svg) no-repeat 50%;}
