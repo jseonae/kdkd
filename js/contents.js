@@ -11,7 +11,7 @@ $(document).ready(function() {
         }
         }); // select add class 'on'
 
-        $('.std_list table td button, #print').click(function() {
+        $('.std_list table td button, #').click(function() {
             var modal_id = $(this).attr('id');
             $('.modal' + '#' + modal_id).css({
                 display: 'flex', 
