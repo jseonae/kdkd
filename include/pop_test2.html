@@ -4,7 +4,7 @@
     <div id="testIntro" class="window">
         <div class="test__intro">
             <div class="intro__wrap">
-                <button type="button" class="btn_close"><i><span class="sr-only">닫기</span></i></button>
+                <button type="button" class="bn_close bk"><span class="sr-only">닫기</span></button>
                 <div class="con_wrap test_intro_hd">
                   
                     <div class="title_box">
@@ -102,33 +102,21 @@
                         <p class="badge small">유창성</p>
                         <p class="sub_txt">제시되는 단어 또는 문장을 정해진 시간 내에 읽어봅시다.</p>
                     </div>
-                    <button type="button" class="btn_close"><i><span class="sr-only">닫기</span></i></button>
+                    <button type="button" class="bn_close bk"><span class="sr-only">닫기</span></button>
                 </div>
 
                 <div class="start__con">
-                    <div class="con_wrap btn_group">
-                        <ul class="tabmenu">
-                            <li class="tab num1">
-                                <button type="button" id="typeBnt01" class="tabBtn tabon"></button>
-                                <div class="type__btn"><label for="typeBnt01">낱말</label><i></i></div>
-                            </li>
-                            <li class="tab num2">
-                                <button type="button" id="typeBnt02"  class="tabBtn"></button>
-                                <div class="type__btn"><label for="typeBnt02">짧은 문장</label><i></i></div>
-                            </li>                               
-                            <li class="tab num3">
-                                <button type="button" id="typeBnt03"  class="tabBtn"></button>
-                                <div class="type__btn"><label for="typeBnt03">긴 문장</label><i></i></div>
-                            </li> 
-                        </ul>
+                     <div class="con_wrap btn_group">
+                        <button type="button" class="btn white bn_tab on">낱말</button>
+                        <button type="button" class="btn white bn_tab">짧은 문장</button>
+                        <button type="button" class="btn white bn_tab">긴 문장</button>
                     </div>
-                    
                     <div class="con_wrap quest_wrap">
                         <div class="slide_box">
                             <div class="quest-box number">
-                                <div class="quest_num"><p>문항 &ndash; </p><span class="circle type02">1</span></div>
+                                <div class="quest_num"><span>문항 &ndash; </span><span class="circle type02">1</span></div>
                             </div>
-                            <div class="quest-box item">
+                            <div class="quest-box">
                                 <ul>
                                     <li class="quest_item single ready">?</li>
                                 </ul>
@@ -136,13 +124,13 @@
                         </div>
                         <div class="answer_box">
                             <ul>
-                                <li><a href="#"><i class="sun big"><span class="sr-only">정답 체크 버튼</span></i></a></li>
-                                <li><a href="#"><i class="moon big"><span class="sr-only">오답 체크 버튼</span></i></a></li>
+                                <li><a href="#"><i class="mark big sun"><span class="sr-only">정답 체크 버튼</span></i></a></li>
+                                <li><a href="#"><i class="mark big moon"><span class="sr-only">오답 체크 버튼</span></i></a></li>
                             </ul>
                         </div>
                         <div class="slide_btn_box">
-                            <div class="btn_prev"><a href="#"><span class="sr-only">왼쪽 화살표</span></a></div>
-                            <div class="btn_next"><a href="#"><span class="sr-only">오른쪽 화살표</span></a></div>
+                            <a href="#" class="arr-btn big prev"><span class="sr-only">왼쪽 화살표</span></a>
+                            <a href="#" class="arr-btn big next"><span class="sr-only">오른쪽 화살표</span></a>
                         </div>
                     </div>
 
@@ -163,12 +151,7 @@
                             </div>
                             <div id="stage_box" class="stage__wrap"><!--btn stage 클릭하면 grap__wrap 위에 나타나게 하기-->
                                 <table class="stage__table">
-                                    <caption>
-                                        <strong>진행단계</strong>
-                                        <details>
-                                            <p>진단 진행단계를 확인하기 위한 네비게이션으로 문항별로 정답과 오답을 표기하여 진행 상태를 확인할 수 있습니다</p>
-                                        </details>
-                                    </caption>
+                                    <caption>진단 진행단계를 확인하기 위한 네비게이션으로 문항별로 정답과 오답을 표기하여 진행 상태를 확인할 수 있습니다</caption>
                                     <colgroup>
                                         <col >                                     
                                     </colgroup>
@@ -232,47 +215,36 @@
                         <p class="badge small">유창성</p>
                         <p class="sub_txt">제시되는 단어 또는 문장을 정해진 시간 내에 읽어봅시다.</p>
                     </div>
-                    <button type="button" class="btn_close"><i><span class="sr-only">닫기</span></i></button>
+                    <button type="button" class="bn_close bk"><span class="sr-only">닫기</span></button>
                 </div>
 
                 <div class="start__con">
                     <div class="con_wrap btn_group">
-                        <ul class="tabmenu">
-                            <li class="tab num1">
-                                <button type="button" id="typeBnt01" class="tabBtn tabon"></button>
-                                <div class="type__btn"><label for="typeBnt01">낱말</label><i></i></div>
-                            </li>
-                            <li class="tab num2">
-                                <button type="button" id="typeBnt02"  class="tabBtn"></button>
-                                <div class="type__btn"><label for="typeBnt02">짧은 문장</label><i></i></div>
-                            </li>                               
-                            <li class="tab num3">
-                                <button type="button" id="typeBnt03"  class="tabBtn"></button>
-                                <div class="type__btn"><label for="typeBnt03">긴 문장</label><i></i></div>
-                            </li> 
-                        </ul>
+                        <button type="button" class="btn white bn_tab on">낱말</button>
+                        <button type="button" class="btn white bn_tab">짧은 문장</button>
+                        <button type="button" class="btn white bn_tab">긴 문장</button>
                     </div>
                     
-                    <div class="con_wrap quest_box">
+                    <div class="con_wrap quest_wrap">
                         <div class="slide_box">
-                            <div class="quest_num_box">
-                                <div class="quest_num"><p>문항 &ndash; </p><span class="circle type02">1</span></div>
+                            <div class="quest-box number">
+                                <div class="quest_num"><span>문항 &ndash; </span><span class="circle type02">1</span></div>
                             </div>
-                            <div class="quest_item_box">
+                            <div class="quest-box item">
                                 <ul>
-                                    <li class="quest_item">가지</li>
+                                    <li class="quest_item single">가지</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="answer_box">
                             <ul>
-                                <li><a href="#"><i class="sun big"><span class="sr-only">정답 체크 버튼</span></i></a></li>
-                                <li><a href="#"><i class="moon big"><span class="sr-only">오답 체크 버튼</span></i></a></li>
+                                <li><a href="#"><i class="mark big sun"><span class="sr-only">정답 체크 버튼</span></i></a></li>
+                                <li><a href="#"><i class="mark big moon"><span class="sr-only">오답 체크 버튼</span></i></a></li>
                             </ul>
                         </div>
                         <div class="slide_btn_box">
-                            <div class="btn_prev"><a href="#"><span class="sr-only">왼쪽 화살표</span></a></div>
-                            <div class="btn_next"><a href="#"><span class="sr-only">오른쪽 화살표</span></a></div>
+                            <a href="#" class="arr-btn big prev"><span class="sr-only">왼쪽 화살표</span></a>
+                            <a href="#" class="arr-btn big next"><span class="sr-only">오른쪽 화살표</span></a>
                         </div>
                     </div>
 
@@ -293,12 +265,7 @@
                             </div>
                             <div id="stage_box" class="stage__wrap"><!--btn stage 클릭하면 grap__wrap 위에 나타나게 하기-->
                                 <table class="stage__table">
-                                    <caption>
-                                        <strong>진행단계</strong>
-                                        <details>
-                                            <p>진단 진행단계를 확인하기 위한 네비게이션으로 문항별로 정답과 오답을 표기하여 진행 상태를 확인할 수 있습니다</p>
-                                        </details>
-                                    </caption>
+                                    <caption>진단 진행단계를 확인하기 위한 네비게이션으로 문항별로 정답과 오답을 표기하여 진행 상태를 확인할 수 있습니다</caption>
                                     <colgroup>
                                         <col >                                     
                                     </colgroup>
