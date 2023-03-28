@@ -13,7 +13,7 @@ html, body {margin: 0; padding: 0;font-size:62.5%; background:var(--bg_body);}
 a {text-decoration: none;color: #333;}
 button {border: 0; background: none; cursor: pointer;}
 
-.btn {display:block; padding: 15px 25px; border-radius: 4px; color: #fff; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em;  font-family: var(--f_nsR); 
+.btn {display:block; padding: 1.2rem 1.6rem; border-radius: 4px; color: #fff; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em;  font-family: var(--f_nsR); 
    transition: var(--ani_time); background:var(--c_blue); }
 .btn:hover {background: var(--c_blue_m);}
 
