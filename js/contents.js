@@ -11,13 +11,13 @@ $(document).ready(function() {
         }
         }); // select add class 'on'
 
-        $('.std_list table td button, #').click(function() {
+        $('.std_list table td button, #print').click(function() {
             var modal_id = $(this).attr('id');
             $('.modal' + '#' + modal_id).css({
                 display: 'flex', 
             });
         })
-        $('.bn_close').click(function() {
+        $('.bn_close, .print__wrap .btn_close').click(function() {
             $('.modal').css({
                 display: 'none',
             });
