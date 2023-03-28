@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키득키득 > menu4(우리학급현황)</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contents.css">    
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/include.js"></script>
+
+</head>
+
+<body>
+<!--[include]HEADER :: Start -->
+<div id="header"></div>
+<!--[include]HEADER :: End -->
+
+<!--CONTENTS :: Start -->
+<div id="exam" class="container">
+    <div class="con_wrap lct_box">
+        <h2 class="title"><i class="tit_ico num4"></i>우리학급현황</h2>
+        <ul class="location">
+            <li><i class="ico home"></i><span class="sr-only">home</span></l></li>
+            <li>우리학급현황</li>
+        </ul>
+    </div>
+
+    <div class="top_box">
+        <div class="inner">
+            <div class="item std">
+                <i class="ico_32 student"></i>
+                <p>학생 추가</p>
+                <div class="btn_group">
+                    <button type="button" class="circle_btn"><i class="ico_36 minus"></i><span class="sr-only">빼기</span></button>
+                    <input type="text" class="count_txt_input" value="20명">
+                    <button type="button" class="circle_btn"><i class="ico_36 plus"></i><span class="sr-only">더하기</span></button>
+                    <button type="button" class="btn" name="btn_add">추가하기</button>
+                </div>
+            </div>
+            <div class="item file">
+                <i class="ico_32 excel"></i>
+                <p>학생목록 엑셀 일괄추가</p>
+                <button type="button" class="btn white" name="download">엑셀양식 다운로드</button>
+                <button type="button" class="btn" name="upload">엑셀파일 업로드</button>
+            </div>
+        </div>
+    </div>
+<!-- 탭 -->
+<div class="tabs">
+    <div class="tab-header">
+        <button class="active">전체학생</button>
+        <button>미해득(보충) 학생</button>
+    </div>
+    <div class="tab-body">
+        <!-- 탭1 내용 -->
+        <div class="active">
+            <h3 class="sr-only">전체학생 현황</h3>
+            <div class="std_list">
+                <div class="table_wrap">
+                    <table class="tbl_basic center table-hover">
+                        <caption>전체학생 현황을 안내하는 표입니다. 순, 이름, 학년, 반, 번호, 다문화, 수준, 인력매칭(온채움교사, 기타교사), 보정지도(읽기, 유창성, 쓰기)로 나뉘어 자료를 제공하고 있습니다.</caption>
+                        <colgroup>
+                            <col >                                    
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" rowspan="2">순</th>
+                                <th scope="col" rowspan="2">이름</th>
+                                <th scope="col" rowspan="2">학년</th>
+                                <th scope="col" rowspan="2">반</th>
+                                <th scope="col" rowspan="2">번호</th>
+                                <th scope="col" rowspan="2">다문화</th>
+                                <th scope="col" rowspan="2">수준</th>
+                                <th scope="colgroup" colspan="2" class="th_deep">인력매칭</th>
+                                <th scope="colgroup" colspan="3" class="th_deep">보정지도</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="th_deep_m">온채움교사</th>
+                                <th scope="col" class="th_deep_m">기타교사</th>
+                                <th scope="col" class="th_deep_m">읽기</th>
+                                <th scope="col" class="th_deep_m">유창성</th>
+                                <th scope="col" class="th_deep_m">쓰기</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td><i class="multi ico_x">해당없음</i></td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td>
+                                    <ul>
+                                        <li>대표받침</li>
+                                        <li>복잡한 받침 단어</li>
+                                        <li>대표 받침 단어</li>
+                                    </ul>
+                                </td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="state learn">해득</i></td>       
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td><i class="multi ico_x">해당없음</i></td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td>
+                                    <ul>
+                                        <li>대표받침</li>
+                                        <li>복잡한 받침 단어</li>
+                                        <li>대표 받침 단어</li>
+                                    </ul>
+                                </td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="state learn">해득</i></td>       
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td><i class="multi ico_x">해당없음</i></td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td>
+                                    <ul>
+                                        <li>대표받침</li>
+                                        <li>복잡한 받침 단어</li>
+                                        <li>대표 받침 단어</li>
+                                    </ul>
+                                </td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="state learn">해득</i></td>       
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td><i class="multi ico_x">해당없음</i></td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td>
+                                    <ul>
+                                        <li>대표받침</li>
+                                        <li>복잡한 받침 단어</li>
+                                        <li>대표 받침 단어</li>
+                                    </ul>
+                                </td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="state learn">해득</i></td>       
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td><i class="multi ico_x">해당없음</i></td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td>
+                                    <ul>
+                                        <li>대표받침</li>
+                                        <li>복잡한 받침 단어</li>
+                                        <li>대표 받침 단어</li>
+                                    </ul>
+                                </td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="state learn">해득</i></td>       
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td><i class="multi ico_x">해당없음</i></td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td>
+                                    <ul>
+                                        <li>대표받침</li>
+                                        <li>복잡한 받침 단어</li>
+                                        <li>대표 받침 단어</li>
+                                    </ul>
+                                </td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="state learn">해득</i></td>       
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td><i class="multi ico_x">해당없음</i></td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td><i class="multi ico_o">해당있음</i></td>
+                                <td>
+                                    <ul>
+                                        <li>대표받침</li>
+                                        <li>복잡한 받침 단어</li>
+                                        <li>대표 받침 단어</li>
+                                    </ul>
+                                </td>
+                                <td><i class="state learn">해득</i></td>
+                                <td><i class="state learn">해득</i></td>       
+                            </tr>                                   
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- //탭1 내용 -->
+        <!-- 탭2 내용 -->
+        <div>
+            <h3 class="sr-only">미해득(보충) 학생 현황</h3>
+            미해득(보충) 학생 탭2</div>
+        <!-- //탭2 내용 -->
+    </div>
+</div>
+<!-- //탭 -->
+</div><!--CONTENTS :: End -->
+
+<!--[include]FOOTER :: Start -->
+<div id="footer"></div>
+<!--[include]FOOTER :: End -->
+
+
+<!-- modal 진단하기 읽기 :: Start -->
+<div id="test01" class="modal">
+    <div id="pop-test1" class="pop-test-wrap"></div>
+</div><!-- modal 진단하기 읽기 :: End -->
+
+<!-- modal 진단하기 유창성:: Start -->
+<div id="test02" class="modal">
+    <div id="pop-test2" class="pop-test-wrap"></div>
+</div><!--modal 진단하기 유창성 :: End -->
+
+<!-- modal 진단하기 쓰기 :: Start -->
+<div id="test03" class="modal">
+    <div id="pop-test3" class="pop-test-wrap"></div>
+</div><!-- modal 진단하기 쓰기 :: End -->
+
+<script type="text/javascript" src="js/contents.js"></script>
+</body>
+</html>
