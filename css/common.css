@@ -4,7 +4,7 @@
 @import url(_font.css);
 
 * {box-sizing: border-box;}
-html, body {font-family: 'NanumSquareNeo', sans-serif; margin: 0; padding: 0;font-size:62.5%; background:var(--bg_body);}
+html, body {margin: 0; padding: 0;font-size:62.5%; background:var(--bg_body);}
 
 /* screen reader only*/
 .sr-only {overflow: hidden;position: absolute;border: 0;width: 1px;height: 1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
@@ -13,15 +13,22 @@ html, body {font-family: 'NanumSquareNeo', sans-serif; margin: 0; padding: 0;fon
 a {text-decoration: none;color: #333;}
 button {border: 0; background: none; cursor: pointer;}
 
-.btn {display:block; padding: 20px 25px; border-radius: 4px; color: #fff; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em;  font-family: var(--f_nsR); 
+.btn {display:block; padding: 15px 25px; border-radius: 4px; color: #fff; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em;  font-family: var(--f_nsR); 
    transition: var(--ani_time); background:var(--c_blue); }
 .btn:hover {background: var(--c_blue_m);}
 
 .btn.white {background: #fff; border: 1px solid var(--c_blue); color:var(--c_blue);}
 .btn.white:hover {background: var(--c_blue_1);}
 
+/* tab 버튼*/
+.bn_tab {padding: 16px 20px; font-weight: 800; font-size: 1.6rem;}
+.bn_tab.on {display: flex; gap: 5px; background: var(--c_blue_1);}
+.bn_tab.on::after {content:"";display:block;width: 16px;height: 16px;background:url(../images/common/arrow_under_blue.svg) no-repeat;}
+
 /* 팝업 닫기버튼 */
-.bn_close{width:7.2rem;height:7.2rem;border-radius:20rem;background:#F6F6F6 url(../images/common/ico_close_b.svg) no-repeat 50% 50%;}
+.bn_close {width:7.2rem;height:7.2rem;border-radius:20rem;background:#F6F6F6 url(../images/common/ico_close_b.svg) no-repeat 50% 50%;}
+.bn_close.bk {background:#333 url(../images/common/ico_close_w.svg) no-repeat 50% 50%; transition: var(--ani_time);}
+.bn_close.bk:hover {background-color: #444;}
 
 /* 프린트/저장버튼그룹 */
 .etcwrap{display:flex;gap:2rem;justify-content: flex-end;}
@@ -43,13 +50,11 @@ table.center tbody tr td{text-align:center;}
 
 table thead th span.step_tit {display: flex; justify-content: center; gap: 5px; line-height: 2.5rem;}
 
-/* exam - 학생목록 테이블 바디*/
+/* 테이블 바디*/
 table tbody tr:nth-child(odd) {background: #fff;}
 table tbody tr:nth-child(even) {background: #fbfdff;}
-
 table tbody tr td {font-weight: 400;font-family: var(--f_nsR);color: #555;}
 table tbody tr:nth-child(1) td {padding-top: 11px;}
-
 
 /*테이블 헤더 스타일*/
 .th_yellow.type01 {background:var(--c_yellow_2);color: var(--c_yellow_m);border: none; border-right: 1px solid var(--c_yellow_2);}
@@ -68,7 +73,6 @@ thead tr:nth-child(1) th:last-child {border-radius: 0 10px 0 0;}
 
 thead tr th, tbody tr td {width: 5%;}
 thead tr th {font-weight: 700; font-size: 1.6rem;}
-
 
 /* 공통 아이콘*/
 .mark.small {display: block; width: 25px; height: 25px; margin: auto;}
@@ -97,6 +101,7 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 /* stat 텍스트 */
 .state.tx{width:7.6rem;height:3.3rem;border:1px solid;padding:.8rem;font-size:1.5rem;border-radius:.4rem;font-style:normal;text-indent:0;overflow:hidden;font-size:1.5rem;text-align:center;}
 .state.tx.more{width:auto;background-color:var(--c_blue_1);color:var(--c_blue);border-color:var(--c_blue)}/* 보충 텍스트형 */
+
 .state.tx.end{background-color:#f6f6f6;color:#afafaf;border-color:#f6f6f6}/*  완료 텍스트형 */
 .state.tx.ing{background-color:var(--c_blue_1);color:var(--c_blue);border-color:var(--c_blue_1)}/*  학습중 텍스트형 */
 .state.tx.study{background-color:#fff;color:#757575;border-color:#e2e2e2}/* 학습하기 텍스트형 */
