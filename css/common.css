@@ -83,27 +83,29 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 
 .ico.home {display: block; width: 25px; height: 25px; background: url(../images/common/home.svg) no-repeat;}
 
-/* 진단 상태 아이콘*/
-.state {margin: auto; height: 36px; width: 32px; display: block;background-repeat:no-repeat;}
+/* stat ico*/
+.state {margin: auto; height: 36px; width: 32px; display: block;background-repeat:no-repeat;text-indent:-999px;overflow:hidden;}
 .state.test {background-image: url(../images/common/ico_test.svg);}/* 검사시작 */
 .state.learn {background-image: url(../images/common/ico_learn.svg);}/* 해득 */
 .state.miss {background-image: url(../images/common/ico_miss.svg);}/* 미해득 */
-.state.more {width: 60px; background-image: url(../images/common/ico_more.svg);}/* 보충 */
+/* .state.more {width: 60px; background-image: url(../images/common/ico_more.svg);}보충 */
 .state.basket {width:32px; background-image: url(../images/common/ico_basket.svg);} /* 삭제 */
 .state.download {width:32px; background-image: url(../images/common/ico_download.svg)} /* 다운로드 */
+.state.modify {width:32px; background-image: url(../images/common/ico_modify.svg)} /* 수정 */
+.state.save {width:32px; background-image: url(../images/common/ico_save_big.svg)} /* 저장 */
 
-.state.tx{border:1px solid;padding:.8rem;font-size:1.5rem;border-radius:.4rem;}
-.state.tx.more{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}/* 보충 텍스트형 */
-.state.tx.end{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}/*  완료 텍스트형 */
-.state.tx.ing{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}/*  학습중 텍스트형 */
+/* stat 텍스트 */
+.state.tx{width:auto;height:3.3rem;border:1px solid;padding:.8rem;font-size:1.5rem;border-radius:.4rem;font-style:normal;text-indent:0;overflow:hidden;font-size:1.5rem}
+.state.tx.more{background-color:var(--c_blue_1);color:var(--c_blue);border-color:var(--c_blue)}/* 보충 텍스트형 */
+.state.tx.end{background-color:#f6f6f6;color:#afafaf;border-color:#f6f6f6}/*  완료 텍스트형 */
+.state.tx.ing{background-color:var(--c_blue_1);color:var(--c_blue);border-color:var(--c_blue_1)}/*  학습중 텍스트형 */
 .state.tx.study{background-color:#fff;color:#757575;border-color:#e2e2e2}/* 학습하기 텍스트형 */
 
-
-
-
 /* 진단 상태 아이콘 + 텍스트 노출 */
-.ing_learn{color:var(--c_blue)}/* 해득 */
-.ing_miss{color:#929EA9}/* 미해득 */
+.txout{display:flex;align-items:center;gap:.4rem;font-size:1.5rem;}
+.txout.ing_learn{color:var(--c_blue)}/* 해득 */
+.txout.ing_miss{color:#929EA9}/* 미해득 */
+.txout.ing_more .more{}/* 보충 */
 
 /* 다문화 여부 아이콘*/
 .multi {display: block; width: 20px; height: 20px;}
