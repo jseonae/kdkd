@@ -95,8 +95,8 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 .state.save {width:32px; background-image: url(../images/common/ico_save_big.svg)} /* 저장 */
 
 /* stat 텍스트 */
-.state.tx{width:auto;height:3.3rem;border:1px solid;padding:.8rem;font-size:1.5rem;border-radius:.4rem;font-style:normal;text-indent:0;overflow:hidden;font-size:1.5rem}
-.state.tx.more{background-color:var(--c_blue_1);color:var(--c_blue);border-color:var(--c_blue)}/* 보충 텍스트형 */
+.state.tx{width:7.6rem;height:3.3rem;border:1px solid;padding:.8rem;font-size:1.5rem;border-radius:.4rem;font-style:normal;text-indent:0;overflow:hidden;font-size:1.5rem;text-align:center;}
+.state.tx.more{width:auto;background-color:var(--c_blue_1);color:var(--c_blue);border-color:var(--c_blue)}/* 보충 텍스트형 */
 .state.tx.end{background-color:#f6f6f6;color:#afafaf;border-color:#f6f6f6}/*  완료 텍스트형 */
 .state.tx.ing{background-color:var(--c_blue_1);color:var(--c_blue);border-color:var(--c_blue_1)}/*  학습중 텍스트형 */
 .state.tx.study{background-color:#fff;color:#757575;border-color:#e2e2e2}/* 학습하기 텍스트형 */
