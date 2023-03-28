@@ -397,7 +397,8 @@ i.moon.small {background:url(../images/common/moon_small.svg) no-repeat 50%;}
 /* result 컨텐츠 시작*/
 
 .top_box .inner h3 {font-weight: 800; font-size: 1.6rem; color: var(--c_blue); margin-bottom:20px;}
-.top_box .inner{gap: 3rem; width:70%; height: 240px; }
+.top_box .inner.type02,
+.top_box .inner.type03{gap: 3rem; width:70%; height: 240px; }
 .top_box .inner.type02 {justify-content: space-around; padding: 50px; }
 .top_box .inner.type03 {justify-content: space-between; padding: 16px 50px;}
 
