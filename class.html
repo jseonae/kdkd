@@ -13,7 +13,110 @@
     <script type="text/javascript" src="js/include.js"></script>
 
 </head>
+<style>
+#classwrap .inner{flex-direction:column;justify-content:flex-start;align-items:flex-start;padding:5rem 4rem;gap:1rem}
+#classwrap .inner .info_wrap{display:flex;gap:4rem}
+#classwrap .inner .info_wrap .graphwrap{display:flex;gap:2rem}
+#classwrap .inner .info_wrap .graphwrap b{display:flex;justify-content:center;align-items:center;width:3.6rem;height:3.6rem;border-radius:4rem;}
+/* 컬러별적용 */
+#classwrap .inner .info_wrap .graphwrap .step1{color:var(--c_yellow)}
+#classwrap .inner .info_wrap .graphwrap .step2{color:var(--c_pink)}
+#classwrap .inner .info_wrap .graphwrap .step3{color:var(--c_mint)}
+#classwrap .inner .info_wrap .graphwrap .step1 b{background:var(--c_yellow_1)}
+#classwrap .inner .info_wrap .graphwrap .step2 b{background:var(--c_pink_1)}
+#classwrap .inner .info_wrap .graphwrap .step3 b{background:var(--c_mint_1)}
+#classwrap .inner .info_wrap .graphwrap .step1 .chart-skills span{border-color:var(--c_yellow)}
+#classwrap .inner .info_wrap .graphwrap .step2 .chart-skills span{border-color:var(--c_pink)}
+#classwrap .inner .info_wrap .graphwrap .step3 .chart-skills span{border-color:var(--c_mint)}
 
+.chart-skills {position:relative;width: 175px;height:87px;margin: 0 auto; padding: 0;overflow:hidden;}
+.chart-skills *,
+.chart-skills::before {box-sizing: border-box;}
+.chart-skills::before {content: '';position: absolute;width: inherit; height: inherit;border: 45px solid rgba(211, 211, 211, .3);border-bottom: none;border-top-left-radius: 175px; border-top-right-radius: 175px;}
+.chart-skills span {display:inline-block;z-index: 4;position: absolute;top: 100%;left: 0;width: inherit;height: inherit;border: 45px solid;border-top: none;border-bottom-left-radius: 175px;border-bottom-right-radius: 175px;transform-origin: 50% 0;border-color: green;font-size:0;}
+.chart-skills span {animation-duration:.5s;animation-timing-function:linear;animation-iteration-count:1;animation-fill-mode:forwards;}
+.chart-skills span.per10 {animation-name:chartAni1}
+.chart-skills span.per20 {animation-name:chartAni2}
+.chart-skills span.per30 {animation-name:chartAni3}
+.chart-skills span.per40 {animation-name:chartAni4}
+.chart-skills span.per50 {animation-name:chartAni5}
+.chart-skills span.per60 {animation-name:chartAni6}
+.chart-skills span.per70 {animation-name:chartAni7}
+.chart-skills span.per80 {animation-name:chartAni8}
+.chart-skills span.per90 {animation-name:chartAni9}
+.chart-skills span.per100 {animation-name:chartAni10}
+
+
+@keyframes chartAni1{
+    0%{transform: rotateZ(0);}
+    26%{transform: rotateZ(20deg)}
+    100%{transform: rotateZ(20deg)}
+}
+@keyframes chartAni2{
+    0%{transform: rotateZ(0);}
+    26%{transform: rotateZ(20deg);}
+    30%{transform: rotateZ(30deg);}
+    100%{transform: rotateZ(30deg);}
+}
+@keyframes chartAni3{
+    0%{transform: rotateZ(0);}
+    30%{transform: rotateZ(30deg)}
+    60%{transform: rotateZ(40deg)}
+    100%{transform: rotateZ(40deg)}
+}
+@keyframes chartAni4{
+    0%{transform: rotateZ(0);}
+    30%{transform: rotateZ(30deg)}
+    60%{transform: rotateZ(50deg)}
+    100%{transform: rotateZ(60deg)}
+}
+@keyframes chartAni5{
+    0%{transform: rotateZ(0);}
+    30%{transform: rotateZ(50deg)}
+    60%{transform: rotateZ(70deg)}
+    100%{transform: rotateZ(90deg)}
+}
+@keyframes chartAni6{
+    0%{transform: rotateZ(0);}
+    30%{transform: rotateZ(50deg)}
+    60%{transform: rotateZ(100deg)}
+    100%{transform: rotateZ(120deg)}
+}
+@keyframes chartAni7{
+    0%{transform: rotateZ(0);}
+    30%{transform: rotateZ(50deg)}
+    60%{transform: rotateZ(120deg)}
+    100%{transform: rotateZ(150deg)}
+}
+@keyframes chartAni8{
+    0%{transform: rotateZ(0);}
+    30%{transform: rotateZ(50deg)}
+    60%{transform: rotateZ(140deg)}
+    100%{transform: rotateZ(160deg)}
+}
+@keyframes chartAni9{
+    0%{transform: rotateZ(0);}
+    30%{transform: rotateZ(50deg)}
+    60%{transform: rotateZ(150deg)}
+    100%{transform: rotateZ(170deg)}
+}
+@keyframes chartAni10{
+    0%{transform: rotateZ(0);}
+    30%{transform: rotateZ(50deg)}
+    60%{transform: rotateZ(100deg)}
+    100%{transform: rotateZ(180deg)}
+}
+/* 그래프테이블 */
+.tbl_graph thead th,
+.tbl_graph tbody th,
+.tbl_graph tbody td{padding:.8rem .8rem;font-size:1.5rem;border-color:#fff;border-width:.2rem;}
+.tbl_graph thead th{color:#757575;background:none}
+.tbl_graph tbody td{border-radius:.4rem;background:#f6f6f6;}
+.tbl_graph tbody .step1{color:var(--c_yellow)}
+.tbl_graph tbody .step2{color:var(--c_pink)}
+.tbl_graph tbody .step3{color:var(--c_mint)}
+.tbl_graph tbody .test-end{color:var(--c_blue)}
+</style>
 <body>
 <!--[include]HEADER :: Start -->
 <div id="header"></div>
@@ -31,16 +134,78 @@
 
     <div class="top_box" id="classwrap">
         <article class="inner">
+            <h3>키득키득 한글 진단검사 현황</h3>
             <div class="info_wrap">
-            <h3>키득키득 한글 진단검사 현황</h3></div>
+                <div class="graphwrap">
+                    <article class="step1">
+                        <b>1차</b>
+                        <div class="chart-skills"> <span class="per10">10%</span></div>
+                    </article>
+                    <article class="step2">
+                        <b>2차</b>
+                        <div class="chart-skills"> <span class="per40">40%</span></div>
+                    </article>
+                    <article class="step3">
+                        <b>3차</b>
+                        <div class="chart-skills"> <span class="per100">100%</span></div>
+                    </article>
+                </div>
+                <div class="table">
+                    <table class="tbl_graph center">
+                        <caption>키득키득 한글 진단검사 현황을 안내하는 표입니다. 차시별, 학생수, 검사완료, 미해득, 다문화로 나뉘어 자료를 제공하고 있습니다.</caption>
+                        <colgroup>                      
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col"><span class="sr-only">차시별</span></th>
+                                <th scope="col">학생순</th>
+                                <th scope="col">검사완료</th>
+                                <th scope="col">미해득</th>
+                                <th scope="col">다문화</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><span class="step1">1차</span></th>
+                                <td>24</td>
+                                <td><span class="test-end">24</span></td>
+                                <td>24</td>
+                                <td>24</td> 
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="step2">2차</span></th>
+                                <td>24</td>
+                                <td><span class="test-end">24</span></td>
+                                <td>24</td>
+                                <td>24</td> 
+                            </tr>
+                            <tr>
+                                <th scope="row"><span class="step3">3차</span></th>
+                                <td>24</td>
+                                <td><span class="test-end">24</span></td>
+                                <td>24</td>
+                                <td>24</td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </article>
         <article class="inner">
+            <h3>우리학급 차시별 한글 미해득 인원(명)</h3>
             <div class="info_wrap">
-            <h3>우리학급 차시별 한글 미해득 인원(명)</h3></div>
+                <ul>
+                    <li>
+                        <b>1차</b>
+                        <span><span></span></span>
+                        <em>0%<span></span>(0명)</em>
+                    </li>
+                </ul>
+            </div>
         </article>
         <article class="inner">
-            <div class="info_wrap">
-            <h3>한글 미해득 현황</h3></div>
+            <h3>한글 미해득 현황</h3>
+            <div class="info_wrap"></div>
         </article>
     </div>
 <!-- 탭 -->
