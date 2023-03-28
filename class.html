@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-latest.min.js"></script>
     <script type="text/javascript" src="js/include.js"></script>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
 
 </head>
 <body>
@@ -87,9 +88,9 @@
                 </div>
             </div>
         </article>
-        <article class="inner">
+        <article class="inner type02">
             <h3>우리학급 차시별 한글 미해득 인원(명)</h3>
-                <ul class="misswrap">
+                <ul class="missgraph">
                     <li>
                         <b>1차</b>
                         <span class="linewrap"><span class="graph_line w0">0%</span></span>
@@ -107,9 +108,40 @@
                     </li>
                 </ul>
         </article>
-        <article class="inner">
+        <article class="inner type03">
             <h3>한글 미해득 현황</h3>
-            <!-- 원그랲프 들어가는 자리 -->
+            <div class="info_wrap">
+                <ul>
+                    <li class="item num1">
+                        <i></i>
+                        <span>해득</span>
+                        <span>12명</span>
+                    </li>
+                    <li class="item num2">
+                        <i></i>
+                        <span>보충</span>
+                        <span>12명</span>
+                    </li>
+                    <li class="item num3">
+                        <i></i>
+                        <span>미해득</span>
+                        <span>12명</span>
+                    </li>
+                    <li class="item num4">
+                        <i></i>
+                        <span>미검사</span>
+                        <span>12명</span>
+                    </li>
+                </ul>
+                <!-- 원그랲프 들어가는 자리 -->
+                <div class="chart_wrap">
+                    <div class="chart_donut">
+                        <canvas id="chartType01" width="164" height="164"></canvas>
+                    </div>
+                </div>
+                <!-- //원그랲프 들어가는 자리 -->
+            </div>
+           
         </article>
     </div>
 <!-- 탭 -->
