@@ -558,7 +558,6 @@ input[type="checkbox"]:checked + label::after {content:'';background: url(../ima
 .result-pop section.con1 .wrapper dl dd.wide{width:100%;}
 .result-pop section.con1 .wrapper dl:last-child{gap:1.6rem;flex-wrap:nowrap;width:100%;}
 .result-pop section.con1 .wrapper dl:last-child dd{flex-direction:column;flex-basis:100%;align-items:center;padding:1.8rem;border:1px solid var(--line_gray);border-radius:.4em;color:#333;}
-.result-pop section.con1 .wrapper dl:last-child dd span{display:flex;align-items:center;gap:.4rem;}
 .result-pop section.con1 .wrapper dl:last-child dd span.date{padding:.8rem}
 
 .result-pop section.con4 .wrapper{display:flex;gap:4rem}
