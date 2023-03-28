@@ -340,13 +340,19 @@ footer p{font-size:1.5rem}
 
 .quest-box {width: 100%; text-align: center;}
 .quest-box.number {gap: 10px; line-height: 50px; font-size: 3rem; line-height: 34px;}
-.quest-box.number .quest_num {display: inline-flex; gap: 10px; line-height: 50px; margin: 0 auto;}
-.quest-box.number .quest_num p {font-weight: 800; font-size: 3rem; color: var(--c_blue);}
+.quest_num {display: inline-flex; gap: 10px; line-height: 50px; margin: 0 auto;}
+.quest_num p {font-weight: 800; font-size: 3rem; color: var(--c_blue);}
+
+.quest_num.small {width: 100%; line-height: 30px; font-size: 2rem;} /*진단하기 - 쓰기*/
+
+
 
 .circle.type02 {display: block; width: 50px;height: 50px; background:var(--c_blue_1); border: 1px solid var(--c_blue); border-radius: 100px; text-align: center; color: var(--c_blue);}
 
+.quest_item.single {font-size: 33.2rem; line-height: 377px;}
+.quest_item.ready {color:#EDEDED;}
 
-
+.quest_item.unit {display: flex; width:25%;}
 
 
 /* .test__start .start__con .slide_box .quest_num_box {text-align: center; font-size: 3rem; line-height: 34px;}
@@ -355,9 +361,9 @@ footer p{font-size:1.5rem}
 .test__start .start__con .slide_box .quest_num_box .quest_num .circle.type02 {display: block; width: 50px;height: 50px; background:var(--c_blue_1);
     border: 1px solid var(--c_blue); border-radius: 100px; text-align: center; color: var(--c_blue);}*/
 
-.test__start .start__con .slide_box .quest_item_box {width: 100%;}
+/* .test__start .start__con .slide_box .quest_item_box {width: 100%;}
 .test__start .start__con .slide_box .quest_item_box .quest_item {font-size: 33.2rem; line-height: 377px;}
-.test__start .start__con .slide_box .quest_item_box .quest_item.ready {color:#EDEDED;}
+.test__start .start__con .slide_box .quest_item_box .quest_item.ready {color:#EDEDED;} */
 
 /* 정답 표기 버튼*/
 .test__start .start__con .answer_box {position: absolute; right: 0;}
