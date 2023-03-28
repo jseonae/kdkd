@@ -40,7 +40,7 @@ button {border: 0; background: none; cursor: pointer;}
 table {display:table;width:100%;font-weight: 400;}
 table caption {overflow: hidden;position: absolute;border: 0;width: 1px;height: 1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
 table th {border-width: 0px 1px 1px 0px;border-style: solid;text-align: center;letter-spacing: -0.05em;}
-table th, table td {padding:18px 5px;border-left:1px solid #E3EEF3;border-bottom:1px solid #E3EEF3;margin-left:-1px;vertical-align:middle;word-wrap:break-word;word-break:keep-all;color:#757575}
+table th, table td {padding:18px 5px;border-left:1px solid #E3EEF3;border-bottom:1px solid #E3EEF3;margin-left:-1px;vertical-align:middle;word-wrap:break-word;word-break:keep-all;color:#757575;font-size:1.5rem;}
 table thead th {border-color: #D0D7E0; color: #FFFFFF; background: #929EA9;}
 table tbody th {border-color: #E3EEF3;color: #757575;}
 table th:first-child, table td:first-child {border-left:none;}
