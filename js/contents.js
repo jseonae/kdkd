@@ -1,19 +1,3 @@
-//탭
-let tabHeader = document.getElementsByClassName("tab-header")[0];
-let tabBody = document.getElementsByClassName("tab-body")[0];
-
-let tabsPane = tabHeader.getElementsByTagName("button");
-
-for(let i=0;i<tabsPane.length;i++){
-  tabsPane[i].addEventListener("click",function(){
-    tabHeader.getElementsByClassName("active")[0].classList.remove("active");
-    tabsPane[i].classList.add("active");
-    tabBody.getElementsByClassName("active")[0].classList.remove("active");
-    tabBody.getElementsByTagName("div")[i].classList.add("active");
-    
-  });
-}
-
 $(document).ready(function() {
         $('.select.type01, .select.type02, .select.type03').on('click', function (event) {
         $(this).toggleClass('on');
@@ -33,16 +17,16 @@ $(document).ready(function() {
                 display: 'flex', 
             });
         })
-        $('.btn_close').click(function() {
+        $('.bn_close').click(function() {
             $('.modal').css({
                 display: 'none',
             });
         }) // modal
         
-        $('#stageBtn').on('click', function (event) {
+        $('.stageBtn').on('click', function (event) {
         $(this).toggleClass('on');
-        $('.stage_nav .stage__wrap').toggleClass('on');
-        $('.stage_nav .grap__wrap').toggleClass('off');
+        $('.stage__wrap').toggleClass('on');
+        $('.grap__wrap').toggleClass('off');
         });
     }); // 진행단계 네비게이션 박스 활성화
 
@@ -80,8 +64,21 @@ $(document).ready(function() {
         $("input:checkbox[name='step_all_3']") .prop("checked", false);
         }
     }); // checkbox 전체선택
+    
+    let tabHeader = document.getElementsByClassName("tab-header")[0];
+    let tabBody = document.getElementsByClassName("tab-body")[0];
 
+    let tabsPane = tabHeader.getElementsByTagName("button");
 
+    for(let i=0;i<tabsPane.length;i++){
+    tabsPane[i].addEventListener("click",function(){
+        tabHeader.getElementsByClassName("active")[0].classList.remove("active");
+        tabsPane[i].classList.add("active");
+        tabBody.getElementsByClassName("active")[0].classList.remove("active");
+        tabBody.getElementsByTagName("div")[i].classList.add("active");
+        
+    });
+    } //탭
 
 
 
