@@ -129,7 +129,6 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 .icon.step-img.num2 {background: url(../images/common/ico_step02.svg) no-repeat 50%;}
 .icon.step-img.num3 {background: url(../images/common/ico_step03.svg) no-repeat 50%;}
 
-
 /* tab */
 .tabs {width:100%}
 .tabs .tab-header {position:relative;display:flex;align-items:center;gap:1rem;}
