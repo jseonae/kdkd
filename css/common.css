@@ -19,16 +19,39 @@ button {border: 0; background: none; cursor: pointer;}
 .btn.white {background: #fff; border: 1px solid var(--c_blue); color:var(--c_blue);}
 .btn.white:hover {background: var(--c_blue_1);}
 
+/* 팝업 닫기버튼 */
+.bn_close{width:7.2rem;height:7.2rem;border-radius:20rem;background:#F6F6F6 url(../images/common/ico_close_b.svg) no-repeat 50% 50%;}
+
+/* 프린트/저장버튼그룹 */
+.etcwrap{display:flex;gap:2rem;justify-content: flex-end;}
+.etcwrap button{display:flex;align-items:center;gap:.5rem;color:#545454}
+.etcwrap button::before{content:"";display:block;width:2rem;height:2rem;background:url(../images/common/ico_print.svg) no-repeat}
+.etcwrap button:last-child::before{background-image:url(../images/common/ico_save.svg);}
+
 /* TABLE */
 table {display:table;width:100%;font-weight: 400;}
 table caption {overflow: hidden;position: absolute;border: 0;width: 1px;height: 1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
 table th {border-width: 0px 1px 1px 0px;border-style: solid;text-align: center;letter-spacing: -0.05em;}
-table th, table td {padding:18px 5px;border-left:1px solid #E3EEF3;border-bottom:1px solid #E3EEF3;margin-left:-1px;vertical-align:middle;word-wrap:break-word;word-break:keep-all;}
+table th, table td {padding:18px 5px;border-left:1px solid #E3EEF3;border-bottom:1px solid #E3EEF3;margin-left:-1px;vertical-align:middle;word-wrap:break-word;word-break:keep-all;color:#757575}
 table thead th {border-color: #D0D7E0; color: #FFFFFF; background: #929EA9;}
 table tbody th {border-color: #E3EEF3;color: #757575;}
 table th:first-child, table td:first-child {border-left:none;}
 table th:last-child, table td:last-child {border-right:none;}
 table th, table td img {vertical-align:middle}
+table.center tbody tr td{text-align:center;}
+
+
+table thead th span.step_tit {display: flex; justify-content: center; gap: 5px; line-height: 2.5rem;}
+
+/* exam - 학생목록 테이블 바디*/
+table tbody tr:nth-child(odd) {background: #fff;}
+table tbody tr:nth-child(even) {background: #fbfdff;}
+
+table tbody tr td {font-weight: 400;font-family: var(--f_nsR);color: #555;}
+table tbody tr:nth-child(1) td {padding-top: 11px;}
+
+
+
 
 /*테이블 헤더 스타일*/
 .th_yellow.type01 {background:var(--c_yellow_2);color: var(--c_yellow_m);border: none; border-right: 1px solid var(--c_yellow_2);}
@@ -65,7 +88,18 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 .state.learn {background-image: url(../images/common/ico_learn.svg);}/* 해득 */
 .state.miss {background-image: url(../images/common/ico_miss.svg);}/* 미해득 */
 .state.more {width: 60px; background-image: url(../images/common/ico_more.svg);}/* 보충 */
-.state.basket {width:32px; background: url(../images/common/ico_basket.svg) no-repeat;} /*삭제*/
+.state.basket {width:32px; background-image: url(../images/common/ico_basket.svg);} /* 삭제 */
+.state.download {width:32px; background-image;: url(../images/common/ico_download.svg)} /* 다운로드 */
+
+.state.tx{border:1px solid;padding:.8rem;font-size:1.5rem;border-radius:.4rem;}
+.state.tx.more{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}/* 보충 텍스트형 */
+.state.tx.end{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}/*  완료 텍스트형 */
+.state.tx.ing{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_y@ellow_m)}/*  학습중 텍스트형 */
+.state.tx.study{background-color:#fff;color:#757575;border-color:#e2e2e2}/* 학습하기 텍스트형 */
+
+
+
+
 /* 진단 상태 아이콘 + 텍스트 노출 */
 .ing_learn{color:var(--c_blue)}/* 해득 */
 .ing_miss{color:#929EA9}/* 미해득 */
@@ -80,6 +114,7 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 .step.sp1{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}
 .step.sp2{background-color:var(--c_pink_1);color:var(--c_pink_m);border-color:var(--c_pink_m)}
 .step.sp3{background-color:var(--c_mint_1);color:var(--c_mint_m);border-color:var(--c_mint_m)}
+
 /* n차 진단 - icon*/
 .icon.step-img {display: block; width: 57px; height: 22px;}
 .icon.step-img.num1 {background: url(../images/common/ico_step01.svg) no-repeat 50%;}
