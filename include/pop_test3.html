@@ -5,7 +5,7 @@
         });
     })
 
-    $('.stageBtn').on('click', function (event) {
+    $('#stageBtn03').on('click', function (event) {
     $(this).toggleClass('on');
     $('.stage__wrap').toggleClass('on');
     $('.grap__wrap').toggleClass('off');
@@ -113,7 +113,7 @@
                 <div class="start__hd">
                     <div class="start__title">
                         <h2><a href="#">진단하기</a></h2>
-                        <p class="badge small">쓰기</p>
+                        <p class="badge small tx-blue">쓰기</p>
                         <p class="sub_txt">제시되는 단어 또는 문장을 듣고 바르게 써봅시다.</p>
                     </div>
                     <button type="button" class="bn_close bk"><span class="sr-only">닫기</span></button>
@@ -221,7 +221,7 @@
                             </div>
                         </div>
                         <div class="frame num2">
-                            <button type="button" class="btn stage stageBtn" name="btn_stage"><i><span class="sr-only">진행단계 보기</span></i></button>
+                            <button type="button" class="btn stage" id="stageBtn03"><i><span class="sr-only">진행단계 보기</span></i></button>
                             <button type="button" class="btn white">문항 다운로드</button>
                             <button type="button" class="btn record">시작하기</button>
                         </div>                        

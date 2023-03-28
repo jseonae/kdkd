@@ -129,7 +129,6 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 .icon.step-img.num2 {background: url(../images/common/ico_step02.svg) no-repeat 50%;}
 .icon.step-img.num3 {background: url(../images/common/ico_step03.svg) no-repeat 50%;}
 
-
 /* tab */
 .tabs {width:100%}
 .tabs .tab-header {position:relative;display:flex;align-items:center;gap:1rem;}
@@ -144,4 +143,3 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 .list_1st{margin-left:1rem}
 .list_1st li{position:relative;padding:.4rem .4rem .4rem 1rem;text-align:left;font-size:1.5rem}
 .list_1st li::before{content:"";position:absolute;left:0;top:50%;display:block;width:.3rem;height:.3rem;border-radius:4rem;transform:translateY(-50%);background:var(--c_blue);}
-

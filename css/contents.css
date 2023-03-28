@@ -146,11 +146,11 @@ footer .intro_ft p {color:#fff;}
 .top_box .inner .item p {line-height:1;font-weight: 800; font-size: 1.6rem; color: var(--c_blue);transform: skew(-0.001deg);}
 
 /* exam - top_box icon*/
-.ico_32 {display: block; width: 32px; height: 32px;}
+.ico_32 {display: block; width: 32px; height: 32px; text-indent:-999px;overflow:hidden;}
 .ico_32.student {background: url(../images/common/ico_student.svg) no-repeat 50%;}
 .ico_32.excel {background: url(../images/common/ico_excel.svg) no-repeat 50%;}
 
-.ico_36 {display: block; width: 36px; height: 36px;}
+.ico_36 {display: block; width: 36px; height: 36px; text-indent:-999px;overflow:hidden;}
 .ico_36.minus {background: url(../images/common/ico_minus.svg) no-repeat 50%;}
 .ico_36.plus {background: url(../images/common/ico_plus.svg) no-repeat 50%;}
 
@@ -169,12 +169,6 @@ footer .intro_ft p {color:#fff;}
 .std_list tbody tr .input_name {width:140px;}
 
 /* exam - 학생목록 button icon*/
-/* .std_list tbody i {margin:auto; height: 36px; display: block;}
-.std_list .test {width:32px; background: url(../images/common/ico_test.svg) no-repeat;}
-.std_list .learn {width:32px; background: url(../images/common/ico_learn.svg) no-repeat 50%;}
-.std_list .miss {width:32px; background: url(../images/common/ico_miss.svg) no-repeat 50%;}
-.std_list .more {width:60px; background: url(../images/common/ico_more.svg) no-repeat 50%;}
-.std_list .basket {width:32px; background: url(../images/common/ico_basket.svg) no-repeat 50%;} */
 .std_list .test_learn {color:var(--c_blue); font-size:1.8rem; font-weight: 700;}
 .std_list .test_miss {color: #AFAFAF; font-size:1.8rem; font-weight: 700;}
 
@@ -237,7 +231,6 @@ footer p{font-size:1.5rem}
 .test__intro .test_intro_hd .title_box {display: flex; flex-direction: column; gap: 10px; width:50%;}
 .test__intro .test_intro_hd .title_box .sub_txt {margin: 10px 0 30px; font-size: 2.3rem; font-family: var(--f_nsN); font-weight: 700; letter-spacing: -0.01em;}
 .test__intro .test_intro_hd .title_cover {display: flex; align-items: center; gap: 15px; font-family: var(--f_nsR);}
-.test__intro .test_intro_hd .title_cover .badge.big {border-radius: 8px; padding: 1rem; color:#fff; font-size: 5.8rem; line-height: 1; font-weight: 700; background:var(--c_blue);}
 
 .test__intro .test_intro_hd .title_box .btn_wrap {display:flex; gap: 10px; width:85%;}
 .test__intro .test_intro_hd .title_box .btn_wrap div {width: 50%;}
@@ -254,8 +247,7 @@ footer p{font-size:1.5rem}
 .test__intro .test_exp .checklist {display: flex; align-items: flex-end; justify-content: space-between; width: 100%; height: 308px; padding: 46px 60px; gap: 25px;}
 .test__intro .test_exp .box_item {position: relative; height: 215px;}
 .test__intro .test_exp .box_item:not(:first-child) {background: rgba(255, 255, 255, 0.1); border-radius: 20px;}
-.test__intro .test_exp .box_item .badge.round {position: absolute; border-radius: 20px; padding: 8px 12px; color:var(--c_deepblue);font-size:1.6rem;font-weight:800;
-    background:var(--c_skyblue); top: -14px;}
+.test__intro .test_exp .box_item .badge.round {position: absolute; top: -14px;}
 .test__intro .test_exp .box_item:not(:last-child) .badge {left: 35px;}
 
 .test__intro .test_exp .box_item.num1 {width: 40%;}
@@ -304,7 +296,6 @@ footer p{font-size:1.5rem}
 .test__start .start__hd .btn_close {right: 0; top: -24px;}
 .test__start .start__hd h2 {font-weight: 800; font-size: 3.6rem; line-height: 41px; color:#fff;}
 .test__start .start__hd h2 a {color:#fff;}
-.test__start .start__hd .badge.small {border-radius: 8px; padding: 7px; font-size: 2rem; line-height: 23px; font-weight: 700; color: var(--c_blue);border: 1px solid var(--c_blue); background-color:#fff;}
 .test__start .start__hd .sub_txt {color:#fff;font-size: 1.6rem;}
 
 /* 문제 유형 선택 버튼*/
@@ -356,7 +347,7 @@ footer p{font-size:1.5rem}
 /* 진행단계 그래프*/
 .test__start .start__con .stage_nav {display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .test__start .start__con .stage_nav .frame {display: flex;}
-.test__start .start__con .stage_nav .frame.num1 {width:70%;}
+.test__start .start__con .stage_nav .frame.num1 {width:75%;}
 .test__start .start__con .stage_nav .frame.num2 {position: relative; display: flex; align-items: center; gap: 20px; width: auto; }
 
 #reading .test__start .start__con .stage_nav .frame.num1 {width:80%;}
@@ -564,3 +555,17 @@ input[type="checkbox"]:checked + label::after {content:'';background: url(../ima
 .nuga-pop .con1 article ul li:first-child span,
 .nuga-pop .con1 article ul li:first-child b{border-left:1px solid #E3EEF3;}
 .nuga-pop .con1 article ul li b{font-size:1.5rem;font-weight:400;line-height:1.5;color:var(--c_blue);border-top:1px solid #E3EEF3;background:#F7FAFD;}
+
+
+/* 학습하기 popup*/
+.video {width:80%; background: #838E99;padding: 210px 0; margin: 0 auto;}
+.video .btn-play {display: block; width: 10rem; height: 10rem; margin:0 auto; border-radius: 10rem; border: 1px solid #fff; background: url(../images/common/bn_vod_play.svg) no-repeat 50%;}
+
+/* 타이틀 badge */
+.bg-gray {background: #929EA9;}
+.tx-gray {color:#929EA9;}
+.tx-blue {color:var(--c_blue);}
+
+.badge.small {border-radius: 8px; padding: 7px; font-size: 2rem; line-height: 23px; font-weight: 700; background-color:#fff;}
+.badge.big {border-radius: 8px; padding: 1rem; font-size: 5.8rem; line-height: 1; font-weight: 700; color:#fff; background:var(--c_blue);}
+.badge.round {border-radius: 20px; padding: 8px 12px; font-size:1.6rem;font-weight:800; color:var(--c_deepblue); background:var(--c_skyblue);}

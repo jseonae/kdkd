@@ -23,7 +23,7 @@ $(document).ready(function() {
             });
         }) // modal
         
-        $('.stageBtn').on('click', function (event) {
+        $('#stageBtn01, #stageBtn02, #stageBtn03').on('click', function (event) {
         $(this).toggleClass('on');
         $('.stage__wrap').toggleClass('on');
         $('.grap__wrap').toggleClass('off');
@@ -79,7 +79,6 @@ $(document).ready(function() {
         
     });
     } //탭
-
 
 
     
