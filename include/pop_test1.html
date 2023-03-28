@@ -1,3 +1,17 @@
+<script type="text/javascript">
+    $('.bn_close').click(function() {
+        $('.modal').css({
+            display: 'none',
+        });
+    })
+
+    $('.stageBtn').on('click', function (event) {
+    $(this).toggleClass('on');
+    $('.stage__wrap').toggleClass('on');
+    $('.grap__wrap').toggleClass('off');
+    });
+</script>
+
 <div class="modal__wrap type01">
         
     <!--진단하기 인트로 :: Start-->
@@ -200,7 +214,7 @@
                             </div>
                         </div>
                         <div class="frame num2">
-                            <button type="button" class="btn stage" name="btn_stage" id="stageBtn"><i><span class="sr-only">진행단계 보기</span></i></button>
+                            <button type="button" class="btn stage stageBtn" name="btn_stage"><i><span class="sr-only">진행단계 보기</span></i></button>
                             <button type="button" class="btn start" name="btn_start">시작하기</button>
                         </div>                        
                     </div>

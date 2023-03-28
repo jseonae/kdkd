@@ -430,7 +430,7 @@ i.moon.small {background:url(../images/common/moon_small.svg) no-repeat 50%;}
 .top_box .inner.type02 .report_box .item .report .per.num3 i {background:url(../images/common/ico_per03.svg) no-repeat;}
 
 .top_box .inner.type03 .info_wrap {padding: 35px 0;}
-.top_box .inner.type03 .info_wrap h4 {font-weight: 800; font-size: 1.6rem; color: var(--c_blue); margin-bottom:20px;}
+.top_box .inner.type03 .info_wrap h3 {font-weight: 800; font-size: 1.6rem; color: var(--c_blue); margin-bottom:20px;}
 .top_box .inner.type03 .info_wrap ul {display: flex; flex-direction: column; gap: 1rem;}
 .top_box .inner.type03 .info_wrap ul .item {display: flex;justify-content: flex-start; gap:1rem;}
 .top_box .inner.type03 .info_wrap ul .item span {font-weight: 400; font-size: 1.5rem; color: #545454;}
