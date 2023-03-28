@@ -14,10 +14,10 @@
 
 </head>
 <style>
-#classwrap .inner{flex-direction:column;justify-content:flex-start;align-items:flex-start;padding:5rem 4rem;gap:1rem}
+#classwrap .inner{flex-direction:column;justify-content:space-between;align-items:flex-start;padding:5rem 4rem;gap:1rem}
 #classwrap .inner .info_wrap{display:flex;gap:4rem}
 #classwrap .inner .info_wrap .graphwrap{display:flex;gap:2rem}
-#classwrap .inner .info_wrap .graphwrap b{display:flex;justify-content:center;align-items:center;width:3.6rem;height:3.6rem;border-radius:4rem;}
+#classwrap .inner .info_wrap .graphwrap b{display:flex;justify-content:center;align-items:center;width:3.6rem;height:3.6rem;font-size:1.5rem;border-radius:4rem;}
 /* 컬러별적용 */
 #classwrap .inner .info_wrap .graphwrap .step1{color:var(--c_yellow)}
 #classwrap .inner .info_wrap .graphwrap .step2{color:var(--c_pink)}
@@ -116,6 +116,28 @@
 .tbl_graph tbody .step2{color:var(--c_pink)}
 .tbl_graph tbody .step3{color:var(--c_mint)}
 .tbl_graph tbody .test-end{color:var(--c_blue)}
+
+/* 미해득 막대그래프 */
+.misswrap{display:flex;flex-direction:column;gap:1rem;width:100%;}
+.misswrap *{font-size:1.5rem;}
+.misswrap li{display:flex;align-items:center;}
+.misswrap li b{width:4rem;color:#929EA9;}
+.misswrap li .linewrap{width:calc(100% - 12rem);padding:1rem;border:1px solid #e2e2e2}
+.misswrap li .graph_line{display:block;height:1.4rem;font-size:0;background:#929EA9}
+.misswrap li .graph_line.w0{width:0%;}
+.misswrap li .graph_line.w10{width:10%;}
+.misswrap li .graph_line.w20{width:20%;}
+.misswrap li .graph_line.w30{width:30%;}
+.misswrap li .graph_line.w40{width:40%;}
+.misswrap li .graph_line.w50{width:50%;}
+.misswrap li .graph_line.w60{width:60%;}
+.misswrap li .graph_line.w70{width:70%;}
+.misswrap li .graph_line.w80{width:80%;}
+.misswrap li .graph_line.w90{width:90%;}
+.misswrap li .graph_line.w100{width:10%;}
+
+.misswrap li em{display:flex;gap:1rem;justify-content:flex-end;width:8rem;font-style: normal;color:#929EA9}
+.misswrap li em span{color:#545454}
 </style>
 <body>
 <!--[include]HEADER :: Start -->
@@ -193,15 +215,23 @@
         </article>
         <article class="inner">
             <h3>우리학급 차시별 한글 미해득 인원(명)</h3>
-            <div class="info_wrap">
-                <ul>
+                <ul class="misswrap">
                     <li>
                         <b>1차</b>
-                        <span><span></span></span>
-                        <em>0%<span></span>(0명)</em>
+                        <span class="linewrap"><span class="graph_line w0">0%</span></span>
+                        <em>0%<span>(0명)</span></em>
+                    </li>
+                    <li>
+                        <b>2차</b>
+                        <span class="linewrap"><span class="graph_line w50">50%</span></span>
+                        <em>50%<span>(0명)</span></em>
+                    </li>
+                    <li>
+                        <b>3차</b>
+                        <span class="linewrap"><span class="graph_line w90">90%</span></span>
+                        <em>90%<span>(0명)</span></em>
                     </li>
                 </ul>
-            </div>
         </article>
         <article class="inner">
             <h3>한글 미해득 현황</h3>
