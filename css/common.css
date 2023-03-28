@@ -139,3 +139,9 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 .tabs .tab-body{padding:3rem 0;font-size:1.5rem}
 .tabs .tab-body > div {display:none;}
 .tabs .tab-body > div.active {display:block;}
+
+
+/* ul */
+.list_1st{margin-left:1rem}
+.list_1st li{position:relative;padding:.4rem .4rem .4rem 1rem;text-align:left;font-size:1.5rem}
+.list_1st li::before{content:"";position:absolute;left:0;top:50%;display:block;width:.3rem;height:.3rem;border-radius:4rem;transform:translateY(-50%);background:var(--c_blue);}
