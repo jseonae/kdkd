@@ -90,12 +90,12 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 .state.miss {background-image: url(../images/common/ico_miss.svg);}/* 미해득 */
 .state.more {width: 60px; background-image: url(../images/common/ico_more.svg);}/* 보충 */
 .state.basket {width:32px; background-image: url(../images/common/ico_basket.svg);} /* 삭제 */
-.state.download {width:32px; background-image;: url(../images/common/ico_download.svg)} /* 다운로드 */
+.state.download {width:32px; background-image: url(../images/common/ico_download.svg)} /* 다운로드 */
 
 .state.tx{border:1px solid;padding:.8rem;font-size:1.5rem;border-radius:.4rem;}
 .state.tx.more{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}/* 보충 텍스트형 */
 .state.tx.end{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}/*  완료 텍스트형 */
-.state.tx.ing{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_y@ellow_m)}/*  학습중 텍스트형 */
+.state.tx.ing{background-color:var(--c_yellow_1);color:var(--c_yellow_m);border-color:var(--c_yellow_m)}/*  학습중 텍스트형 */
 .state.tx.study{background-color:#fff;color:#757575;border-color:#e2e2e2}/* 학습하기 텍스트형 */
 
 
