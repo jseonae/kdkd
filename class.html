@@ -29,25 +29,19 @@
         </ul>
     </div>
 
-    <div class="top_box">
-        <div class="inner">
-            <div class="item std">
-                <i class="ico_32 student"></i>
-                <p>학생 추가</p>
-                <div class="btn_group">
-                    <button type="button" class="circle_btn"><i class="ico_36 minus"></i><span class="sr-only">빼기</span></button>
-                    <input type="text" class="count_txt_input" value="20명">
-                    <button type="button" class="circle_btn"><i class="ico_36 plus"></i><span class="sr-only">더하기</span></button>
-                    <button type="button" class="btn" name="btn_add">추가하기</button>
-                </div>
-            </div>
-            <div class="item file">
-                <i class="ico_32 excel"></i>
-                <p>학생목록 엑셀 일괄추가</p>
-                <button type="button" class="btn white" name="download">엑셀양식 다운로드</button>
-                <button type="button" class="btn" name="upload">엑셀파일 업로드</button>
-            </div>
-        </div>
+    <div class="top_box" id="classwrap">
+        <article class="inner">
+            <div class="info_wrap">
+            <h3>키득키득 한글 진단검사 현황</h3></div>
+        </article>
+        <article class="inner">
+            <div class="info_wrap">
+            <h3>우리학급 차시별 한글 미해득 인원(명)</h3></div>
+        </article>
+        <article class="inner">
+            <div class="info_wrap">
+            <h3>한글 미해득 현황</h3></div>
+        </article>
     </div>
 <!-- 탭 -->
 <div class="tabs">
@@ -64,7 +58,18 @@
                     <table class="tbl_basic center table-hover">
                         <caption>전체학생 현황을 안내하는 표입니다. 순, 이름, 학년, 반, 번호, 다문화, 수준, 인력매칭(온채움교사, 기타교사), 보정지도(읽기, 유창성, 쓰기)로 나뉘어 자료를 제공하고 있습니다.</caption>
                         <colgroup>
-                            <col >                                    
+                            <col style="width:auto">
+                            <col style="width:auto">
+                            <col style="width:auto">
+                            <col style="width:auto">
+                            <col style="width:auto">
+                            <col style="width:auto">
+                            <col style="width:auto">
+                            <col style="width:auto">
+                            <col style="width:auto"> 
+                            <col style="width:10%">   
+                            <col style="width:10%">   
+                            <col style="width:10%">                             
                         </colgroup>
                         <thead>
                             <tr>
@@ -98,7 +103,7 @@
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td>
-                                    <ul>
+                                    <ul class="list_1st">
                                         <li>대표받침</li>
                                         <li>복잡한 받침 단어</li>
                                         <li>대표 받침 단어</li>
@@ -118,7 +123,7 @@
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td>
-                                    <ul>
+                                    <ul class="list_1st">
                                         <li>대표받침</li>
                                         <li>복잡한 받침 단어</li>
                                         <li>대표 받침 단어</li>
@@ -138,7 +143,7 @@
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td>
-                                    <ul>
+                                    <ul class="list_1st">
                                         <li>대표받침</li>
                                         <li>복잡한 받침 단어</li>
                                         <li>대표 받침 단어</li>
@@ -158,7 +163,7 @@
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td>
-                                    <ul>
+                                    <ul class="list_1st">
                                         <li>대표받침</li>
                                         <li>복잡한 받침 단어</li>
                                         <li>대표 받침 단어</li>
@@ -178,7 +183,7 @@
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td>
-                                    <ul>
+                                    <ul class="list_1st">
                                         <li>대표받침</li>
                                         <li>복잡한 받침 단어</li>
                                         <li>대표 받침 단어</li>
@@ -198,7 +203,7 @@
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td>
-                                    <ul>
+                                    <ul class="list_1st">
                                         <li>대표받침</li>
                                         <li>복잡한 받침 단어</li>
                                         <li>대표 받침 단어</li>
@@ -218,7 +223,7 @@
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td><i class="multi ico_o">해당있음</i></td>
                                 <td>
-                                    <ul>
+                                    <ul class="list_1st">
                                         <li>대표받침</li>
                                         <li>복잡한 받침 단어</li>
                                         <li>대표 받침 단어</li>
