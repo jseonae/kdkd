@@ -13,7 +13,7 @@ html, body {margin: 0; padding: 0;font-size:62.5%; background:var(--bg_body);}
 a {text-decoration: none;color: #333;}
 button {border: 0; background: none; cursor: pointer;}
 
-.btn {display:block; padding: 15px 25px; border-radius: 4px; color: #fff; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em;  font-family: var(--f_nsR); 
+.btn {display:block; padding: 1.2rem 1.6rem; border-radius: 4px; color: #fff; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em;  font-family: var(--f_nsR); 
    transition: var(--ani_time); background:var(--c_blue); }
 .btn:hover {background: var(--c_blue_m);}
 
@@ -40,7 +40,7 @@ button {border: 0; background: none; cursor: pointer;}
 table {display:table;width:100%;font-weight: 400;}
 table caption {overflow: hidden;position: absolute;border: 0;width: 1px;height: 1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
 table th {border-width: 0px 1px 1px 0px;border-style: solid;text-align: center;letter-spacing: -0.05em;}
-table th, table td {padding:18px 5px;border-left:1px solid #E3EEF3;border-bottom:1px solid #E3EEF3;margin-left:-1px;vertical-align:middle;word-wrap:break-word;word-break:keep-all;color:#757575}
+table th, table td {padding:18px 5px;border-left:1px solid #E3EEF3;border-bottom:1px solid #E3EEF3;margin-left:-1px;vertical-align:middle;word-wrap:break-word;word-break:keep-all;color:#757575;font-size:1.5rem;}
 table thead th {border-color: #D0D7E0; color: #FFFFFF; background: #929EA9;}
 table tbody th {border-color: #E3EEF3;color: #757575;}
 table th:first-child, table td:first-child {border-left:none;}
@@ -135,7 +135,7 @@ thead tr th {font-weight: 700; font-size: 1.6rem;}
 .tabs .tab-header::after{z-index:0;content:"";position:absolute;left:0;bottom:0;display:block;width:100%;height:.2rem;background:var(--c_blue);}
 .tabs .tab-header > button {position:relative;padding:2.2rem 4.2rem;font-size:1.6rem;font-weight:800;color:#757575;border-top-left-radius:1rem;border-top-right-radius:1rem;border:2px solid #fff;border-bottom:0;cursor: pointer;background-color:#fff;}
 .tabs .tab-header > button.active {z-index:10;color:var(--c_blue);border-color:var(--c_blue);background:var(--bg_body);}
-.tabs .tab-body{padding:3rem 0;font-size:1.5rem}
+.tabs .tab-body{padding:0;font-size:1.5rem}
 .tabs .tab-body > div {display:none;}
 .tabs .tab-body > div.active {display:block;}
 
